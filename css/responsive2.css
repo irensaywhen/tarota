@@ -5,31 +5,31 @@
 }
 
 @media (max-width: 1199px) and (min-width: 991px){
-	.hs_btn_wrapper{
+	.header-button{
 		margin-right:5px;
 	}
 	.hs_top_user_profile{
 		padding-left:0;
 	}
-	.hs_header_add_wrapper{
+	.header-phone-wrapper{
 		margin-left:0;
 		width:190px;
 		margin-top: 10px;
 	}
-	.hs_header_add_icon {
+	.header-phone-icon {
 		width: 30px;
 		height: 30px;
 		line-height: 30px;
 		font-size: 17px;
 	}
-	.hs_header_add_icon_cont{
+	.header-phone{
 		padding-top:0;
 		padding-left:7px;
 	}
-	.hs_header_add_icon_cont h5{
+	.header-phone h5{
 		font-size:14px;
 	}
-	.hs_header_add_icon_cont p{
+	.header-phone p{
 		font-size:12px;
 	}
 	.hs_cycle_main_wrapper{
@@ -189,7 +189,7 @@
 	.hs_footer_help_wrapper, .hs_footer_contact_wrapper{
 		margin-top:60px;
 	}
-	.hs_header_logo_left, .hs_header_logo_right{
+	.header-logo, .header-info{
 		width:50%;
 	}
 	.slider-area .carousel-inner .item .carousel-captions .content h2{
@@ -207,7 +207,7 @@
 	.hs_trt_first_cont{
 		padding-top:30px;
 	}
-	.hs_blog_right_sidebar_main_wrapper{
+	.sidebar-wrapper{
 		margin-top:60px;
 	}
 	.hs_shop_single_cart_wrapper{
@@ -400,10 +400,10 @@
 	.hs_navigation_header_wrapper{
 		background:#4f2b7f;
 	}
-	.hs_header_logo_right{
+	.header-info{
 		width:100%;
 	}
-	.hs_btn_wrapper{
+	.header-button{
 		float:left;
 	}
 	.hs_logo{
@@ -477,10 +477,10 @@
 	.full_width{
 		width:100%;
 	}
-		.hs_indx_title_main_wrapper{
+		.title-wrapper{
 		text-align:center;
 	}
-	.hs_indx_title_right_wrapper ul{
+	.title-right-wrapper ul{
 		display:inline-block;
 		float:none;
 		margin-top:20px;
@@ -494,7 +494,7 @@
 		padding-top:150px;
 		padding-bottom:150px;
 	}
-	.hs_about_heading_wrapper h2, .hs_about_right_cont_wrapper h1, .hs_advert_cont_wrapper h1, .hs_online_slider_left_cont h2, .hs_about_progress_img_left h2, .hs_about_progress_cont_left h2, .hs_indx_title_left_wrapper h2, .hs_kd_first_sec_wrapper h2{
+	.hs_about_heading_wrapper h2, .hs_about_right_cont_wrapper h1, .hs_advert_cont_wrapper h1, .hs_online_slider_left_cont h2, .hs_about_progress_img_left h2, .hs_about_progress_cont_left h2, .title-left-wrapper h2, .hs_kd_first_sec_wrapper h2{
 		font-size:25px;
 	}
 	.btc_shop_single_tabs_wrapper .nav-pills > li{
@@ -513,7 +513,7 @@
 	.hs_cycle_main_wrapper{
 		display:none;
 	}
-	.hs_btn_wrapper li a{
+	.header-button li a{
 		width:180px;
 	}
 }

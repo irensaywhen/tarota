@@ -312,7 +312,7 @@
 
 
         $(document).ready(function() {
-            $('.hs_blog_box1_img_wrapper .owl-carousel').owlCarousel({
+            $('.post-img-wrapper .owl-carousel').owlCarousel({
                 loop: true,
                 margin: 10,
                 autoplay: true,
