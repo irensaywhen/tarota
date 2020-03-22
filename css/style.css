@@ -97,6 +97,13 @@ body::-webkit-scrollbar-thumb{
 .aries_padding_left{
 	padding-left:10px;
 }
+
+/*------Helper classes-----*/
+
+.px-0{
+	padding-left: 0;
+	padding-right: 0;
+}
 /*---------- Custom Css Start -------*/
 /*---------- btn Css Start -------*/
 .hs_btn_wrapper a {
@@ -569,7 +576,7 @@ ul{
 .hs_navigation_header_wrapper{
 	float:left;
 	width:100%;
-	background:#170135;
+	background:#4f2b7f;
 	border-top:1px solid rgba(255, 255, 255, 0.28);
 	position:relative;
 }
@@ -3288,16 +3295,17 @@ width:100%;
 .hs_footer_logo_wrapper p{
 	margin-top:20px;
 }
-.hs_footer_logo_wrapper h4 a{
+.hs_footer_ln_cont_wrapper a{
 	font-size:16px;
-	color:#7b5aa7;
+	color:#1c043c;
+	text-decoration: underline;
 	display:inline-block;
 	    -webkit-transition: all 0.5s;
     -o-transition: all 0.5s;
     -ms-transition: all 0.5s;
     -moz-transition: all 0.5s;
     transition: all 0.5s;
-	margin-top:20px;
+	margin-top:40px;
 }
 .hs_footer_logo_wrapper h4 a i{
 	    -webkit-transition: all 0.5s;
@@ -3519,10 +3527,7 @@ width:100%;
 	position:relative;
 }
 .footer_bottom_cont_wrapper{
-	float:left;
 	width:100%;
-}
-.footer_bottom_cont_wrapper p{
 	font-size:14px;
 }
 /*-- hs bottom footer wrapper End --*/
@@ -3530,10 +3535,9 @@ width:100%;
 /**************-------------------- ABOUT CSS START --------------*******************/
 /*-- hs title wrapper Start --*/
 .hs_indx_title_main_wrapper{
-	background:url('../images/content/advert_bg.jpg') 50% 0 repeat-y;
-	background-position:center 0;
-	background-size:cover;
-	background-repeat:no-repeat;
+	background:#625772;
+	background: #3b1d8f;
+	background: #0f0122;
 	float:left;
 	width:100%;
 	height:100%;
@@ -3541,14 +3545,7 @@ width:100%;
 	padding-top:60px;
 	padding-bottom:60px;
 }
-.hs_title_img_overlay{
-	position:absolute;
-	top:0%;
-	bottom:0%;
-	left:0%;
-	right:0%;
-	background:rgba(13, 1, 29, 0.6);
-}
+
 .hs_indx_title_left_wrapper{
 	float:left;
 	width:100%;
@@ -5874,11 +5871,11 @@ width:100%;
 	width:100%;
 	background:#4f2b7f;
 	padding:15px;
-	margin-top:60px;
 }
 .hs_blog_right_cate_list_heading_wrapper h2{
-	font-size:18px;
+	font-size:16px;
 	color:#ffffff;
+	text-align: center;
 	text-transform:uppercase;
 }
 .hs_blog_right_cate_list_cont_wrapper{
@@ -5911,9 +5908,12 @@ width:100%;
     transition: all 0.5s;
 }
 .hs_blog_right_recnt_cont_wrapper{
+	background:#4f2b7f;
+	border:1px dashed rgba(255, 255, 255, 0.5);
 	float:left;
 	width:100%;
 	margin-top:40px;
+	padding: 2px;
 }
 .hs_footer_ln_img_wrapper{
 	float:left;
@@ -5923,30 +5923,19 @@ width:100%;
 	float:left;
 	width:calc(100% - 100px);
 	padding-left:20px;
-	padding-top:10px;
 }
-.hs_footer_ln_cont_wrapper h4{
+.hs_footer_ln_cont_wrapper h3{
 	font-size:16px;
 	color:#fff;
 	line-height:22px;
+	padding-top: 10px;
 }
 .hs_footer_ln_cont_wrapper p{
 	font-size:16px;
 	color:#7b5aa7;
 	padding-top:7px;
 }
-.hs_blog_right_insta_img_wrapper{
-	float:left;
-	width:100%;
-}
-.hs_blog_right_insta_img_wrapper li{
-	float:left;
-	margin-right: 3px;
-    margin-top: 3px;
-}
-.hs_blog_right_insta_img_wrapper ul{
-	margin-top:20px;
-}
+
 .pager_wrapper{
 	margin-top:80px;
 	text-align:center;
