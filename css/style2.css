@@ -89,7 +89,7 @@ body::-webkit-scrollbar-thumb{
     color: #fff;
     top: 5px;
 }
-.house_toggle svg{
+.hamburger-icon svg{
 	fill:#ffffff !important;
 	width:25px;
 	height:25px;
@@ -566,18 +566,18 @@ ul{
 }
 /*-- hs top header End --*/
 /*-- hs Navigation Start --*/
-.hs_navigation_header_wrapper{
+.header-navigation-wrapper{
 	float: left;
     width: 100%;
     background: #170135;
     position: relative;
     border-top: 1px solid rgba(255, 255, 255, 0.17);
 }
-.hs_main_menu li{
+.menu-desktop li{
 	float:left;
 	position:relative;
 }
-.hs_main_menu li:after{
+.menu-desktop li:after{
 	content: '';
     border: 1px solid rgba(255, 255, 255, 0.17);
     height: 20px;
@@ -585,16 +585,16 @@ ul{
     right: -1px;
     top: 29px;
 }
-.hs_main_menu li:last-child:after{
+.menu-desktop li:last-child:after{
 	display:none;
 }
-.hs_main_menu {
+.menu-desktop {
   flex-direction: column;
   justify-content: space-between;
   overflow: visible;
   position:relative;
 }
-.hs_main_menu a {
+.menu-desktop a {
     text-align: center;
     padding: 26px 20px 26px 20px;
     display: inline-block;
@@ -605,7 +605,7 @@ ul{
     -moz-transition: all 0.5s;
     transition: all 0.5s;
 }
-.hs_main_menu .drop-menu a{
+.menu-desktop .drop-menu a{
 	padding: .75em 1em;
 	padding-left: 20px;
     text-align: left;
@@ -640,7 +640,7 @@ ul{
     -moz-transition: all 0.5s;
     transition: all 0.5s;
 }
-.hs_main_menu a:hover {
+.menu-desktop a:hover {
       color: #ffffff;
      background: #4f2b7f;
 	  -webkit-transition: all 0.5s;
@@ -649,7 +649,7 @@ ul{
     -moz-transition: all 0.5s;
     transition: all 0.5s;
 }
-.hs_main_menu .menu-button2:hover{
+.menu-desktop .menu-button2:hover{
 	 color: #fff;
      background:transparent;
 	  -webkit-transition: all 0.5s;
@@ -672,7 +672,7 @@ ul{
 .dropdown-wrapper:hover > .drop-menu .menu-button {
   transform: translateY(0%); 
 }
-.hs_main_menu ul{
+.menu-desktop ul{
 	float:right;
 }
 #search_button{
@@ -1398,7 +1398,7 @@ ul{
 	padding-top:100px;
 	padding-bottom:100px;
 }
-.hs_about_heading_main_wrapper{
+.services-heading-wrapper{
 	float:left;
 	width:100%;
 	text-align:center;
@@ -2421,13 +2421,13 @@ ul{
 /*-- hs sign cycle wrapper End --*/
 /*-- hs sign wrapper End --*/
 /*-- hs service wrapper Start --*/
-.hs_service_main_wrapper{
+.services-wrapper{
 	float:left;
 	width:100%;
 	padding-top:100px;
 	padding-bottom:100px;
 }
-.hs_service_main_box_wrapper{
+.service-card{
 	float:left;
 	width:100%;
 	text-align:center;
@@ -2439,7 +2439,7 @@ ul{
     -moz-transition: all 0.5s;
     transition: all 0.5s;
 }
-.hs_service_icon_main_wrapper{
+.image-wrapper{
 	display:inline-block;
 	border:1px dashed #cecece;
 	-webkit-border-radius: 100%;
@@ -2447,7 +2447,7 @@ ul{
     border-radius: 100%;
 	padding: 10px;
 }
-.hs_service_icon_wrapper{
+.service-line-inner-wrapper{
 	position:relative;
 	width:90px;
 	height:90px;
@@ -2464,7 +2464,7 @@ ul{
     -moz-transition: all 0.5s;
     transition: all 0.5s;
 }
-.hs_service_icon_wrapper i:before{
+.service-line-inner-wrapper i:before{
 	color:rgba(255, 255, 255, 0.7);
 	margin-left:0;
 	font-size:40px;
@@ -2474,12 +2474,12 @@ ul{
     -moz-transition: all 0.5s;
     transition: all 0.5s;
 }
-.hs_service_icon_cont_wrapper{
+.service-info{
 	float:left;
 	width:100%;
 	display:inline-block;
 }
-.hs_service_icon_cont_wrapper h2{
+.service-info h2{
 	font-size:20px;
 	color:#fff;
 	font-weight:bold;
@@ -2492,13 +2492,13 @@ ul{
     -moz-transition: all 0.5s;
     transition: all 0.5s;
 }
-.hs_service_icon_cont_wrapper h5 a{
+.service-info h5 a{
 	font-size:16px;
 	color:#7b5aa7;
 	padding-top:20px;
 	display:inline-block;
 }
-.hs_service_icon_cont_wrapper h5 a i{
+.service-info h5 a i{
 	position:relative;
 	top:2px;
 	    -webkit-transition: all 0.5s;
@@ -2507,7 +2507,7 @@ ul{
     -moz-transition: all 0.5s;
     transition: all 0.5s;
 }
-.hs_service_icon_cont_wrapper h5 a:hover i{
+.service-info h5 a:hover i{
 	padding-left:5px;
 	    -webkit-transition: all 0.5s;
     -o-transition: all 0.5s;
@@ -2515,7 +2515,7 @@ ul{
     -moz-transition: all 0.5s;
     transition: all 0.5s;
 }
-.portfolio-filter ul{
+.services-filter ul{
 	display:inline-block;
 	margin-top:60px;
 	margin-bottom:30px;
@@ -2525,7 +2525,7 @@ ul{
 .III_column{
 	margin-top:30px;
 }
-.portfolio-filter li{
+.services-filter li{
 	float:left;
 	position:relative;
 }
@@ -2590,7 +2590,7 @@ ul{
 .cc_cart_wrapper1:last-child{
 	border-bottom:0;
 }
-.hs_service_main_box_wrapper:hover .btc_step_overlay{
+.service-card:hover .btc_step_overlay{
 	position:absolute;
 	top:0;
 	left:0;
@@ -2599,7 +2599,7 @@ ul{
 	background:#4f2b7f;
 	opacity:1;
 }
-.hs_service_main_box_wrapper:hover .hs_service_icon_wrapper i:before{
+.service-card:hover .service-line-inner-wrapper i:before{
 	position:relative;
 	color:#ffffff;
 	z-index:100;
@@ -4224,12 +4224,12 @@ footer{
 	color:#ffffff;
 	text-transform:uppercase;
 }
-.hs_kd_right_first_sec_img_heading{
+.sidebar-image{
 	float:left;
 	width:100%;
 	margin-top:30px;
 }
-.hs_kd_right_first_sec_img_heading img{
+.sidebar-image img{
 	width:100%;
 }
 .hs_kd_right_first_sec_img_price_heading{
@@ -5898,14 +5898,14 @@ footer{
     -moz-transition: all 0.5s;
     transition: all 0.5s;
 }
-.sidebar-header-wrapper{
+.sidebar-header{
 	float:left;
 	width:100%;
 	background:#ff7e00;
 	padding:15px;
 	margin-top:60px;
 }
-.sidebar-header-wrapper h2{
+.sidebar-header h2{
 	font-size:18px;
 	color:#ffffff;
 	text-transform:uppercase;
@@ -6230,7 +6230,7 @@ footer{
 .hs_vs_left_side_first_wrapper img{
 	width:100%;
 }
-.sidebar-header-wrapper2{
+.sidebar-header2{
 	margin-top:0;
 }
 .hs_vs_first_sec_wrapper{

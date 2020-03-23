@@ -1,5 +1,5 @@
 @media(min-width: 768px) and (max-width: 992px){
-	.hs_main_menu a{
+	.menu-desktop a{
 		padding: 25px 10px 25px 10px;
 	}
 }
@@ -224,7 +224,7 @@
 }
 
 @media (max-width: 480px){
-	.portfolio-filter li{
+	.services-filter li{
 		float:none;
 	}
 	.hs_rs_comment_img_wrapper{
@@ -377,7 +377,7 @@
 	.hs_counter_cont_wrapper5{
 		border-bottom:1px dashed #cecece;
 	}
-	.hs_navigation_header_wrapper{
+	.header-navigation-wrapper{
 		background:#4f2b7f;
 	}
 	.header-info{

@@ -73,7 +73,7 @@
 
 jQuery(document).ready(function($){
 	//open/close mega-navigation
-	$('.house_toggle').on('click', function(event){
+	$('.hamburger-icon').on('click', function(event){
 		event.preventDefault();
 		toggleNav();
 	});
@@ -104,7 +104,7 @@ jQuery(document).ready(function($){
 	function toggleNav(){
 		var navIsVisible = ( !$('.cd-dropdown').hasClass('dropdown-is-active') ) ? true : false;
 		$('.cd-dropdown').toggleClass('dropdown-is-active', navIsVisible);
-		$('.house_toggle').toggleClass('dropdown-is-active', navIsVisible);
+		$('.hamburger-icon').toggleClass('dropdown-is-active', navIsVisible);
 		if( !navIsVisible ) {
 			$('.cd-dropdown').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend',function(){
 				$('.has-children ul').addClass('is-hidden');

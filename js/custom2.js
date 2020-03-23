@@ -46,9 +46,9 @@
         $(window).scroll(function() {
             var window_top = $(window).scrollTop() + 1;
             if (window_top > 160) {
-                $('.hs_navigation_header_wrapper').addClass('menu_fixed animated fadeInDown');
+                $('.header-navigation-wrapper').addClass('menu_fixed animated fadeInDown');
             } else {
-                $('.hs_navigation_header_wrapper').removeClass('menu_fixed animated fadeInDown');
+                $('.header-navigation-wrapper').removeClass('menu_fixed animated fadeInDown');
             }
         });
 
@@ -121,7 +121,7 @@
                 var $grid = $('#gridWrapper');
 
                 $grid.shuffle({
-                    itemSelector: '.portfolio-wrapper' // the selector for the items in the grid
+                    itemSelector: '.service-wrapper' // the selector for the items in the grid
                 });
 
                 /* reshuffle when user clicks a filter item */

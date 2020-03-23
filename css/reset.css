@@ -17,7 +17,7 @@ header {
   -moz-osx-font-smoothing: grayscale;
       float: right;
 }
-.house_toggle i{
+.hamburger-icon i{
 	font-size:17px;
 }
 .cd-dropdown-trigger {
@@ -95,14 +95,14 @@ header {
   }
 }
 
-.cd-dropdown h2,
+.inner-logo,
 .cd-dropdown-content a,
 .cd-dropdown-content ul a {
   height: 50px;
   line-height: 50px;
 }
 @media only screen and (min-width: 768px) {
-  .cd-dropdown h2,
+  .inner-logo,
   .cd-dropdown-content a,
   .cd-dropdown-content ul a {
     height: 60px;
@@ -110,7 +110,7 @@ header {
   }
 }
 @media only screen and (min-width: 1024px) {
-  .cd-dropdown h2,
+  .inner-logo,
   .cd-dropdown-content a,
   .cd-dropdown-content ul a {
     height: 50px;
@@ -118,7 +118,7 @@ header {
   }
 }
 
-.cd-dropdown h2,
+.inner-logo,
 .cd-dropdown-content a,
 .cd-dropdown-content ul a,
 .cd-dropdown-content .cd-divider {
@@ -147,7 +147,7 @@ header {
   -moz-transition: -moz-transform 0.5s 0s, visibility 0s 0.5s;
   transition: transform 0.5s 0s, visibility 0s 0.5s;
 }
-.cd-dropdown h2 {
+.inner-logo {
   /* dropdown title - mobile version only */
   position: relative;
   z-index: 1;
@@ -157,10 +157,10 @@ header {
   color:#e5ae49;
   position:relative;
 }
-.cd-dropdown h2 a{
+.inner-logo a{
 	color:#ffffff;
 }
-.cd-dropdown h2:after{
+.inner-logo:after{
 	content:'';
 	border:1px solid rgba(255, 255, 255, 0.52);
 	width:100px;
@@ -168,7 +168,7 @@ header {
 	bottom: 9px;
     left: 33px;
 }
-.cd-dropdown h2 span{
+.inner-logo span{
 	color:#00468c;
 }
 .cd-dropdown .cd-close {
@@ -262,7 +262,7 @@ header {
     right: 0;
     left: auto;
   }
-  .cd-dropdown h2, .cd-dropdown .cd-close {
+  .inner-logo, .cd-dropdown .cd-close {
     /* on desktop - hide title and 'X' */
     display: none;
   }
