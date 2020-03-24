@@ -419,9 +419,13 @@ ul{
 .header-info{
 	padding-left: 30px;
 	width:75%;
-	display: flex;
-	justify-content: space-around;
-	flex-wrap: wrap;
+	display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 }
 .hs_logo_wrapper{
 	float:left;
@@ -675,9 +679,16 @@ ul{
 ====================================*/
 
 .drop-menu {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+	display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   transition: max-height .4s, opacity .3s;
   max-height: 0;
   opacity: 0;
@@ -3352,18 +3363,8 @@ width:100%;
 .hs_footer_logo_wrapper p{
 	margin-top:20px;
 }
-.sidebar-block-content a{
-	font-size:16px;
-	color:rgb(240, 110, 156);
-	text-decoration: underline;
-	display:inline-block;
-	    -webkit-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    -ms-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    transition: all 0.5s;
-	margin: 45px 5px 0 0;
-}
+
+
 .hs_footer_logo_wrapper h4 a i{
 	    -webkit-transition: all 0.5s;
     -o-transition: all 0.5s;
@@ -3587,9 +3588,15 @@ footer{
 .footer-inner{
 	width:100%;
 	font-size:14px;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	  -webkit-box-pack: justify;
+		  -ms-flex-pack: justify;
+			  justify-content: space-between;
+	  -webkit-box-align: center;
+		  -ms-flex-align: center;
+			  align-items: center;
 }
 /*-- hs bottom footer wrapper End --*/
 
@@ -6036,12 +6043,44 @@ footer{
 	float:left;
 	width:100px;
 }
-.sidebar-block-content{
+
+.sidebar-block-content {
+	display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 	float:left;
 	width:calc(100% - 100px);
 	padding-left:20px;
-	text-align: right;
+	height: 100px;
 }
+.sidebar-block-content a{
+	font-size:16px;
+	color:rgb(240, 110, 156);
+	text-decoration: underline;
+	display:inline-block;
+	    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+	transition: all 0.5s;
+	width: 100%;
+	text-align: right;
+	display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+	-webkit-box-align: end;
+	    -ms-flex-align: end;
+	        align-items: flex-end;
+	-webkit-box-pack: end;
+	    -ms-flex-pack: end;
+	        justify-content: flex-end;
+}
+
 .sidebar-block-content h3{
 	font-size:16px;
 	text-align: left;
@@ -6052,6 +6091,8 @@ footer{
   	-webkit-line-clamp: 2;
 	-webkit-box-orient: vertical; 
 	overflow: hidden;
+	-ms-flex-item-align: start;
+	    align-self: start;
 }
 .sidebar-block-content p{
 	font-size:16px;
