@@ -3362,7 +3362,7 @@ width:100%;
     -ms-transition: all 0.5s;
     -moz-transition: all 0.5s;
     transition: all 0.5s;
-	margin-top:40px;
+	margin: 45px 5px 0 0;
 }
 .hs_footer_logo_wrapper h4 a i{
 	    -webkit-transition: all 0.5s;
@@ -6040,9 +6040,11 @@ footer{
 	float:left;
 	width:calc(100% - 100px);
 	padding-left:20px;
+	text-align: right;
 }
 .sidebar-block-content h3{
 	font-size:16px;
+	text-align: left;
 	color:#fff;
 	line-height:22px;
 	padding-top: 10px;
