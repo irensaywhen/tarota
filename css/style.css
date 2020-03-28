@@ -5675,15 +5675,31 @@ footer{
 }
 /**************-------------------- CHINESE CSS END --------------*******************/
 /**************------- BLOG CATEGORIES CSS START ---------*******************/
-.blog-wrapper{
+.card-wrapper{
+	background: #170135;
+	float: left;
+	width:100%;
+	padding-top:50px;
+	padding-bottom:100px;
+}
+
+.blog-wrapper {
 	float:left;
 	width:100%;
 	padding-top:50px;
 	padding-bottom:100px;
 }
 
-.blog-container{
+.blog-container,
+.card-container{
 	margin-top: 50px;
+}
+
+.post-title,
+.personal-reading_title {
+	font-size:36px;
+	color:#fff;
+	font-weight:bold;
 }
 .hs_blog_left_sidebar_main_wrapper,
 .sidebar-wrapper{
@@ -5694,6 +5710,10 @@ footer{
 	float:left;
 	width:100%;
 }
+
+
+/*Image styles of the blog*/
+
 .post-img-wrapper img{
 	width:100%;
 }
@@ -5703,18 +5723,103 @@ footer{
 	width:100%;
 	overflow:hidden;
 }
-.post-img-wrapper iframe{
+
+.card-img-wrapper {
+	margin: 30px auto 0 auto;
+	text-align: center;
+}
+
+
+.post-img-wrapper iframe {
 	width:100%;
 	height:350px;
 	border:0;
 }
 
-.post-content-wrapper{
+/*Post styles of the blog*/
+
+
+.post-content-wrapper,
+.card-content-wrapper {
 	float:left;
 	width:100%;
 	border:1px dashed rgba(255, 255, 255, 0.5);
 	padding:35px;
 }
+
+.card-content-wrapper {
+	border: none;
+	border-bottom:1px dashed rgba(255, 255, 255, 0.5);
+}
+
+.card-content,
+.post-content {
+	padding-top:20px;
+}
+
+/*Personal reading styles*/
+
+.personal-reading {
+	float: left;
+	background: rgb(15, 1, 34);
+	padding: 100px 0 40px 0;
+	width: 100%;
+}
+
+.personal-reading_title::after {
+	content: "";
+	display: block;
+	margin: 30px auto 30px auto;
+	width: 50px;
+	font-weight: 700;
+	border-bottom: 2px solid #fff;
+}
+
+.personal-reading_description {
+	width: 100%;
+	text-align: justify-all;
+	margin: 10px 0 10px 0;
+}
+
+.personal-reading_image-wrapper {
+	width: 100%;
+}
+
+.personal-reading_image{
+	width: 100%;
+	height: auto;
+}
+
+.personal-reading_call-wrapper{
+	width: 100%;
+	font-size: 30px;
+	background: #4f2b7f;
+	color: #fff;
+	line-height: normal;
+	margin: 50px 0 5px 0;
+	padding: 10px 0 10px 0;
+}
+
+.personal-reading_call {
+	color: #fff;
+}
+
+.persinal-reading_price-wrapper {
+	font-size: 14px;
+}
+
+
+/*Personal reading styles end */
+
+/*Ad section styles start */
+
+.ad-section {
+	float: left;
+	width: 100%;
+	padding: 50px 0 50px 0;
+}
+/*Ad section styles end*/
+
 .hs_blog_box1_main_wrapper h2{
 	font-size:30px;
 	color:#fff;
@@ -5722,9 +5827,6 @@ footer{
 	padding-bottom: 29px;
 }
 
-.post-content{
-	padding-top:20px;
-}
 
 .hs_blog_box1_bottom_cont_main_wrapper{
 	float:left;
