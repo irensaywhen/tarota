@@ -5868,13 +5868,53 @@ footer{
 	height: auto;
 }
 
+/*Animation for online label start*/
+
+@-webkit-keyframes pulsate {
+	0% {
+		-webkit-box-shadow: 0 0 0 #9fdc86;
+		        box-shadow: 0 0 0 #9fdc86;
+	}
+
+	50% {
+		-webkit-box-shadow: 0 0 17px #35751a;
+		        box-shadow: 0 0 17px #35751a;
+	}
+
+	100% {
+		-webkit-box-shadow: 0 0 0 #9fdc86;
+		        box-shadow: 0 0 0 #9fdc86;
+	}
+}
+@keyframes pulsate {
+	0% {
+		-webkit-box-shadow: 0 0 0 #9fdc86;
+		        box-shadow: 0 0 0 #9fdc86;
+	}
+
+	50% {
+		-webkit-box-shadow: 0 0 17px #35751a;
+		        box-shadow: 0 0 17px #35751a;
+	}
+
+	100% {
+		-webkit-box-shadow: 0 0 0 #9fdc86;
+		        box-shadow: 0 0 0 #9fdc86;
+	}
+}
+
+/*Animation for online label end*/
+
 .specialist-card_online {
 	width: 100%;
 	background: #72bb53;
 	border:1px dashed rgba(255, 255, 255, 0.5);
 	padding: 5px 0 5px 0;
 	color: #fff;
+	box-shadow: 0 0 17px #35751a;
+    animation: pulsate 1s ease-out infinite;
 }
+
 
 .specialist-card_offline {
 	width: 100%;
@@ -5916,6 +5956,7 @@ footer{
 	text-align: left;
 	padding: 0 0 15px 15px;
 }
+
 /*Specialists section end*/
 
 /*Ad section styles start */
