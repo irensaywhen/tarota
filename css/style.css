@@ -3575,7 +3575,7 @@ width:100%;
 	color:#4f2b7f;
 }
 /*-- hs footer wrapper End --*/
-/*-- hs bottom footer wrapper Start --*/
+/*-- footer wrapper Start --*/
 footer{
 	float:left;
 	width:100%;
@@ -3591,14 +3591,46 @@ footer{
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	  -webkit-box-pack: justify;
-		  -ms-flex-pack: justify;
-			  justify-content: space-between;
-	  -webkit-box-align: center;
-		  -ms-flex-align: center;
-			  align-items: center;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
 }
-/*-- hs bottom footer wrapper End --*/
+
+.footer-copyright {
+	-webkit-box-ordinal-group: unset;
+	-ms-flex-order: unset;
+	order: unset;
+}
+
+@media screen and (max-width: 400px){
+	.footer-inner {
+		-ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+	}
+
+	.footer-copyright {
+		-webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+        order: 1;
+	}
+
+	.footer-menu {
+		display: -webkit-box;
+    	display: -ms-flexbox;
+    	display: flex;
+    	-webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+	}
+}
+
+/*-- footer wrapper End --*/
 
 /**************-------------------- ABOUT CSS START --------------*******************/
 /*-- hs title wrapper Start --*/

@@ -270,7 +270,8 @@
 }
 @media (max-width: 580px){
 	#return-to-top{
-		display:none !important;
+		bottom: 120px;
+    	right: 60px;
 	}
 	.hs_ar_tabs_wrapper li{
 		float:none;
@@ -513,5 +514,12 @@
 @media (max-width: 380px){
 	.hs_blog_box3_right_cont_wrapper{
 		display:none;
+	}
+}
+
+@media screen and (max-width: 388px){
+	#return-to-top {
+		bottom: 140px;
+		right: 40px;
 	}
 }
