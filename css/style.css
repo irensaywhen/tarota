@@ -5890,6 +5890,12 @@ footer{
 	font-size: 20px;
 	color: #fff;
 	padding: 7px 0 7px 0;
+	transition: all 0.5s;
+}
+
+.specialist-card_view-profile:hover {
+	color: #fff;
+	background: #4f2b7f;
 }
 
 .service-info{
