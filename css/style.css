@@ -5811,6 +5811,75 @@ footer{
 
 /*Personal reading styles end */
 
+/*Specialists section start*/
+
+.specialist-card{
+	float:left;
+	width:100%;
+	text-align:center;
+	border:1px dashed rgba(255, 255, 255, 0.5);
+	padding-bottom: 30px;
+	position: relative;
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.specialist-card_image-wrapper {
+	width: 100%;
+}
+
+.specialist-card_image {
+	width: 100%;
+	height: auto;
+}
+
+.specialist-card_online {
+	width: 100%;
+	background: #72bb53;
+	border:1px dashed rgba(255, 255, 255, 0.5);
+	padding: 5px 0 5px 0;
+	color: #fff;
+}
+
+.specialist-card_offline {
+	width: 100%;
+	height: 35px;
+}
+
+.specialist-card_view-profile {
+	display: block;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	border:1px dashed rgba(255, 255, 255, 0.5);
+	font-size: 20px;
+	color: #fff;
+	padding: 7px 0 7px 0;
+}
+
+.service-info{
+	float:left;
+	width:100%;
+	display:inline-block;
+	padding-left: 30px; 
+	padding-right: 30px;
+}
+
+.specialist-card_info_title {
+	color: #fff;
+	margin: 10px auto 10px auto;
+}
+
+.specialist-card_info_services {
+	list-style: inside;
+	text-align: left;
+	padding: 0 0 15px 15px;
+}
+/*Specialists section end*/
+
 /*Ad section styles start */
 
 .ad-section {
