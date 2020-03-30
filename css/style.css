@@ -3575,7 +3575,7 @@ width:100%;
 	color:#4f2b7f;
 }
 /*-- hs footer wrapper End --*/
-/*-- hs bottom footer wrapper Start --*/
+/*-- footer wrapper Start --*/
 footer{
 	float:left;
 	width:100%;
@@ -3591,14 +3591,46 @@ footer{
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	  -webkit-box-pack: justify;
-		  -ms-flex-pack: justify;
-			  justify-content: space-between;
-	  -webkit-box-align: center;
-		  -ms-flex-align: center;
-			  align-items: center;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
 }
-/*-- hs bottom footer wrapper End --*/
+
+.footer-copyright {
+	-webkit-box-ordinal-group: unset;
+	-ms-flex-order: unset;
+	order: unset;
+}
+
+@media screen and (max-width: 400px){
+	.footer-inner {
+		-ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+	}
+
+	.footer-copyright {
+		-webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+        order: 1;
+	}
+
+	.footer-menu {
+		display: -webkit-box;
+    	display: -ms-flexbox;
+    	display: flex;
+    	-webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+	}
+}
+
+/*-- footer wrapper End --*/
 
 /**************-------------------- ABOUT CSS START --------------*******************/
 /*-- hs title wrapper Start --*/
@@ -5675,15 +5707,31 @@ footer{
 }
 /**************-------------------- CHINESE CSS END --------------*******************/
 /**************------- BLOG CATEGORIES CSS START ---------*******************/
-.blog-wrapper{
+.card-wrapper{
+	background: #170135;
+	float: left;
+	width:100%;
+	padding-top:50px;
+	padding-bottom:100px;
+}
+
+.blog-wrapper {
 	float:left;
 	width:100%;
 	padding-top:50px;
 	padding-bottom:100px;
 }
 
-.blog-container{
+.blog-container,
+.card-container{
 	margin-top: 50px;
+}
+
+.post-title,
+.personal-reading_title {
+	font-size:36px;
+	color:#fff;
+	font-weight:bold;
 }
 .hs_blog_left_sidebar_main_wrapper,
 .sidebar-wrapper{
@@ -5694,6 +5742,10 @@ footer{
 	float:left;
 	width:100%;
 }
+
+
+/*Image styles of the blog*/
+
 .post-img-wrapper img{
 	width:100%;
 }
@@ -5703,18 +5755,219 @@ footer{
 	width:100%;
 	overflow:hidden;
 }
-.post-img-wrapper iframe{
+
+.card-img-wrapper {
+	margin: 30px auto 0 auto;
+	text-align: center;
+}
+
+
+.post-img-wrapper iframe {
 	width:100%;
 	height:350px;
 	border:0;
 }
 
-.post-content-wrapper{
+/*Post styles of the blog*/
+
+
+.post-content-wrapper,
+.card-content-wrapper {
 	float:left;
 	width:100%;
 	border:1px dashed rgba(255, 255, 255, 0.5);
 	padding:35px;
 }
+
+.card-content-wrapper {
+	border: none;
+	border-bottom:1px dashed rgba(255, 255, 255, 0.5);
+}
+
+.card-content,
+.post-content {
+	padding-top:20px;
+}
+
+/*Personal reading styles*/
+
+.personal-reading {
+	float: left;
+	background: rgb(15, 1, 34);
+	padding: 100px 0 40px 0;
+	width: 100%;
+}
+
+.personal-reading_title::after {
+	content: "";
+	display: block;
+	margin: 30px auto 30px auto;
+	width: 50px;
+	font-weight: 700;
+	border-bottom: 2px solid #fff;
+}
+
+.personal-reading_description {
+	width: 100%;
+	text-align: justify-all;
+	margin: 10px 0 10px 0;
+}
+
+.personal-reading_image-wrapper {
+	width: 100%;
+}
+
+.personal-reading_image{
+	width: 100%;
+	height: auto;
+}
+
+.personal-reading_call-wrapper{
+	width: 100%;
+	font-size: 30px;
+	background: #4f2b7f;
+	color: #fff;
+	line-height: normal;
+	margin: 50px 0 5px 0;
+	padding: 10px 0 10px 0;
+}
+
+.personal-reading_call {
+	color: #fff;
+}
+
+.persinal-reading_price-wrapper {
+	font-size: 14px;
+}
+
+
+/*Personal reading styles end */
+
+/*Specialists section start*/
+
+.specialist-card{
+	float:left;
+	width:100%;
+	text-align:center;
+	border:1px dashed rgba(255, 255, 255, 0.5);
+	padding-bottom: 30px;
+	position: relative;
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.specialist-card_image-wrapper {
+	width: 100%;
+}
+
+.specialist-card_image {
+	width: 100%;
+	height: auto;
+}
+
+/*Animation for online label start*/
+
+@-webkit-keyframes pulsate {
+	0% {
+		-webkit-box-shadow: 0 0 0 #9fdc86;
+		        box-shadow: 0 0 0 #9fdc86;
+	}
+
+	50% {
+		-webkit-box-shadow: 0 0 17px #35751a;
+		        box-shadow: 0 0 17px #35751a;
+	}
+
+	100% {
+		-webkit-box-shadow: 0 0 0 #9fdc86;
+		        box-shadow: 0 0 0 #9fdc86;
+	}
+}
+@keyframes pulsate {
+	0% {
+		-webkit-box-shadow: 0 0 0 #9fdc86;
+		        box-shadow: 0 0 0 #9fdc86;
+	}
+
+	50% {
+		-webkit-box-shadow: 0 0 17px #35751a;
+		        box-shadow: 0 0 17px #35751a;
+	}
+
+	100% {
+		-webkit-box-shadow: 0 0 0 #9fdc86;
+		        box-shadow: 0 0 0 #9fdc86;
+	}
+}
+
+/*Animation for online label end*/
+
+.specialist-card_online {
+	width: 100%;
+	background: #72bb53;
+	border:1px dashed rgba(255, 255, 255, 0.5);
+	padding: 5px 0 5px 0;
+	color: #fff;
+	box-shadow: 0 0 17px #35751a;
+    animation: pulsate 1s ease-out infinite;
+}
+
+
+.specialist-card_offline {
+	width: 100%;
+	height: 35px;
+}
+
+.specialist-card_view-profile {
+	display: block;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	border:1px dashed rgba(255, 255, 255, 0.5);
+	font-size: 20px;
+	color: #fff;
+	padding: 7px 0 7px 0;
+	transition: all 0.5s;
+}
+
+.specialist-card_view-profile:hover {
+	color: #fff;
+	background: #4f2b7f;
+}
+
+.service-info{
+	float:left;
+	width:100%;
+	display:inline-block;
+	padding-left: 30px; 
+	padding-right: 30px;
+}
+
+.specialist-card_info_title {
+	color: #fff;
+	margin: 10px auto 10px auto;
+}
+
+.specialist-card_info_services {
+	list-style: inside;
+	text-align: left;
+	padding: 0 0 15px 15px;
+}
+
+/*Specialists section end*/
+
+/*Ad section styles start */
+
+.ad-section {
+	float: left;
+	width: 100%;
+	padding: 50px 0 50px 0;
+}
+/*Ad section styles end*/
+
 .hs_blog_box1_main_wrapper h2{
 	font-size:30px;
 	color:#fff;
@@ -5722,9 +5975,6 @@ footer{
 	padding-bottom: 29px;
 }
 
-.post-content{
-	padding-top:20px;
-}
 
 .hs_blog_box1_bottom_cont_main_wrapper{
 	float:left;
