@@ -123,7 +123,8 @@ body::-webkit-scrollbar-thumb{
 }
 /*---------- btn Css Start -------*/
 .header-button a,
-.pink-button a{
+.pink-button a,
+.pink-button button{
 	float: left;
 	width: 220px;
 	height:50px;
@@ -143,7 +144,8 @@ body::-webkit-scrollbar-thumb{
 }
 
 .header-button a:focus,
-.pink-button a:focus {
+.pink-button a:focus,
+.pink-button button:focus {
 	outline: none;
 }
 .header-button a > span {
@@ -195,6 +197,7 @@ body::-webkit-scrollbar-thumb{
 .header-button:nth-of-type(2) .hs_btn_hover,
 .header-button:nth-of-type(2) .hs_btn_hover:hover,
 .pink-button a,
+.pink-button button,
 .pink-button .hs_btn_hover,
 .pink-button .hs_btn_hover:hover{
 	background: #f06e9c;
@@ -6109,6 +6112,208 @@ footer{
 /*Small arkana section end*/
 
 /*Tarota styles end*/
+
+/*Dream Search start*/
+
+.dream-search-block{
+	background:#4f2b7f;
+	border:1px dashed rgba(255, 255, 255, 0.5);
+	clear: both;
+	width:90%;
+	margin-top:40px;
+	padding: 2px;
+	display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+	-ms-flex-wrap: nowrap;
+	flex-wrap: nowrap;
+}
+
+.dream-search-block_image {
+	width: 30%;
+}
+
+.dream-search-block_content {
+	display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	width: 70%;
+	padding-left:20px;
+}
+.dream-search-block_link{
+	font-size:16px;
+	color:rgb(240, 110, 156);
+	padding-right: 20px;
+	text-decoration: underline;
+	display:inline-block;
+	    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+	transition: all 0.5s;
+	width: 100%;
+	text-align: right;
+	display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+	-webkit-box-align: end;
+	    -ms-flex-align: end;
+	        align-items: flex-end;
+	-webkit-box-pack: end;
+	    -ms-flex-pack: end;
+	        justify-content: flex-end;
+}
+
+.dream-search-block_title{
+	font-size:18px;
+	text-align: left;
+	color:#fff;
+	line-height:22px;
+	padding-top: 10px;
+	display: -webkit-box;
+  	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical; 
+	overflow: hidden;
+	-ms-flex-item-align: start;
+	    align-self: start;
+}
+
+/*Pagination*/
+
+.search-pagination {
+	clear: both;
+	display: block;
+	margin: 40px auto 40px auto;
+	display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+.search-pagination_button,
+.search-letters_letter {
+	display: inline-block;
+	background: transparent;
+	padding: 6px 9px 6px 9px;
+	margin: 0;
+	border:1px dashed rgba(255, 255, 255, 0.5);
+	font-size: 18px;
+	color: #fff;
+}
+
+.search-pagination_button:hover,
+.search-letters_letter:hover {
+	color: #fff;
+	background: #4f2b7f;
+}
+
+/*Pagination end*/
+
+/*Search section start*/
+
+.search {
+	clear: both;
+}
+/*Search Letters start*/
+
+.search-letters-wrapper {
+	padding: 60px 0 40px 0;
+}
+
+.search-letters_title,
+.search_searchbar_title {
+	font-size: 16px;
+	color: #fff;
+	padding-bottom: 20px;
+}
+
+.search-letters {
+	display: -webkit-box;
+    display: -ms-flexbox;
+	display: flex;
+	margin-left: 40px;
+}
+
+.search-letters_letter {
+	padding: 6px 12px 6px 12px;
+}
+/*Search letters end*/
+
+/*Searchbar start*/
+
+.search_searchbar_search-wrapper {
+	display: -webkit-box;
+    	display: -ms-flexbox;
+    	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+
+.search_searchbar {
+	padding-bottom: 100px;
+}
+
+.search_searchbar_search {
+	display: inline-block;
+	width: 80%;
+	margin-left: 40px;
+	background: #4f2b7f;
+	border:1px dashed rgba(255, 255, 255, 0.5);
+	color: rgba(255, 255, 255, 0.5);
+	padding: 5px 0 5px 15px;
+	border-radius: 10px;
+}
+
+.search_searchbar_button {
+	-webkit-transform: scale3d(0.8, 0.75, 1);
+	transform: scale3d(0.8, 0.75, 1);
+	font-size: 20px !important;
+}
+
+.search_searchbar_button button {
+	font-size: 20px !important;
+}
+
+@media screen and (max-width: 970px){
+	.search_searchbar_search-wrapper {
+		-ms-flex-wrap: wrap;
+    	    flex-wrap: wrap;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+	}
+
+	.search_searchbar_search {
+		width: 100%;
+		margin: 0;
+	}
+
+	.search-letters {
+		margin: 0;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.search-letters_letter {
+		margin-bottom: 10px;
+	}
+}
+/*Searchbar end*/
+
+/*Search section end*/
+/*Dream Search end*/
 .hs_blog_box1_main_wrapper h2{
 	font-size:30px;
 	color:#fff;
@@ -6372,6 +6577,11 @@ footer{
     -moz-transition: all 0.5s;
     transition: all 0.5s;
 }
+
+.sidebar-block-wrapper {
+	clear: both;
+}
+
 .sidebar-header{
 	float:left;
 	width:100%;
@@ -6489,6 +6699,10 @@ footer{
 	font-size:16px;
 	color:#7b5aa7;
 	padding-top:7px;
+}
+
+.sidebar-block-wrapper {
+	padding-top: 15px;
 }
 
 .pager_wrapper{
