@@ -6452,6 +6452,110 @@ footer{
 /*Dream form end*/
 
 /*Dream end*/
+
+/*Dreamer start*/
+
+.dream-meaning {
+	clear: both;
+	padding-top: 70px;
+}
+
+.dream-meaning_title,
+.dream-meaning_description {
+	color: #fff;
+	padding-bottom: 40px;
+}
+
+/*Dreamer form start*/
+
+.describe-dream-image-wrapper {
+	max-height: 100%;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.describe-dream-image {
+	max-width: 100%;
+	height: auto;
+}
+
+.dreamer-describe-dream-label{
+	font-size: 22px;
+	color: #fff;
+	cursor: pointer;
+}
+
+.dreamer-submit-wrapper{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+	background: #986cd4;
+	color: #fff;
+	padding: 5px 10px;
+}
+
+.dreamer-button {
+	margin: 0 !important;
+}
+
+@media screen and (max-width: 510px){
+
+	.describe-dream_price {
+		padding-right: 30px;
+		margin-bottom: 15px;
+	}
+	.dreamer-submit-wrapper{
+		-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	}
+}
+
+/*Dreamer form end*/
+
+/*Recently searched dreams start*/
+
+.recently-searched {
+	clear: both;
+	padding: 80px 0;
+}
+
+.recently-searched_container {
+	margin-bottom: 70px;
+}
+
+.recently-searched_title {
+	color: #fff;
+	font-size: 36px;
+}
+
+.line{
+	width:8px;
+	height:8px;
+	background:#4f2b7f;
+	display:inline-block;
+	position:relative;
+}
+.line::after{
+	content:'';
+	border:1px solid #d8d8d8;
+	width:60px;
+	position:absolute;
+	left: 15px;
+    top: 3px;
+}
+
+/*Recently searched dreams end*/
+
+/*Dreamer end*/
 .hs_blog_box1_main_wrapper h2{
 	font-size:30px;
 	color:#fff;
