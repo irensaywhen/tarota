@@ -708,15 +708,19 @@ Purchase:
                 </div>
             </div>
             <div class="search_searchbar">
-                <h2 class="search_searchbar_title">
-                    Find your dream:
-                </h2>
-                <form action="" method="POST" class="search_searchbar_search-wrapper">
-                    <input type="text" placeholder="Find your Dream" class="search_searchbar_search">
-                    <div class="pink-button search_searchbar_button">
-                        <button type="submit" class="hs_btn_hover">
+                <form action="" method="POST">
+                    <label for="find-dream" class="search_searchbar_title-wrapper">
+                        <h2 class="search_searchbar_title">
+                            Find your dream:
+                        </h2>
+                    </label>
+                    <div class="search_searchbar_search-wrapper">
+                        <input type="text" placeholder="Find your Dream" id="find-dream" class="search_searchbar_search">
+                        <div class="pink-button search_searchbar_button">
+                            <button type="submit" class="hs_btn_hover">
                             <i class="fas fa-search"></i> Search
-                        </button>
+                            </button>
+                        </div>
                     </div>
                 </form>
             </div>

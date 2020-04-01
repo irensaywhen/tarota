@@ -5775,8 +5775,9 @@ footer{
 
 
 .post-content-wrapper,
-.card-content-wrapper {
-	float:left;
+.card-content-wrapper,
+.dream-content-wrapper {
+	clear: both;
 	width:100%;
 	border:1px dashed rgba(255, 255, 255, 0.5);
 	padding:35px;
@@ -5788,7 +5789,8 @@ footer{
 }
 
 .card-content,
-.post-content {
+.post-content,
+.dream-content {
 	padding-top:20px;
 }
 
@@ -6260,6 +6262,10 @@ footer{
 	        align-items: center;
 }
 
+.search_searchbar_title-wrapper {
+	cursor: pointer;
+}
+
 .search_searchbar {
 	padding-bottom: 100px;
 }
@@ -6319,6 +6325,41 @@ footer{
 
 /*Search section end*/
 /*Dream Search end*/
+
+/*Dream start*/
+
+.dream-section-wrapper {
+	padding-bottom: 40px;
+	border-bottom: 1px dashed #565656;
+	clear: both;
+}
+
+.dream-title {
+	font-size:36px;
+	color:#fff;
+	font-weight:bold;
+	margin-bottom: 20px;
+}
+.dream-content-wrapper {
+	border: 1px dashed #565656;
+	padding: 0;
+}
+
+.dream-content{
+	padding: 10px 20px 35px 20px;
+}
+.dream-img-wrapper {
+	margin: 10px auto 0 auto;
+	text-align: center;
+	width: 100%;
+}
+
+.dream-img {
+	width: 95%;
+	height: auto;
+}
+
+/*Dream end*/
 .hs_blog_box1_main_wrapper h2{
 	font-size:30px;
 	color:#fff;
