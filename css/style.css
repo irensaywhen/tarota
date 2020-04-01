@@ -6359,6 +6359,94 @@ footer{
 	height: auto;
 }
 
+/*Dream form start*/
+
+.describe-dream-wrapper {
+	margin-top: 40px;
+}
+.describe-dream-label {
+	display: block;
+	color: #fff;
+	cursor: pointer;
+	margin-bottom: 10px;
+}
+
+.describe-dream {
+	max-width: 100%;
+	min-width: 100%;
+	width: 100%;
+	background: #4f2b7f;
+	border: 1px dashed #565656;
+}
+
+.describe-dream_button {
+	margin: 0;
+}
+
+.describe-dream-submit-wrapper{
+	width: 100%;
+	font-size: 30px;
+	background: #4f2b7f;
+	color: #fff;
+	line-height: normal;
+	margin: 50px 0 5px 0;
+	padding: 10px 0 10px 0;
+}
+
+.describe-dream_price {
+	font-size: 22px;
+}
+
+.describe-dream_price-current {
+	text-decoration: underline;
+	font-size: 20px;
+}
+
+.describe-dream_price-previous {
+	font-size: 16px;
+}
+
+.describe-dream-submit {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+}
+
+.describe-dream-submit::before,
+.describe-dream-submit::after {
+	display: none;
+}
+
+@media screen and (max-width: 500px){
+	.describe-dream-submit {
+		-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	.describe-dream_price {
+		margin-bottom: 20px;
+	}
+}
+
+@media screen and (max-width: 400px){
+	.describe-dream-submit {
+		width: 100%;
+	}
+}
+
+/*Dream form end*/
+
 /*Dream end*/
 .hs_blog_box1_main_wrapper h2{
 	font-size:30px;
