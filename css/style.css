@@ -6425,6 +6425,10 @@ footer{
 	display: none;
 }
 
+.search-dream {
+	padding-top: 50px;
+}
+
 @media screen and (max-width: 500px){
 	.describe-dream-submit {
 		-webkit-box-pack: center;
