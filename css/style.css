@@ -98,6 +98,22 @@ body::-webkit-scrollbar-thumb{
 	padding-left:10px;
 }
 
+::-webkit-input-placeholder {
+	color: #d9d1e4;
+}
+::-moz-placeholder {
+	color: #d9d1e4;
+}
+:-ms-input-placeholder {
+	color: #d9d1e4;
+}
+::-ms-input-placeholder {
+	color: #d9d1e4;
+}
+::placeholder {
+	color: #d9d1e4;
+}
+
 /*------Helper classes-----*/
 
 .px-0{
@@ -6226,7 +6242,7 @@ footer{
 /*Search Letters start*/
 
 .search-letters-wrapper {
-	padding: 60px 0 40px 0;
+	padding-top: 60px;
 }
 
 .search-letters_title,
@@ -6240,6 +6256,9 @@ footer{
 	display: -webkit-box;
     display: -ms-flexbox;
 	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	margin-left: 40px;
 }
 
