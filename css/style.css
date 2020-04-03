@@ -6227,7 +6227,9 @@ footer{
 }
 
 .search-pagination_button:hover,
-.search-letters_letter:hover {
+.search-letters_letter:hover,
+.search-pagination_button:active,
+.search-letters_letter:active {
 	color: #fff;
 	background: #4f2b7f;
 }
