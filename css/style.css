@@ -98,6 +98,22 @@ body::-webkit-scrollbar-thumb{
 	padding-left:10px;
 }
 
+::-webkit-input-placeholder {
+	color: #d9d1e4;
+}
+::-moz-placeholder {
+	color: #d9d1e4;
+}
+:-ms-input-placeholder {
+	color: #d9d1e4;
+}
+::-ms-input-placeholder {
+	color: #d9d1e4;
+}
+::placeholder {
+	color: #d9d1e4;
+}
+
 /*------Helper classes-----*/
 
 .px-0{
@@ -123,7 +139,8 @@ body::-webkit-scrollbar-thumb{
 }
 /*---------- btn Css Start -------*/
 .header-button a,
-.pink-button a{
+.pink-button a,
+.pink-button button{
 	float: left;
 	width: 220px;
 	height:50px;
@@ -143,7 +160,8 @@ body::-webkit-scrollbar-thumb{
 }
 
 .header-button a:focus,
-.pink-button a:focus {
+.pink-button a:focus,
+.pink-button button:focus {
 	outline: none;
 }
 .header-button a > span {
@@ -195,6 +213,7 @@ body::-webkit-scrollbar-thumb{
 .header-button:nth-of-type(2) .hs_btn_hover,
 .header-button:nth-of-type(2) .hs_btn_hover:hover,
 .pink-button a,
+.pink-button button,
 .pink-button .hs_btn_hover,
 .pink-button .hs_btn_hover:hover{
 	background: #f06e9c;
@@ -241,28 +260,7 @@ body::-webkit-scrollbar-thumb{
     from {background-position:0 0;}
     to {background-position:-10000px 5000px;}
 }
-/*.stars, .twinkling{
-  position:fixed;
-  top:0;
-  left:0;
-  right:0;
-  bottom:0;
-  width:100%;
-  height:100%;
-  display:block;
-}
-.stars {
-  background:#000 url(../images/content/stars.jpg) repeat top center;
-  z-index:0;
-}
-.twinkling{
-  background:transparent url(../images/content/twinkling.png) repeat top center;
-  -moz-animation:move-twink-back 200s linear infinite;
-  -ms-animation:move-twink-back 200s linear infinite;
-  -o-animation:move-twink-back 200s linear infinite;
-  -webkit-animation:move-twink-back 200s linear infinite;
-  animation:move-twink-back 200s linear infinite;
-}*/
+
 @-webkit-keyframes anim-moema-1 {
 	60% {
 		-webkit-transform: scale3d(0.8, 0.8, 1);
@@ -5772,8 +5770,9 @@ footer{
 
 
 .post-content-wrapper,
-.card-content-wrapper {
-	float:left;
+.card-content-wrapper,
+.dream-content-wrapper {
+	clear: both;
 	width:100%;
 	border:1px dashed rgba(255, 255, 255, 0.5);
 	padding:35px;
@@ -5785,7 +5784,8 @@ footer{
 }
 
 .card-content,
-.post-content {
+.post-content,
+.dream-content {
 	padding-top:20px;
 }
 
@@ -6109,6 +6109,456 @@ footer{
 /*Small arkana section end*/
 
 /*Tarota styles end*/
+
+/*Dream Search start*/
+
+.dream-search-block{
+	background:#4f2b7f;
+	border:1px dashed rgba(255, 255, 255, 0.5);
+	clear: both;
+	width:90%;
+	margin-top:40px;
+	padding: 2px;
+	display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+	-ms-flex-wrap: nowrap;
+	flex-wrap: nowrap;
+}
+
+.dream-search-block_image {
+	width: 30%;
+}
+
+.dream-search-block_content {
+	display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	width: 70%;
+	padding-left:20px;
+}
+.dream-search-block_link{
+	font-size:16px;
+	color:rgb(240, 110, 156);
+	padding-right: 20px;
+	text-decoration: underline;
+	display:inline-block;
+	    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+	transition: all 0.5s;
+	width: 100%;
+	text-align: right;
+	display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+	-webkit-box-align: end;
+	    -ms-flex-align: end;
+	        align-items: flex-end;
+	-webkit-box-pack: end;
+	    -ms-flex-pack: end;
+	        justify-content: flex-end;
+}
+
+.dream-search-block_title{
+	font-size:18px;
+	text-align: left;
+	color:#fff;
+	line-height:22px;
+	padding-top: 10px;
+	display: -webkit-box;
+  	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical; 
+	overflow: hidden;
+	-ms-flex-item-align: start;
+	    align-self: start;
+}
+
+/*Pagination*/
+
+.search-pagination {
+	clear: both;
+	display: block;
+	margin: 40px auto 40px auto;
+	display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+.search-pagination_button,
+.search-letters_letter {
+	display: inline-block;
+	background: transparent;
+	padding: 6px 9px 6px 9px;
+	margin: 0;
+	border:1px dashed rgba(255, 255, 255, 0.5);
+	font-size: 18px;
+	color: #fff;
+}
+
+.search-pagination_button:hover,
+.search-letters_letter:hover {
+	color: #fff;
+	background: #4f2b7f;
+}
+
+.search-pagination .active {
+	color: #fff;
+	background: #4f2b7f;
+}
+
+/*Pagination end*/
+
+/*Search section start*/
+
+.search {
+	clear: both;
+}
+/*Search Letters start*/
+
+.search-letters-wrapper {
+	padding-top: 60px;
+}
+
+.search-letters_title,
+.search_searchbar_title {
+	font-size: 16px;
+	color: #fff;
+	padding-bottom: 20px;
+}
+
+.search-letters {
+	display: -webkit-box;
+    display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	margin-left: 40px;
+}
+
+.search-letters_letter {
+	padding: 6px 12px 6px 12px;
+}
+/*Search letters end*/
+
+/*Searchbar start*/
+
+.search_searchbar_search-wrapper {
+	display: -webkit-box;
+    	display: -ms-flexbox;
+    	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+
+.search_searchbar_title-wrapper {
+	cursor: pointer;
+}
+
+.search_searchbar {
+	padding-bottom: 100px;
+}
+
+.search_searchbar_search {
+	display: inline-block;
+	width: 80%;
+	margin-left: 40px;
+	background: #4f2b7f;
+	border:1px dashed rgba(255, 255, 255, 0.5);
+	color: rgba(255, 255, 255, 0.5);
+	padding: 5px 0 5px 15px;
+	border-radius: 10px;
+}
+
+.search_searchbar_button {
+	-webkit-transform: scale3d(0.8, 0.75, 1);
+	transform: scale3d(0.8, 0.75, 1);
+	font-size: 20px !important;
+}
+
+.search_searchbar_button button {
+	font-size: 20px !important;
+}
+
+@media screen and (max-width: 970px){
+	.search_searchbar_search-wrapper {
+		-ms-flex-wrap: wrap;
+    	    flex-wrap: wrap;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+	}
+
+	.search_searchbar_search {
+		width: 100%;
+		margin: 0;
+	}
+
+	.search-letters {
+		margin: 0;
+		display: -webkit-box;
+    	display: -ms-flexbox;
+    	display: flex;
+		-ms-flex-wrap: wrap;
+		    flex-wrap: wrap;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+	}
+
+	.search-letters_letter {
+		margin-bottom: 10px;
+	}
+}
+/*Searchbar end*/
+
+/*Search section end*/
+/*Dream Search end*/
+
+/*Dream start*/
+
+.dream-section-wrapper {
+	padding-bottom: 40px;
+	border-bottom: 1px dashed #565656;
+	clear: both;
+}
+
+.dream-title {
+	font-size:36px;
+	color:#fff;
+	font-weight:bold;
+	margin-bottom: 20px;
+}
+.dream-content-wrapper {
+	border: 1px dashed #565656;
+	padding: 0;
+}
+
+.dream-content{
+	padding: 10px 20px 35px 20px;
+}
+.dream-img-wrapper {
+	margin: 10px auto 0 auto;
+	text-align: center;
+	width: 100%;
+}
+
+.dream-img {
+	width: 95%;
+	height: auto;
+}
+
+/*Dream form start*/
+
+.describe-dream-wrapper {
+	margin-top: 40px;
+}
+.describe-dream-label {
+	display: block;
+	color: #fff;
+	cursor: pointer;
+	margin-bottom: 10px;
+}
+
+.describe-dream {
+	max-width: 100%;
+	min-width: 100%;
+	width: 100%;
+	background: #4f2b7f;
+	border: 1px dashed #565656;
+}
+
+.describe-dream_button {
+	margin: 0;
+}
+
+.describe-dream-submit-wrapper{
+	width: 100%;
+	font-size: 30px;
+	background: #4f2b7f;
+	color: #fff;
+	line-height: normal;
+	margin: 50px 0 5px 0;
+	padding: 10px 0 10px 0;
+}
+
+.describe-dream_price {
+	font-size: 22px;
+}
+
+.describe-dream_price-current {
+	text-decoration: underline;
+	font-size: 20px;
+}
+
+.describe-dream_price-previous {
+	font-size: 16px;
+}
+
+.describe-dream-submit {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+}
+
+.describe-dream-submit::before,
+.describe-dream-submit::after {
+	display: none;
+}
+
+.search-dream {
+	padding-top: 50px;
+}
+
+@media screen and (max-width: 500px){
+	.describe-dream-submit {
+		-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	.describe-dream_price {
+		margin-bottom: 20px;
+	}
+}
+
+@media screen and (max-width: 400px){
+	.describe-dream-submit {
+		width: 100%;
+	}
+}
+
+/*Dream form end*/
+
+/*Dream end*/
+
+/*Dreamer start*/
+
+.dream-meaning {
+	clear: both;
+	padding-top: 70px;
+}
+
+.dream-meaning_title,
+.dream-meaning_description {
+	color: #fff;
+	padding-bottom: 40px;
+}
+
+/*Dreamer form start*/
+
+.describe-dream-image-wrapper {
+	max-height: 100%;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.describe-dream-image {
+	max-width: 100%;
+	height: auto;
+}
+
+.dreamer-describe-dream-label{
+	font-size: 22px;
+	color: #fff;
+	cursor: pointer;
+}
+
+.dreamer-submit-wrapper{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+	background: #986cd4;
+	color: #fff;
+	padding: 5px 10px;
+}
+
+.dreamer-button {
+	margin: 0 !important;
+}
+
+@media screen and (max-width: 510px){
+
+	.describe-dream_price {
+		padding-right: 30px;
+		margin-bottom: 15px;
+	}
+	.dreamer-submit-wrapper{
+		-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	}
+}
+
+/*Dreamer form end*/
+
+/*Recently searched dreams start*/
+
+.recently-searched {
+	clear: both;
+	padding: 80px 0;
+}
+
+.recently-searched_container {
+	margin-bottom: 70px;
+}
+
+.recently-searched_title {
+	color: #fff;
+	font-size: 36px;
+}
+
+.line{
+	width:8px;
+	height:8px;
+	background:#4f2b7f;
+	display:inline-block;
+	position:relative;
+}
+.line::after{
+	content:'';
+	border:1px solid #d8d8d8;
+	width:60px;
+	position:absolute;
+	left: 15px;
+    top: 3px;
+}
+
+/*Recently searched dreams end*/
+
+/*Dreamer end*/
 .hs_blog_box1_main_wrapper h2{
 	font-size:30px;
 	color:#fff;
@@ -6372,6 +6822,11 @@ footer{
     -moz-transition: all 0.5s;
     transition: all 0.5s;
 }
+
+.sidebar-block-wrapper {
+	clear: both;
+}
+
 .sidebar-header{
 	float:left;
 	width:100%;
@@ -6489,6 +6944,10 @@ footer{
 	font-size:16px;
 	color:#7b5aa7;
 	padding-top:7px;
+}
+
+.sidebar-block-wrapper {
+	padding-top: 15px;
 }
 
 .pager_wrapper{
