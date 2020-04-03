@@ -5962,7 +5962,7 @@ footer{
 /*Ad section styles start */
 
 .ad-section {
-	float: left;
+	clear: both;
 	width: 100%;
 	padding: 50px 0 50px 0;
 }
@@ -6559,6 +6559,177 @@ footer{
 /*Recently searched dreams end*/
 
 /*Dreamer end*/
+
+/*---Registration pages start---*/
+
+/*--Sign up / log in start--*/
+
+/*Join service start*/
+
+.join-service {
+	clear: both;
+	padding: 70px 0;
+}
+
+.join-service_title {
+	font-size:36px;
+	color:#fff;
+	font-weight:bold;
+}
+
+.join-service_image {
+	width: 100%;
+	height: auto;
+	margin: 20px auto 20px auto;
+}
+
+.join-service_description {
+	color: #fff;
+}
+
+/*Join service end*/
+
+/*Account start*/
+
+.account {
+	clear: both;
+	padding: 70px 0;
+	background: #0f0122;
+}
+
+.account_title {
+	font-size:36px;
+	color:#fff;
+	font-weight:bold;
+}
+
+.account_title::after {
+	content: "";
+	display: block;
+	width: 80px;
+	margin: 30px auto 15px auto;
+	border-bottom: 1px solid #fff;
+}
+
+.account_description {
+	color: #fff;
+}
+
+.account_forms {
+	margin: 30px auto;
+}
+
+.account-form:nth-of-type(2) {
+	border-left: 1px dashed #565656;
+}
+
+.account_form-field {
+	background: #4f2b7f;
+	border: 1px dashed #565656;
+	padding: 2px 0 1px 6px;
+	width: 100%;
+}
+
+.account_form-label {
+	color: #fff;
+	width: 100%;
+	margin: 0;
+	padding: 2px 0 1px 0;
+}
+
+.account_form_title {
+	color: #fff;
+	margin: 0 auto 30px auto;
+}
+
+.account_form_form-group,
+.account_form_checkbox-group {
+	margin-bottom: 15px;
+}
+
+.account_form_forgot-password {
+	color: #fff;
+}
+
+.account_form_button-wrapper {
+	display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+			justify-content: center;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+.account_form_button,
+.account_form_button button {
+	padding: 0;
+	-webkit-transform: scale3d(0.9, 0.9, 1);
+	transform: scale3d(0.9, 0.9, 1);
+	font-size: 20px !important;
+}
+
+.account_form_checkbox {
+	color: #fff;
+	position: relative;
+}
+
+.account_form_checkbox-input {
+	position: absolute;
+	visibility: hidden;
+}
+
+.account_form_checkbox-terms {
+	text-decoration: underline;
+	color: #fff;
+}
+
+.account_form_checkbox-label::before {
+	content: "";
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	background: #4f2b7f;
+	border: 1px dashed #565656;
+	border-radius: 2px;
+	transition: all 0.5s;
+}
+
+#checkbox-terms:checked ~ .account_form_checkbox-label::before,
+#checkbox-newsletter:checked ~ .account_form_checkbox-label::before {
+	background: #986cd4;
+	background-clip: content-box;
+	padding: 1px;
+}
+
+@media screen and (max-width: 996px){
+
+	.account-form:nth-of-type(1) {
+		margin-bottom: 30px;
+	}
+	.account_form-label {
+		text-align: left;
+		margin-bottom: 5px;
+	}
+
+	.account_form-field {
+		padding: 6px 0 3px 6px;
+	}
+
+	.account-form:nth-of-type(2) {
+		border-left: none;
+	}
+
+	.account_form_forgot-password {
+		width: 100%;
+	}
+}
+/*Account end*/
+
+/*--Sign up / log in end--*/
+
+/*---Registration pages end---*/
 .hs_blog_box1_main_wrapper h2{
 	font-size:30px;
 	color:#fff;
