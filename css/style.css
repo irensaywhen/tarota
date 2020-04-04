@@ -6736,13 +6736,13 @@ footer{
 	padding: 80px 0;
 }
 
-.credentials-micellaneous_title {
+.credentials-miscellaneous_title {
 	font-size:36px;
 	color:#fff;
 	font-weight:bold;
 }
 
-.credentials-micellaneous_title::after {
+.credentials-miscellaneous_title::after {
 	content: "";
 	display: block;
 	width: 80px;
@@ -6754,6 +6754,42 @@ footer{
 	padding: 10px 0 20px 0;
 	color: #fff;
 }
+
+/*-Forgot pages start-*/
+
+html, body {
+	height: 100%;
+}
+
+.inner-wrapper {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.title-wrapper {
+	height: auto;
+}
+
+.content-wrapper {
+	flex: 1 0 auto;
+}
+
+.footer-wrapper {
+	flex-shrink: 0;
+}
+/*
+.inner-wrapper {
+	clear: both;
+	height: 100%;
+	position: relative;
+}
+
+.footer-wrapper {
+	position: absolute;
+	bottom: 0;
+}*/
+/*Forgot pages end-*/
 
 /*--Credentials Miscellaneous end--*/
 
