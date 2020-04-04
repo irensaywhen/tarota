@@ -139,6 +139,7 @@ body::-webkit-scrollbar-thumb{
 }
 /*---------- btn Css Start -------*/
 .header-button a,
+.header-button-green a,
 .pink-button a,
 .pink-button button{
 	float: left;
@@ -160,15 +161,18 @@ body::-webkit-scrollbar-thumb{
 }
 
 .header-button a:focus,
+.header-button-green a:focus,
 .pink-button a:focus,
 .pink-button button:focus {
 	outline: none;
 }
-.header-button a > span {
+.header-button a > span,
+.header-button-green a > span {
 	vertical-align: middle;
 }
 .header-button .hs_btn_hover,
-.pink-button .hs_btn_hover {
+.pink-button .hs_btn_hover,
+.header-button-green .hs_btn_hover {
 	border-radius: 50px;
 	background: #4f2b7f;
 	color: #fff;
@@ -176,7 +180,8 @@ body::-webkit-scrollbar-thumb{
 	transition: background-color 0.3s, color 0.3s;
 }
 .header-button .hs_btn_hover::before,
-.pink-button .hs_btn_hover::before {
+.pink-button .hs_btn_hover::before,
+.header-button-green .hs_btn_hover::before {
 	content: '';
 	position: absolute;
 	top: -20px;
@@ -191,7 +196,8 @@ body::-webkit-scrollbar-thumb{
 	transform: scale3d(0.8, 0.5, 1);
 }
 .header-button .hs_btn_hover:hover,
-.pink-button .hs_btn_hover:hover {
+.pink-button .hs_btn_hover:hover,
+.header-button-green .hs_btn_hover:hover {
 	-webkit-transition: background-color 0.1s 0.3s, color 0.1s 0.3s;
 	transition: background-color 0.1s 0.3s, color 0.1s 0.3s;
 	color: #ECEFF1;
@@ -200,7 +206,8 @@ body::-webkit-scrollbar-thumb{
 	animation: anim-moema-1 0.3s forwards;
 }
 .header-button .hs_btn_hover:hover::before,
-.pink-button .hs_btn_hover:hover::before {
+.pink-button .hs_btn_hover:hover::before,
+.header-button-green .hs_btn_hover:hover::before {
 	-webkit-animation: anim-moema-2 0.3s 0.3s forwards;
 	animation: anim-moema-2 0.3s 0.3s forwards;
 }
@@ -217,6 +224,12 @@ body::-webkit-scrollbar-thumb{
 .pink-button .hs_btn_hover,
 .pink-button .hs_btn_hover:hover{
 	background: #f06e9c;
+}
+
+.header-button-green a,
+.header-button-green .hs_btn_hover,
+.header-button-green .hs_btn_hover:hover {
+	background: #72bb53;
 }
 
 
@@ -6778,18 +6791,16 @@ html, body {
 .footer-wrapper {
 	flex-shrink: 0;
 }
-/*
-.inner-wrapper {
-	clear: both;
-	height: 100%;
-	position: relative;
-}
 
-.footer-wrapper {
-	position: absolute;
-	bottom: 0;
-}*/
 /*Forgot pages end-*/
+
+.plus-icon {
+	font-size: 22px;
+	line-height:50px;
+	vertical-align: middle;
+	padding-left: 16px;
+	padding-right: 35px;
+}
 
 /*--Credentials Miscellaneous end--*/
 
