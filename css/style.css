@@ -6729,6 +6729,33 @@ footer{
 
 /*--Sign up / log in end--*/
 
+/*--Credentials Miscellaneous start--*/
+
+.credentials-miscellaneous {
+	clear: both;
+	padding: 80px 0;
+}
+
+.credentials-micellaneous_title {
+	font-size:36px;
+	color:#fff;
+	font-weight:bold;
+}
+
+.credentials-micellaneous_title::after {
+	content: "";
+	display: block;
+	width: 80px;
+	margin: 30px auto 15px auto;
+	border-bottom: 1px solid #fff;
+}
+
+.credentials-miscellaneous_description {
+	padding: 10px 0 20px 0;
+}
+
+/*--Credentials Miscellaneous end--*/
+
 /*---Registration pages end---*/
 .hs_blog_box1_main_wrapper h2{
 	font-size:30px;
