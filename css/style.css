@@ -7088,7 +7088,134 @@ html, body {
 	}
 }
 
-/*Wallet styles end-*/
+/*Balance page start*/
+
+.balance_deposits-wrapper {
+	background: #4f2b7f;
+	border-radius: 20px;
+	margin-top: 30px;
+	padding: 20px 0 10px 0;
+}
+
+.balance_deposits {
+	max-width: 800px;
+	margin: 10px auto;
+}
+
+.balance_custom-deposit {
+	max-width: 800px;
+	margin: 10px auto;
+}
+
+#balance_deposit-50:checked ~ .wallet_deposit-50,
+#balance_deposit-75:checked ~ .wallet_deposit-75,
+#balance_deposit-100:checked ~ .wallet_deposit-100,
+#balance_deposit-150:checked ~ .wallet_deposit-150,
+#balance_deposit-200:checked ~ .wallet_deposit-200 {
+	background: #986cd4;
+}
+
+.balance_custom-deposit {
+	display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+	padding-bottom: 30px;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.balance_custom-deposit_title {
+	font-size: 18px;
+}
+
+.balance_custom-deposit_total {
+	font-size: 18px;
+	text-align: center;
+}
+
+.balance_custop-deposit_description {
+	font-size: 10px;
+}
+
+.deposit-button {
+	margin: 0;
+	-webkit-transform: scale3d(0.7, 0.8, 1);
+            transform: scale3d(0.7, 0.8, 1);
+}
+
+.deposit-button,
+.deposit-button button {
+	font-size: 20px !important;
+}
+
+.balance_custom-deposit_label {
+	display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+	padding-top: 20px;
+	text-align: center;
+}
+
+.balance_custom-deposit_amount {
+	background: #0f0122;
+	border: 1px dashed #565656;
+	padding: 3px 0 2px 60px;
+	width: 120px;
+}
+
+@media screen and (max-width: 992px){
+
+	.balance_deposits {
+		max-width: 700px;
+	}
+
+	.balance_custom-deposit {
+		width: 100%;
+		margin: 10px auto !important;
+	}
+}
+
+@media screen and (max-width: 800px){
+
+	.balance_deposits {
+		max-width: 700px;
+	}
+
+	.balance_custom-deposit_label {
+		margin-right: 10px;
+	}
+}
+
+@media screen and (max-width: 650px) {
+
+	.balance_custom-deposit {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.balance_custom-deposit_total {
+		margin-left: 10px;
+	}
+}
+
+/*Balance page end*/
+
+/*-Wallet styles end-*/
 
 /*Logged in user miscellaneous end--*/
 
