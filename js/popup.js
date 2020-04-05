@@ -26,7 +26,7 @@
             'border-radius'     : '20px',
         },
         callback_afterClose: () => {
-            $('.account-button:nth-of-type(1)')
+            $('.header-button-green')
                 .toggleClass('open-wallet');
             $('.inner-wrapper').css({
                 '-webkit-filter': '',
@@ -42,9 +42,8 @@
         }
     });
 
-    $('.account-button:nth-of-type(1)').click(function(event){
+    $('.header-button-green').click(function(event){
         $(this).toggleClass('open-wallet');
-        console.log(this);
     })
     
 })(jQuery);
