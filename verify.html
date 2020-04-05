@@ -32,6 +32,7 @@ Purchase:
     <link rel="stylesheet" type="text/css" href="css/reset.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/slickmodal.min.css">
     <link rel="stylesheet" href="fonts/fontawesome/css/all.css">
     <link rel="stylesheet" href="fonts/fontawesome/css/all.css">
     <!-- favicon links -->
@@ -557,7 +558,98 @@ Purchase:
     <script src="js/jquery.inview.min.js"></script>
     <script src="js/jquery.magnific-popup.js"></script>
     <script src="js/custom.js"></script>
+    <script src="js/jquery.slickmodal.js"></script>
     <!--main js file end-->
+    <!--Popup start-->
+    <div class="wallet-popup" data-sm-init="true">
+        <h2 class="wallet_title text-center">
+            Deposit to your wallet
+        </h2>
+        <form action="" method="POST" class="wallet_form">
+            <!--Pre-defined deposits start-->
+            <div class="wallet_deposits">
+                <input type="radio" class="wallet_deposit-input" name="wallet_deposit" id="wallet_deposit-50" value="50" checked>
+                <input type="radio" class="wallet_deposit-input" name="wallet_deposit" id="wallet_deposit-75" value="75">
+                <input type="radio" class="wallet_deposit-input" name="wallet_deposit" id="wallet_deposit-100" value="100">
+                <input type="radio" class="wallet_deposit-input" name="wallet_deposit" id="wallet_deposit-150" value="150">
+                <input type="radio" class="wallet_deposit-input" name="wallet_deposit" id="wallet_deposit-200" value="200">
+                <label for="wallet_deposit-50" class="wallet_deposit wallet_deposit-50">
+                    <span class="wallet_deposit_amount">
+                        50 zł
+                    </span>
+                    <span class="wallet_deposit_info">
+                        Lorem ipsum
+                    </span>
+                </label>
+                <label for="wallet_deposit-75" class="wallet_deposit wallet_deposit-75">
+                    <span class="wallet_deposit_amount">
+                        75 zł
+                    </span>
+                    <span class="wallet_deposit_info">
+                        Lorem ipsum
+                    </span>
+                </label>
+                <label for="wallet_deposit-100" class="wallet_deposit wallet_deposit-100">
+                    <span class="wallet_deposit_amount">
+                        100 zł
+                    </span>
+                    <span class="wallet_deposit_info">
+                        Lorem ipsum
+                    </span>
+                </label>
+                <label for="wallet_deposit-150" class="wallet_deposit wallet_deposit-150">
+                    <span class="wallet_deposit_amount">
+                        150 zł
+                    </span>
+                    <span class="wallet_deposit_info">
+                        Lorem ipsum
+                    </span>
+                </label>
+                <label for="wallet_deposit-200" class="wallet_deposit wallet_deposit-200">
+                    <span class="wallet_deposit_amount">
+                        200 zł
+                    </span>
+                    <span class="wallet_deposit_info">
+                        Lorem ipsum
+                    </span>
+                </label>
+            </div>
+            <!--Pre-defined deposits end-->
+            <span class="wallet_or text-center">
+                Or
+            </span>
+            <!--Custom deposit start-->
+            <div class="wallet_custom-deposit">
+                <label for="wallet_custom-deposit_amount" class="wallet_custom-deposit_label">
+                    <span class="wallet_custom-deposit_title">
+                        Custom value:
+                    </span>
+                    <span class="wallet_custop-deposit_description">
+                        min. 25 zł
+                    </span>
+                </label>
+                <input 
+                    type="number" 
+                    step="0.01" 
+                    min="25.00"
+                    name="wallet_custom-deposit_amount"
+                    id="wallet_custom-deposit_amount"
+                    class="wallet_custom-deposit_amount"
+                    placeholder="25.00">
+                    <span class="wallet_custom-deposit_total">
+                        = Total: 272.98 zł
+                    </span>
+                    <div class="pink-button deposit-button">
+                        <button type="submit" class="hs_btn_hover">
+                            Deposit
+                        </button>
+                    </div>
+            </div>
+            <!--Custom deposit end-->
+        </form>
+    </div>
+    <script src="js/popup.js"></script>
+    <!--Popup end-->
 </body>
 
 </html>
