@@ -12,12 +12,13 @@
             'border-radius' : '20px',
             'max-width'     : '920px',
         },
-        'mobile_show'       : true,
-        'mobile_breakpoint' : '760px',
-        'mobile_position'   : 'center',
-        'mobile_css'        : {
+        mobile_show       : true,
+        mobile_breakpoint : '760px',
+        mobile_position   : 'center',
+        mobile_css        : {
             'width'             : '100%',
             'height'            : 'auto',
+            'max-height'        : '95vh',
             'background'        : '#fff',
             'margin'            : '0',
             'padding'           : '18px',
