@@ -21,6 +21,7 @@ Purchase:
     <meta name="author" content="" />
     <meta name="MobileOptimized" content="320" />
     <!--srart theme style -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.css">
     <link rel="stylesheet" type="text/css" href="css/animate.css" />
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
     <link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
@@ -35,7 +36,6 @@ Purchase:
     <link rel="stylesheet" href="css/slickmodal.min.css">
     <link rel="stylesheet" href="fonts/fontawesome/css/all.css">
     <link rel="stylesheet" href="fonts/fontawesome/css/all.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.css">
     <!-- favicon links -->
     <link rel="shortcut icon" type="image/png" href="images/header/favicon.ico" />
 </head>
@@ -717,32 +717,236 @@ Purchase:
     </section>
     <!--Ad section end-->
     <section class="orders">
-        <div class="container">
+        <div class="container orders_inner-container">
             <h2 class="orders_title text-center">
                 Orders
             </h2>
             <p class="orders_description text-center">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
             </p>
-            <table id="orders_table" class="cell-border">
-                <thead>
+            <table id="orders_table" class="cell-border orders_table text-center">
+                <thead class="orders_table_head">
                     <tr>
-                        <th>Column 1</th>
-                        <th>Column 2</th>
+                        <th id="orders_table_id">ID</th>
+                        <th>Order</th>
+                        <th>Status</th>
+                        <th>Delivered at</th>
+                        <th>Ordered at</th>
+                        <th>Price</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Row 1 Data 1</td>
-                        <td>Row 1 Data 2</td>
+                        <td class="orders_table_cell">11</td>
+                        <td class="orders_table_cell">Ritual for love</td>
+                        <td class="orders_table_cell">
+                            <div class="orders_table_cell_unpaid">
+                                <span>Unpaid -</span>
+                                <div class="pay-button">
+                                    <button type="submit" class="hs_btn_hover">
+                                        pay
+                                    </button>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="orders_table_cell">
+                            <div class="orders_table_cell_delivered">
+                                <span>
+                                    12 / 05 / 2020
+                                </span>
+                                <span>
+                                    at 15:45
+                                </span>
+                            </div>
+                        </td>
+                        <td class="orders_table_cell">
+                            <div class="orders_table_cell_ordered-at">
+                                <span class="orders_table_cell_ordered-at_date">
+                                    12 / 05 / 2020
+                                </span>
+                                <span class="orders_table_cell_ordered-at_time">
+                                    15:15
+                                </span>
+                            </div>
+                        </td>
+                        <td class="orders_table_cell">95.76 zł</td>
                     </tr>
                     <tr>
-                        <td>Row 2 Data 1</td>
-                        <td>Row 2 Data 2</td>
+                        <td class="orders_table_cell">10</td>
+                        <td class="orders_table_cell">Dream</td>
+                        <td class="orders_table_cell">Paid</td>
+                        <td class="orders_table_cell">12 / 05 / 2020</td>
+                        <td class="orders_table_cell">
+                            <div class="orders_table_cell_ordered-at">
+                                <span class="orders_table_cell_ordered-at_date">
+                                    12 / 05 / 2020
+                                </span>
+                                <span class="orders_table_cell_ordered-at_time">
+                                    15:15
+                                </span>
+                            </div>
+                        </td>
+                        <td class="orders_table_cell">95.76 zł</td>
+                    </tr>
+                    <tr>
+                        <td class="orders_table_cell">9</td>
+                        <td class="orders_table_cell">Dream</td>
+                        <td class="orders_table_cell">Paid</td>
+                        <td class="orders_table_cell">12 / 05 / 2020</td>
+                        <td class="orders_table_cell">
+                            <div class="orders_table_cell_ordered-at">
+                                <span class="orders_table_cell_ordered-at_date">
+                                    12 / 05 / 2020
+                                </span>
+                                <span class="orders_table_cell_ordered-at_time">
+                                    15:15
+                                </span>
+                            </div>
+                        </td>
+                        <td class="orders_table_cell">95.76 zł</td>
+                    </tr>
+                    <tr>
+                        <td class="orders_table_cell">8</td>
+                        <td class="orders_table_cell">Dream</td>
+                        <td class="orders_table_cell">Paid</td>
+                        <td class="orders_table_cell">12 / 05 / 2020</td>
+                        <td class="orders_table_cell">
+                            <div class="orders_table_cell_ordered-at">
+                                <span class="orders_table_cell_ordered-at_date">
+                                    12 / 05 / 2020
+                                </span>
+                                <span class="orders_table_cell_ordered-at_time">
+                                    15:15
+                                </span>
+                            </div>
+                        </td>
+                        <td class="orders_table_cell">95.76 zł</td>
+                    </tr>
+                    <tr>
+                        <td class="orders_table_cell">7</td>
+                        <td class="orders_table_cell">Dream</td>
+                        <td class="orders_table_cell">Paid</td>
+                        <td class="orders_table_cell">12 / 05 / 2020</td>
+                        <td class="orders_table_cell">
+                            <div class="orders_table_cell_ordered-at">
+                                <span class="orders_table_cell_ordered-at_date">
+                                    12 / 05 / 2020
+                                </span>
+                                <span class="orders_table_cell_ordered-at_time">
+                                    15:15
+                                </span>
+                            </div>
+                        </td>
+                        <td class="orders_table_cell">95.76 zł</td>
+                    </tr>
+                    <tr>
+                        <td class="orders_table_cell">6</td>
+                        <td class="orders_table_cell">Dream</td>
+                        <td class="orders_table_cell">Expired / Unpaid</td>
+                        <td class="orders_table_cell">12 / 05 / 2020</td>
+                        <td class="orders_table_cell">
+                            <div class="orders_table_cell_ordered-at">
+                                <span class="orders_table_cell_ordered-at_date">
+                                    12 / 05 / 2020
+                                </span>
+                                <span class="orders_table_cell_ordered-at_time">
+                                    15:15
+                                </span>
+                            </div>
+                        </td>
+                        <td class="orders_table_cell">95.76 zł</td>
+                    </tr>
+                    <tr>
+                        <td class="orders_table_cell">8</td>
+                        <td class="orders_table_cell">Dream</td>
+                        <td class="orders_table_cell">Paid</td>
+                        <td class="orders_table_cell">12 / 05 / 2020</td>
+                        <td class="orders_table_cell">
+                            <div class="orders_table_cell_ordered-at">
+                                <span class="orders_table_cell_ordered-at_date">
+                                    12 / 05 / 2020
+                                </span>
+                                <span class="orders_table_cell_ordered-at_time">
+                                    15:15
+                                </span>
+                            </div>
+                        </td>
+                        <td class="orders_table_cell">95.76 zł</td>
+                    </tr>
+                    <tr>
+                        <td class="orders_table_cell">8</td>
+                        <td class="orders_table_cell">Dream</td>
+                        <td class="orders_table_cell">Paid</td>
+                        <td class="orders_table_cell">12 / 05 / 2020</td>
+                        <td class="orders_table_cell">
+                            <div class="orders_table_cell_ordered-at">
+                                <span class="orders_table_cell_ordered-at_date">
+                                    12 / 05 / 2020
+                                </span>
+                                <span class="orders_table_cell_ordered-at_time">
+                                    15:15
+                                </span>
+                            </div>
+                        </td>
+                        <td class="orders_table_cell">95.76 zł</td>
+                    </tr>
+                    <tr>
+                        <td class="orders_table_cell">8</td>
+                        <td class="orders_table_cell">Dream</td>
+                        <td class="orders_table_cell">Paid</td>
+                        <td class="orders_table_cell">12 / 05 / 2020</td>
+                        <td class="orders_table_cell">
+                            <div class="orders_table_cell_ordered-at">
+                                <span class="orders_table_cell_ordered-at_date">
+                                    12 / 05 / 2020
+                                </span>
+                                <span class="orders_table_cell_ordered-at_time">
+                                    15:15
+                                </span>
+                            </div>
+                        </td>
+                        <td class="orders_table_cell">95.76 zł</td>
+                    </tr>
+                    <tr>
+                        <td class="orders_table_cell">8</td>
+                        <td class="orders_table_cell">Dream</td>
+                        <td class="orders_table_cell">Paid</td>
+                        <td class="orders_table_cell">12 / 05 / 2020</td>
+                        <td class="orders_table_cell">
+                            <div class="orders_table_cell_ordered-at">
+                                <span class="orders_table_cell_ordered-at_date">
+                                    12 / 05 / 2020
+                                </span>
+                                <span class="orders_table_cell_ordered-at_time">
+                                    15:15
+                                </span>
+                            </div>
+                        </td>
+                        <td class="orders_table_cell">95.76 zł</td>
+                    </tr>
+                    <tr>
+                        <td class="orders_table_cell">8</td>
+                        <td class="orders_table_cell">Dream</td>
+                        <td class="orders_table_cell">Paid</td>
+                        <td class="orders_table_cell">12 / 05 / 2020</td>
+                        <td class="orders_table_cell">
+                            <div class="orders_table_cell_ordered-at">
+                                <span class="orders_table_cell_ordered-at_date">
+                                    12 / 05 / 2020
+                                </span>
+                                <span class="orders_table_cell_ordered-at_time">
+                                    15:15
+                                </span>
+                            </div>
+                        </td>
+                        <td class="orders_table_cell">95.76 zł</td>
                     </tr>
                 </tbody>
             </table>
         </div>
+    </section>
+    <section class="ad-section">
+        <div class="ad"></div>
     </section>
     <!-- hs bottom footer wrapper Start -->
     <footer class="footer">
