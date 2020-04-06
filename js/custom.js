@@ -34,9 +34,9 @@
         $(window).scroll(function() {
             var window_top = $(window).scrollTop() + 1;
             if (window_top > 160) {
-                $('.hs_navigation_header_wrapper').addClass('menu_fixed animated fadeInDown');
+                $('.header-navigation-wrapper').addClass('menu_fixed animated fadeInDown');
             } else {
-                $('.hs_navigation_header_wrapper').removeClass('menu_fixed animated fadeInDown');
+                $('.header-navigation-wrapper').removeClass('menu_fixed animated fadeInDown');
             }
         });
 
@@ -101,7 +101,6 @@
         // -------------------------------------------------------------
 
         $(window).on('load',function() {
-            /** this is come when complete page is fully loaded, including all frames, objects and images **/
 
             if ($('#gridWrapper').length > 0) {
 
@@ -109,7 +108,7 @@
                 var $grid = $('#gridWrapper');
 
                 $grid.shuffle({
-                    itemSelector: '.portfolio-wrapper' // the selector for the items in the grid
+                    itemSelector: '.service-wrapper' // the selector for the items in the grid
                 });
 
                 /* reshuffle when user clicks a filter item */
@@ -300,7 +299,7 @@
 
 
         $(document).ready(function() {
-            $('.hs_blog_box1_img_wrapper .owl-carousel').owlCarousel({
+            $('.post-img-wrapper .owl-carousel').owlCarousel({
                 loop: true,
                 margin: 10,
                 autoplay: true,
