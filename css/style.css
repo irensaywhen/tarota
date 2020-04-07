@@ -7100,7 +7100,7 @@ footer{
 @media screen and (max-width: 350px) {
 
 	.wallet_title {
-		margin: 0 auto 5px auto;
+		margin: 10px auto 5px auto;
 	}
 
 	.wallet_or {
@@ -7109,6 +7109,11 @@ footer{
 
 	.wallet_custom-deposit_label {
 		margin-top: 0;
+	}
+
+	.wallet_deposit {
+		padding: 0 5px;
+		height: 50px;
 	}
 }
 
@@ -7589,7 +7594,74 @@ footer{
 
 /*---Ritual end---*/
 
+/*---Blog list start---*/
 
+
+.blog-list {
+	clear: both;
+	width:100%;
+	padding: 50px 0 100px 0;
+}
+
+.blog-list_title {
+	font-size: 36px;
+	color: #fff;
+	font-weight: bold;
+	margin: 0 auto 50px auto;
+}
+
+.blog-list_post {
+	border: 1px dashed #565656;
+	background: #4f2b7f;
+	margin-top: 30px;
+}
+
+.blog-list_post:nth-of-type(1) {
+	margin-top: 0;
+}
+
+.blog-list_post_image-wrapper {
+	width: 100%;
+	height: auto;
+}
+
+.blog-list_post_image {
+	max-width: 100%;
+	height: auto;
+}
+
+.blog-list_post_title {
+	padding: 15px 0 5px 10px;
+	font-size: 28px;
+	color: #fff;
+}
+
+.blog-list_post_line-wrapper {
+	padding-left: 10px;
+}
+
+.blog-list_post_description {
+	color: #fff;
+	padding: 15px 20px 30px 10px;
+}
+
+.blog-list_post_link {
+	font-size:16px;
+	color:rgb(240, 110, 156);
+	text-decoration: underline;
+}
+
+.blog-list_post_link-wrapper {
+	padding: 0 20px 30px 0;
+}
+
+.blog-list_post_line{
+	background: #986cd4;
+}
+
+
+
+/*---Blog list end---*/
 
 
 
