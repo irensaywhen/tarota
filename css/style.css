@@ -40,18 +40,19 @@ body, html {
 	overflow-x:hidden;
 	position:relative;
 }
-body::-webkit-scrollbar-track{
+body::-webkit-scrollbar-track {
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
 	background-color: #ffffff;
 }
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
 	width: 6px;
 	background-color: #ffffff;
 }
 
-body::-webkit-scrollbar-thumb{
+body::-webkit-scrollbar-thumb {
 	background-color: #4f2b7f;
 }
+
 #return-to-top {
     position: absolute;
 	bottom: 120px;
@@ -139,6 +140,7 @@ body::-webkit-scrollbar-thumb{
 }
 /*---------- btn Css Start -------*/
 .header-button a,
+.header-button-green a,
 .pink-button a,
 .pink-button button{
 	float: left;
@@ -160,15 +162,18 @@ body::-webkit-scrollbar-thumb{
 }
 
 .header-button a:focus,
+.header-button-green a:focus,
 .pink-button a:focus,
 .pink-button button:focus {
 	outline: none;
 }
-.header-button a > span {
+.header-button a > span,
+.header-button-green a > span {
 	vertical-align: middle;
 }
 .header-button .hs_btn_hover,
-.pink-button .hs_btn_hover {
+.pink-button .hs_btn_hover,
+.header-button-green .hs_btn_hover {
 	border-radius: 50px;
 	background: #4f2b7f;
 	color: #fff;
@@ -176,7 +181,8 @@ body::-webkit-scrollbar-thumb{
 	transition: background-color 0.3s, color 0.3s;
 }
 .header-button .hs_btn_hover::before,
-.pink-button .hs_btn_hover::before {
+.pink-button .hs_btn_hover::before,
+.header-button-green .hs_btn_hover::before {
 	content: '';
 	position: absolute;
 	top: -20px;
@@ -191,7 +197,8 @@ body::-webkit-scrollbar-thumb{
 	transform: scale3d(0.8, 0.5, 1);
 }
 .header-button .hs_btn_hover:hover,
-.pink-button .hs_btn_hover:hover {
+.pink-button .hs_btn_hover:hover,
+.header-button-green .hs_btn_hover:hover {
 	-webkit-transition: background-color 0.1s 0.3s, color 0.1s 0.3s;
 	transition: background-color 0.1s 0.3s, color 0.1s 0.3s;
 	color: #ECEFF1;
@@ -200,7 +207,8 @@ body::-webkit-scrollbar-thumb{
 	animation: anim-moema-1 0.3s forwards;
 }
 .header-button .hs_btn_hover:hover::before,
-.pink-button .hs_btn_hover:hover::before {
+.pink-button .hs_btn_hover:hover::before,
+.header-button-green .hs_btn_hover:hover::before {
 	-webkit-animation: anim-moema-2 0.3s 0.3s forwards;
 	animation: anim-moema-2 0.3s 0.3s forwards;
 }
@@ -217,6 +225,12 @@ body::-webkit-scrollbar-thumb{
 .pink-button .hs_btn_hover,
 .pink-button .hs_btn_hover:hover{
 	background: #f06e9c;
+}
+
+.header-button-green a,
+.header-button-green .hs_btn_hover,
+.header-button-green .hs_btn_hover:hover {
+	background: #72bb53;
 }
 
 
@@ -5962,7 +5976,7 @@ footer{
 /*Ad section styles start */
 
 .ad-section {
-	float: left;
+	clear: both;
 	width: 100%;
 	padding: 50px 0 50px 0;
 }
@@ -6559,6 +6573,1109 @@ footer{
 /*Recently searched dreams end*/
 
 /*Dreamer end*/
+
+/*---Registration pages start---*/
+
+/*--Sign up / log in start--*/
+
+/*Join service start*/
+
+.join-service {
+	clear: both;
+	padding: 70px 0;
+}
+
+.join-service_title {
+	font-size:36px;
+	color:#fff;
+	font-weight:bold;
+}
+
+.join-service_image {
+	width: 100%;
+	height: auto;
+	margin: 20px auto 20px auto;
+}
+
+.join-service_description {
+	color: #fff;
+}
+
+/*Join service end*/
+
+/*Account start*/
+
+.account {
+	clear: both;
+	padding: 70px 0;
+	background: #0f0122;
+}
+
+.account_title {
+	font-size:36px;
+	color:#fff;
+	font-weight:bold;
+}
+
+.account_title::after {
+	content: "";
+	display: block;
+	width: 80px;
+	margin: 30px auto 15px auto;
+	border-bottom: 1px solid #fff;
+}
+
+.account_description {
+	color: #fff;
+}
+
+.account_forms {
+	margin: 30px auto;
+	color: #f76666;
+
+}
+
+.account_forms_sign-up {
+	border-left: 1px dashed #565656;
+}
+
+.account_form-field {
+	background: #4f2b7f;
+	border: 1px dashed #565656;
+	padding: 2px 0 1px 6px;
+	width: 100%;
+}
+
+.account_form-label {
+	color: #fff;
+	width: 100%;
+	margin: 0;
+	padding: 2px 0 1px 0;
+}
+
+.account_form_title {
+	color: #fff;
+	margin: 0 auto 30px auto;
+}
+
+.account_form_form-group,
+.account_form_checkbox-group {
+	margin-bottom: 15px;
+}
+
+.account_form_forgot-password {
+	color: #fff;
+}
+
+.account_form_button-wrapper {
+	display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+			justify-content: center;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+.account_form_button,
+.account_form_button button {
+	padding: 0;
+	-webkit-transform: scale3d(0.9, 0.9, 1);
+	transform: scale3d(0.9, 0.9, 1);
+	font-size: 20px !important;
+}
+
+.account_form_checkbox {
+	color: #fff;
+	position: relative;
+}
+
+.account_form_checkbox-input {
+	position: absolute;
+	visibility: hidden;
+}
+
+.account_form_checkbox-terms {
+	text-decoration: underline;
+	color: #fff;
+}
+
+.account_form_checkbox-label::before {
+	content: "";
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	background: #4f2b7f;
+	border: 1px dashed #565656;
+	border-radius: 2px;
+	transition: all 0.5s;
+}
+
+#checkbox-terms:checked ~ .account_form_checkbox-label::before,
+#checkbox-newsletter:checked ~ .account_form_checkbox-label::before {
+	background: #986cd4;
+	background-clip: content-box;
+	padding: 1px;
+}
+
+@media screen and (max-width: 996px){
+
+	.account-form:nth-of-type(1) {
+		margin-bottom: 30px;
+	}
+	.account_form-label {
+		text-align: left;
+		margin-bottom: 5px;
+	}
+
+	.account_form-field {
+		padding: 6px 0 3px 6px;
+	}
+
+	.account_forms_sign-up {
+		border-left: none;
+	}
+
+	.account_form_forgot-password {
+		width: 100%;
+	}
+}
+/*Account end*/
+
+/*--Sign up / log in end--*/
+
+/*--Credentials Miscellaneous start--*/
+
+.forgot-password-form,
+.account_forms_log-in,
+.account_forms_sign-up {
+	color: #f76666;
+}
+
+.credentials-miscellaneous {
+	clear: both;
+	padding: 80px 0;
+}
+
+.credentials-miscellaneous_title {
+	font-size:36px;
+	color:#fff;
+	font-weight:bold;
+}
+
+.credentials-miscellaneous_title::after {
+	content: "";
+	display: block;
+	width: 80px;
+	margin: 30px auto 15px auto;
+	border-bottom: 1px solid #fff;
+}
+
+.credentials-miscellaneous_description {
+	padding: 10px 0 20px 0;
+	color: #fff;
+}
+
+/*-Forgot pages start-*/
+
+.content-wrapper {
+	min-height: calc(100vh - 145px);
+}
+
+.footer {
+	height: 145px;
+}
+
+@media screen and (max-width: 387px){
+
+	.content-wrapper {
+		min-height: calc(100vh - 168px);
+	}
+	
+	.footer {
+		height: 168px;
+	}
+}
+
+/*Forgot pages end-*/
+
+.plus-icon,
+.arrow-icon,
+.user-icon {
+	font-size: 22px;
+}
+
+.account-button {
+	display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+
+/*-Logged user styles start-*/
+
+.user-dropdown {
+	width: 220px;
+	padding-top: 0 !important;
+	margin-top: 0 !important;
+}
+
+.user-dropdown_name {
+	border: 1px solid #0f0122;
+	background: #52268a;
+	color: #fff;
+	font-size: 17px;
+	font-weight: 700;
+	padding: 9px 0 9px 12px;
+}
+
+.divider {
+	margin: 0 !important;
+}
+
+.user-dropdown_item {
+	height: 44px;
+	display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+/*-Logged user styles end-*/
+
+/*--Credentials Miscellaneous end--*/
+
+/*--Logged in user miscellaneous start--*/
+
+/*-Wallet styles start-*/
+
+.wallet_title {
+	text-transform: uppercase;
+	margin: 10px auto 30px auto;
+	color: rgba(255, 255, 255, 0.75);
+}
+
+.wallet_deposits {
+	display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	color: #fff;
+}
+
+.wallet_deposit-input {
+	position: absolute;
+	visibility: hidden;
+}
+
+
+.wallet_deposit {
+	display: block;
+	position: relative;
+	cursor: pointer;
+	border-radius: 40px;
+	background: #0f0122;
+	border: 1px solid #05000c;
+	padding: 15px 20px;
+	height: 80px;
+	width: 150px;
+	display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.wallet_deposit_amount {
+	font-size: 20px;
+}
+
+.wallet_deposit_info {
+	font-size: 10px;
+}
+
+.wallet_or {
+	font-size: 30px;
+	color: rgba(255, 255, 255, 0.75);
+	text-transform: uppercase;
+	display: block;
+	margin: 15px auto;
+}
+
+#wallet_deposit-50:checked ~ .wallet_deposit-50,
+#wallet_deposit-75:checked ~ .wallet_deposit-75,
+#wallet_deposit-100:checked ~ .wallet_deposit-100,
+#wallet_deposit-150:checked ~ .wallet_deposit-150,
+#wallet_deposit-200:checked ~ .wallet_deposit-200 {
+	background: #986cd4;
+}
+
+.wallet_custom-deposit {
+	display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+	padding-bottom: 30px;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.wallet_custom-deposit_title {
+	font-size: 18px;
+}
+
+.wallet_custom-deposit_total {
+	font-size: 18px;
+	text-align: center;
+}
+
+.wallet_custop-deposit_description {
+	font-size: 10px;
+}
+
+.deposit-button {
+	margin: 0;
+	-webkit-transform: scale3d(0.7, 0.8, 1);
+            transform: scale3d(0.7, 0.8, 1);
+}
+
+.deposit-button,
+.deposit-button button {
+	font-size: 20px !important;
+}
+
+.wallet_custom-deposit_label {
+	display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+	padding-top: 20px;
+	text-align: center;
+}
+
+.wallet_custom-deposit_amount {
+	background: #0f0122;
+	border: 1px dashed #565656;
+	padding: 3px 0 2px 60px;
+	width: 120px;
+}
+
+@media screen and (max-width: 1100px){
+
+	.wallet_deposit {
+		width: 120px;
+	}
+
+	.wallet_custom-deposit {
+		width: 90%;
+		-webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+	}
+}
+
+@media screen and (max-width: 990px){
+
+	.deposit-button {
+		-webkit-transform: scale3d(0.7, 0.8, 1);
+            transform: scale3d(0.7, 0.8, 1);
+	}
+
+	.wallet_custom-deposit {
+		-webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+		margin: 0 !important;
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 760px){
+
+	.wallet_deposits {
+		-ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+	}
+
+	.wallet_deposit {
+		margin: 5px 15px;
+	}
+}
+
+@media screen and (max-width: 650px) {
+
+	.wallet_custom-deposit {
+		-ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+	}
+
+	.wallet_custom-deposit_label,
+	.wallet_custom-deposit_total {
+		-webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+	}
+
+	.wallet_custom-deposit_total {
+		text-align: right;
+	}
+}
+
+@media screen and (max-width: 425px) {
+	.wallet_deposit {
+		border-radius: 40px;
+		padding: 5px 20px;
+		height: 80px;
+		width: 100px;
+		margin: 2px 5px;
+		-webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+	}
+
+	.wallet_deposit_amount {
+		font-size: 16px;
+	}
+
+	.wallet_deposit_info {
+		line-height: 1.1;
+		text-align: center;
+	}
+
+	.wallet_custom-deposit {
+		padding-bottom: 10px;
+	}
+
+	.wallet_custom-deposit_label,
+	.wallet_custom-deposit_total {
+		-webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+	}
+
+	.wallet_custom-deposit_label {
+		padding-right: 5px;
+	}
+}
+
+@media screen and (max-width: 350px) {
+
+	.wallet_title {
+		margin: 10px auto 5px auto;
+	}
+
+	.wallet_or {
+		margin: 10px auto;
+	}
+
+	.wallet_custom-deposit_label {
+		margin-top: 0;
+	}
+
+	.wallet_deposit {
+		padding: 0 5px;
+		height: 50px;
+	}
+}
+
+/*Balance page start*/
+
+.balance_deposits-wrapper {
+	background: #4f2b7f;
+	border-radius: 20px;
+	margin-top: 30px;
+	padding: 20px 0 10px 0;
+}
+
+.balance_deposits {
+	max-width: 800px;
+	margin: 10px auto;
+}
+
+.balance_custom-deposit {
+	max-width: 800px;
+	margin: 10px auto;
+}
+
+#balance_deposit-50:checked ~ .wallet_deposit-50,
+#balance_deposit-75:checked ~ .wallet_deposit-75,
+#balance_deposit-100:checked ~ .wallet_deposit-100,
+#balance_deposit-150:checked ~ .wallet_deposit-150,
+#balance_deposit-200:checked ~ .wallet_deposit-200 {
+	background: #986cd4;
+}
+
+.balance_custom-deposit {
+	display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+	padding-bottom: 30px;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.balance_custom-deposit_title {
+	font-size: 18px;
+}
+
+.balance_custom-deposit_total {
+	font-size: 18px;
+	text-align: center;
+}
+
+.balance_custop-deposit_description {
+	font-size: 10px;
+}
+
+.deposit-button {
+	margin: 0;
+	-webkit-transform: scale3d(0.7, 0.8, 1);
+            transform: scale3d(0.7, 0.8, 1);
+}
+
+.deposit-button,
+.deposit-button button {
+	font-size: 20px !important;
+}
+
+.balance_custom-deposit_label {
+	display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+	padding-top: 20px;
+	text-align: center;
+}
+
+.balance_custom-deposit_amount {
+	background: #0f0122;
+	border: 1px dashed #565656;
+	padding: 3px 0 2px 60px;
+	width: 120px;
+}
+
+@media screen and (max-width: 992px){
+
+	.balance_deposits {
+		max-width: 700px;
+	}
+
+	.balance_custom-deposit {
+		width: 100%;
+		margin: 10px auto !important;
+	}
+}
+
+@media screen and (max-width: 800px){
+
+	.balance_deposits {
+		max-width: 700px;
+	}
+
+	.balance_custom-deposit_label {
+		margin-right: 10px;
+	}
+}
+
+@media screen and (max-width: 650px) {
+
+	.balance_custom-deposit {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.balance_custom-deposit_total {
+		margin-left: 10px;
+	}
+}
+
+/*Balance page end*/
+
+/*-Wallet styles end-*/
+
+/*-Account details start-*/
+
+.account-details {
+	background: #170135;
+}
+
+.account_form_update-info {
+	border-right: 1px dashed #565656;
+}
+
+.account_form_update-password {
+	border-left: none !important;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px){
+
+	.account_form-confirm-password {
+		margin-top: 20px;
+	}
+}
+
+@media screen and (max-width: 992px){
+	.account_form_update-info {
+		border-right: none;
+	}
+}
+/*-Account details end-*/
+
+/*-Orders start-*/
+
+.orders {
+	background: #0f0122;
+	padding: 80px 0;
+}
+
+.orders_inner-container {
+	overflow-x: auto;
+}
+.orders_title {
+	font-size:36px;
+	color:#fff;
+	font-weight:bold;
+}
+
+.orders_title::after {
+	content: "";
+	display: block;
+	width: 80px;
+	margin: 30px auto 15px auto;
+	border-bottom: 1px solid #fff;
+}
+
+.orders_description {
+	color: #fff;
+	margin-bottom: 50px;
+}
+
+#orders_table {
+	color: #fff;
+}
+
+.orders_table_head {
+	background: #4f2b7f;
+}
+
+.orders_table_cell {
+	background: #0f0122;
+	border: 1px dashed rgba(255, 255, 255, 0.5) !important;
+}
+
+.orders_table_cell_ordered-at {
+	display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+}
+
+.pay-button button{
+	width: 100px;
+	height:30px;
+	font-size:16px;
+	font-family: 'Roboto', sans-serif;
+	display: block;
+	line-height:30px;
+	border: none;
+	background: none;
+	color: inherit;
+	vertical-align: middle;
+	position: relative;
+	z-index: 1;
+	-webkit-backface-visibility: hidden;
+	-moz-osx-font-smoothing: grayscale;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+}
+
+.pay-button button:focus {
+	outline: none;
+}
+
+.pay-button .hs_btn_hover {
+	border-radius: 30px;
+	background: #428bca;
+	color: #fff;
+	-webkit-transition: background-color 0.3s, color 0.3s;
+	transition: background-color 0.3s, color 0.3s;
+}
+
+.pay-button .hs_btn_hover::before {
+	content: '';
+	position: absolute;
+	top: -20px;
+	left: -20px;
+	bottom: -20px;
+	right: -20px;
+	background: inherit;
+	border-radius: 30px;
+	z-index: -1;
+	opacity: 0.4;
+	-webkit-transform: scale3d(0.4, 0.5, 1);
+	transform: scale3d(0.4, 0.4, 1);
+}
+
+.pay-button .hs_btn_hover:hover {
+	-webkit-transition: background-color 0.1s 0.3s, color 0.1s 0.3s;
+	transition: background-color 0.1s 0.3s, color 0.1s 0.3s;
+	color: #ECEFF1;
+	background-color: #428bca;
+	-webkit-animation: anim-moema-1 0.3s forwards;
+	animation: anim-moema-1 0.3s forwards;
+}
+
+.pay-button .hs_btn_hover:hover::before {
+	-webkit-animation: anim-moema-2 0.3s 0.3s forwards;
+	animation: anim-moema-2 0.3s 0.3s forwards;
+}
+
+.pay-button .hs_btn_hover {
+	margin: 0;
+}
+
+.orders_table_cell_delivered {
+	display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+
+.orders_table_cell_unpaid {
+	display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: center;
+}
+
+.orders_table_cell_unpaid_label {
+	padding-right: 10px;
+}
+
+.sorting {
+	border: 1px solid rgba(255, 255, 255, 0.5) !important;
+}
+
+#orders_table_id {
+	border: 1px solid rgba(255, 255, 255, 0.5) !important;
+}
+
+.dataTables_filter label,
+.dataTables_length label,
+.dataTables_info {
+	color: #fff !important;
+}
+
+.dataTables_filter input,
+.dataTables_length select {
+	color: #fff;
+	background: #4f2b7f;
+	border: 1px dashed rgba(255, 255, 255, 0.5) !important;
+}
+
+.dataTables_paginate {
+	color: #fff !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button,
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover,
+.dataTables_wrapper .dataTables_paginate .paginate_button:active {
+	color: #fff !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current, 
+.dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+	color: #fff !important;
+	border: 1px dashed rgba(255, 255, 255, 0.5) !important;
+	background: #4f2b7f !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button, 
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+	color: #fff !important;
+	border: 1px dashed rgba(255, 255, 255, 0.5) !important;
+	background: #0f0122 !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+	background: #4f2b7f !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled, 
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled:hover, 
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled:active {
+	border: none !important;
+	background: #0f0122 !important;
+}
+
+.paginate_button {
+	color: #fff !important;
+	background: #428bca;
+}
+
+.orders_inner-container {
+	padding-bottom: 15px;
+}
+
+.orders_inner-container::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3) !important;
+	background-color: #0f0122 !important;
+}
+.orders_inner-container::-webkit-scrollbar {
+	width: 6px;
+	background-color: #0f0122 !important;
+}
+
+.orders_inner-container::-webkit-scrollbar-thumb {
+	background-color: #4f2b7f !important;
+}
+/*-Orders end-*/
+
+/*Logged in user miscellaneous end--*/
+
+/*---Registration pages end---*/
+
+/*---Ritual start---*/
+
+.ritual-form {
+	margin-top: 40px;
+}
+
+.describe-intentions-label {
+	display: block;
+	color: #fff;
+	cursor: pointer;
+	margin-bottom: 10px;
+}
+
+.describe-intentions {
+	max-width: 100%;
+	min-width: 100%;
+	width: 100%;
+	background: #4f2b7f;
+	border: 1px dashed #565656;
+}
+
+.describe-dream_button {
+	margin: 0;
+}
+
+.describe-dream-submit-wrapper{
+	width: 100%;
+	font-size: 30px;
+	background: #4f2b7f;
+	color: #fff;
+	line-height: normal;
+	margin: 50px 0 5px 0;
+	padding: 10px 0 10px 0;
+}
+
+.describe-dream_price {
+	font-size: 22px;
+}
+
+.describe-dream_price-current {
+	text-decoration: underline;
+	font-size: 20px;
+}
+
+.describe-dream_price-previous {
+	font-size: 16px;
+}
+
+.describe-dream-submit {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+}
+
+.describe-dream-submit::before,
+.describe-dream-submit::after {
+	display: none;
+}
+
+.search-dream {
+	padding-top: 50px;
+}
+
+@media screen and (max-width: 500px){
+	.describe-dream-submit {
+		-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	.describe-dream_price {
+		margin-bottom: 20px;
+	}
+}
+
+@media screen and (max-width: 400px){
+	.describe-dream-submit {
+		width: 100%;
+	}
+}
+
+/*Dream form end*/
+
+/*---Ritual end---*/
+
+/*---Blog list start---*/
+
+
+.blog-list {
+	clear: both;
+	width:100%;
+	padding: 50px 0 100px 0;
+}
+
+.blog-list_title {
+	font-size: 36px;
+	color: #fff;
+	font-weight: bold;
+	margin: 0 auto 50px auto;
+}
+
+.blog-list_post {
+	border: 1px dashed #565656;
+	background: #4f2b7f;
+	margin-top: 30px;
+}
+
+.blog-list_post:nth-of-type(1) {
+	margin-top: 0;
+}
+
+.blog-list_post_image-wrapper {
+	width: 100%;
+	height: auto;
+}
+
+.blog-list_post_image {
+	max-width: 100%;
+	height: auto;
+}
+
+.blog-list_post_title {
+	padding: 15px 0 5px 10px;
+	font-size: 28px;
+	color: #fff;
+}
+
+.blog-list_post_line-wrapper {
+	padding-left: 10px;
+}
+
+.blog-list_post_description {
+	color: #fff;
+	padding: 15px 20px 30px 10px;
+}
+
+.blog-list_post_link {
+	font-size:16px;
+	color:rgb(240, 110, 156);
+	text-decoration: underline;
+}
+
+.blog-list_post_link-wrapper {
+	padding: 0 20px 30px 0;
+}
+
+.blog-list_post_line{
+	background: #986cd4;
+}
+
+
+
+/*---Blog list end---*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .hs_blog_box1_main_wrapper h2{
 	font-size:30px;
 	color:#fff;
