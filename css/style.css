@@ -7711,8 +7711,44 @@ footer{
 
 /*---Blog list end---*/
 
+/*---Terms start---*/
 
 
+
+/*---Terms end---*/
+
+.terms {
+	clear: both;
+	padding: 80px 0 80px 0;
+	color: #fff !important;
+}
+
+.terms_title {
+	color: #fff;
+	font-size: 36px;
+}
+
+.terms_title::after {
+	content: '';
+	display: block;
+	margin: 0 auto;
+	width: 180px;
+	height: 30px;
+	border-bottom: 1px solid #fff;
+}
+
+.terms_description {
+	padding: 40px 0;
+}
+
+.terms_subtitle {
+	color: #fff;
+	font-size: 30px;
+}
+
+.terms_subtitle-description {
+	padding: 30px 0;
+}
 
 
 
@@ -9042,3 +9078,7 @@ footer{
 }
 /*-- btc shop single tabs Wrapper End --*/
 /**************------ SHOP SINGLE CSS END -------*******************/
+
+input {
+	color: #fff !important;
+}
