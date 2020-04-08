@@ -7,6 +7,7 @@
         $('#forgot-password-form').validate();
         $('#account_form_update-password').validate();
         $('#account_form_update-info').validate();
+        $('#ritual-form').validate();
     })
     
 })(jQuery);

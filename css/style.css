@@ -5801,6 +5801,7 @@ footer{
 .post-content,
 .dream-content {
 	padding-top:20px;
+	color: #fff;
 }
 
 /*Personal reading styles*/
@@ -5825,6 +5826,7 @@ footer{
 	width: 100%;
 	text-align: justify-all;
 	margin: 10px 0 10px 0;
+	color: #fff;
 }
 
 .personal-reading_image-wrapper {
@@ -7503,13 +7505,14 @@ footer{
 
 .ritual-form {
 	margin-top: 40px;
+	color: #f76666;
 }
 
 .describe-intentions-label {
 	display: block;
 	color: #fff;
 	cursor: pointer;
-	margin-bottom: 10px;
+	margin-bottom: 5px;
 }
 
 .describe-intentions {
@@ -7520,77 +7523,122 @@ footer{
 	border: 1px dashed #565656;
 }
 
-.describe-dream_button {
-	margin: 0;
+/*-Date styles-*/
+
+.describe-intentions_date::-webkit-datetime-edit-text,
+.describe-intentions_date::-webkit-datetime-edit-month-field,
+.describe-intentions_date::-webkit-datetime-edit-day-field,
+.describe-intentions_date::-webkit-datetime-edit-year-field,
+.describe-intentions_date {
+	color: #000;
 }
 
-.describe-dream-submit-wrapper{
-	width: 100%;
-	font-size: 30px;
-	background: #4f2b7f;
-	color: #fff;
-	line-height: normal;
-	margin: 50px 0 5px 0;
-	padding: 10px 0 10px 0;
-}
 
-.describe-dream_price {
-	font-size: 22px;
-}
-
-.describe-dream_price-current {
-	text-decoration: underline;
-	font-size: 20px;
-}
-
-.describe-dream_price-previous {
-	font-size: 16px;
-}
-
-.describe-dream-submit {
+.describe-intentions_date {
+	position: relative;
+	height: 39px;
+  }
+  
+.describe-intentions_date::-webkit-calendar-picker-indicator {
+	color: transparent;
+	background: none;
+	z-index: 1;
+	cursor: pointer;
+	width: 70px;
+	height: 39px;
+	position: absolute;
+	top: 0;
+	right: 0;
+  }
+  
+.describe-intentions_date:before {
+	color: #d9d1e4 !important;
+	background: #3b1d8f;
 	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-pack: justify;
-	    -ms-flex-pack: justify;
-	        justify-content: space-between;
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
-	-ms-flex-wrap: wrap;
-	    flex-wrap: wrap;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+	font-family: 'FontAwesome';
+	font-size: 22px;
+	content: '\f073\00a0\00a0\00a0\f0d7';
+	width: 70px;
+	height: 39px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding-left: 5px;
+	cursor: pointer;
+  }
+
+.describe-intentions_date {
+	padding: 2px auto 2px 4px;;
 }
 
-.describe-dream-submit::before,
-.describe-dream-submit::after {
-	display: none;
+.describe-intentions_date-label {
+	color: #fff;
+	display: block;
+	cursor: pointer;
 }
 
-.search-dream {
-	padding-top: 50px;
+.describe-intentions_date {
+	display: block;
+	min-width: 200px;
+}
+
+.describe-intentions_time-wrapper {
+	margin-top: 20px;
+}
+
+.describe-intentions_time {
+	color: #000;
+	border-radius: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	min-width: 120px;
+}
+
+@media screen and (max-width: 970px) {
+
+	.describe-intentions-wrapper {
+		display: -webkit-box;
+    	display: -ms-flexbox;
+    	display: flex;
+    	-ms-flex-pack: distribute;
+        justify-content: space-around;
+		padding: 20px 0 10px 0;
+	}
+
+	.describe-intentions_time-wrapper {
+		margin: 0;
+	}
 }
 
 @media screen and (max-width: 500px){
-	.describe-dream-submit {
-		-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
-		width: 80%;
-		margin: 0 auto;
-	}
 
-	.describe-dream_price {
-		margin-bottom: 20px;
+	.describe-intentions-wrapper {
+		-webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+		padding: 15px;
 	}
 }
 
-@media screen and (max-width: 400px){
-	.describe-dream-submit {
-		width: 100%;
+@media screen and (max-width: 400px) {
+
+	.describe-intentions-wrapper {
+		-webkit-box-orient: vertical;
+    	-webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+	}
+
+	.describe-intentions_time-wrapper {
+		margin-top: 20px;
 	}
 }
 
-/*Dream form end*/
 
 /*---Ritual end---*/
 
