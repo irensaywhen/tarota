@@ -31,6 +31,7 @@ Purchase:
     <link rel="stylesheet" type="text/css" href="css/responsive.css" />
     <link rel="stylesheet" href="fonts/fontawesome/css/all.css">
     <link rel="stylesheet" href="fonts/fontawesome/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css">
     <!-- favicon links -->
     <link rel="shortcut icon" type="image/png" href="images/header/favicon.ico" />
 </head>
@@ -580,6 +581,7 @@ Purchase:
         <form action="" method="POST" class="ritual-form" id="ritual-form">
             <div class="container">
                 <div class="row">
+                    <!--Textarea start-->
                     <div class="col-xs-12 col-md-8">
                         <label for="describe-intentions" class="describe-intentions-label">
                             Describe your intentions:
@@ -594,49 +596,50 @@ Purchase:
                             rows="10"
                             required></textarea>
                     </div>
-                    <div class="col-xs-12 col-md-4 describe-intentions-wrapper">
-                        <div class="describe-intentions_date-wrapper">
-                            <label for="describe-intentions_date"
-                                   class="describe-intentions_date-label">
-                                Date of ritual
-                            </label>
-                            <input 
-                                type="date" 
-                                id="describe-intentions_date" 
-                                class="describe-intentions_date"
-                                name="describe-intentions_date"
-                                value="2020-04-22"
-                                min="2020-04-07" 
-                                max="2020-12-31"
-                                required>
+                    <!--Textarea end-->
+                    <div class="col-xs-12 col-md-4 describe-intentions-info-wrapper">
+                        <!--Date and time of the ritual start-->
+                        <div class="describe-intentions-wrapper">
+                            <div class="describe-intentions_date-wrapper">
+                                <label for="describe-intentions_date"
+                                       class="describe-intentions_date-label">
+                                    Date of ritual
+                                </label>
+                                <input 
+                                    type="date" 
+                                    id="describe-intentions_date" 
+                                    class="describe-intentions_date"
+                                    name="describe-intentions_date"
+                                    value="2020-04-22"
+                                    min="2020-04-07" 
+                                    max="2020-12-31"
+                                    required>
+                            </div>
+                            <div class="describe-intentions_time-wrapper">
+                                <label for="describe-intentions_time" class="describe-intentions-label">
+                                    Hour of ritual
+                                </label>
+                                <input  type="text"
+                                        id="describe-intentions_time" 
+                                        class="describe-intentions_time text-left"
+                                        name="describe-intentions_time"
+                                        required>
+                            </div>
                         </div>
-                        <div class="describe-intentions_time-wrapper">
-                            <label for="describe-intentions_time" class="describe-intentions-label">
-                                Hour of ritual
-                            </label>
-                            <input type="time" 
-                                   id="describe-intentions_time" 
-                                   class="describe-intentions_time text-center"
-                                   name="describe-intentions_time"
-                                   min="10:00" 
-                                   max="23:30" 
-                                   value="22:00"
-                                   required>
+                        <!--Date and time of the ritual end-->
+                        <!--Price and submit start-->
+                        <div class="describe-intentions-submit">
+                            <div class="describe-intentions_price">
+                                <strong class="describe-intentions_price-current">19.99 zł</strong>
+                                <del class="describe-intentions_price-previous">29.99 zł</del>
+                            </div>
+                            <div class="describe-intentions-button">
+                                <button type="submit" class="hs_btn_hover">
+                                    Order now
+                                </button>
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div class="describe-dream-submit-wrapper">
-                <div class="container describe-dream-submit">
-                    <div class="describe-dream_price">
-                        <span>Price:</span>&nbsp;
-                        <strong class="describe-dream_price-current">  19.99 zł</strong>&nbsp;
-                        <del class="describe-dream_price-previous">29.99 zł</del>
-                    </div>
-                    <div class="pink-button describe-dream_button">
-                        <button type="submit" class="hs_btn_hover">
-                            Order now
-                        </button>
+                        <!--Price and submit end-->
                     </div>
                 </div>
             </div>
@@ -692,6 +695,8 @@ Purchase:
     <script src="js/custom.js"></script>
     <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
     <script src="js/validation.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
+    <script src="js/timepicker.js"></script>
     <!--main js file end-->
 </body>
 
