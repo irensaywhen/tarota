@@ -2639,7 +2639,7 @@ width:100%;
 	}
 }
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 767px) {
 
 	.service-wrapper {
 		display: -webkit-box;
@@ -8824,6 +8824,21 @@ footer{
 }
 
 /*-Expert section end-*/
+
+/*-Homepage media queries start-*/
+
+@media screen and (max-width: 992px){
+
+	.home_subtitle,
+	.home_subdescription,
+	.home_get-help-title,
+	.home_get-help-description,
+	.home_get-help-link {
+		text-align: center;
+	}
+}
+
+/*-Homepage media queries end-*/
 
 /*--Home page end--*/
 
