@@ -8742,7 +8742,93 @@ footer{
 
 /*---Profile end---*/
 
+/*---Home pages start---*/
 
+/*--Home page start--*/
+
+/*-Home top section start-*/
+
+.home {
+	clear: both;
+	padding: 100px 0;
+}
+
+.home_title {
+	color: #fff;
+	font-size: 40px;
+}
+
+.home_title::after {
+	content: "";
+	display: block;
+	width: 80px;
+	margin: 30px auto 15px auto;
+	border-bottom: 1px solid #fff;
+}
+
+.home_description {
+	color: #fff;
+}
+
+.home_subinformation {
+	padding: 50px 0;
+	color: #fff;
+}
+
+.home_image-wrapper {
+	width: 100%;
+}
+
+.home_image {
+	max-width: 100%;
+	width: 100%;
+	height: auto;
+}
+
+.home_subtitle {
+	color: #fff;
+	font-size: 30px;
+	padding: 10px 0 20px 0;
+}
+
+.home_get-help-title {
+	color: #fff;
+	font-size: 30px;
+	padding: 10px 0;
+}
+
+.home_get-help-link {
+	display: block;
+	color: #fff;
+	font-size: 28px;
+	padding: 20px 0 10px 0;
+}
+
+/*-Home top section end-*/
+
+/*-Experts section start-*/
+
+.experts {
+	padding: 70px 0;
+	background: #0f0122;
+}
+
+.experts_title {
+	color: #fff;
+	font-size: 36px;
+}
+
+.experts_description {
+	color: #fff;
+	padding: 15px 0;
+}
+
+/*-Expert section end-*/
+
+/*--Home page end--*/
+
+
+/*---Home pages end---*/
 
 
 
