@@ -8055,6 +8055,23 @@ footer{
 	padding: 1px;
 }
 
+.account_form_checkbox-terms-wrapper {
+	display: -webkit-box;
+   	display: -ms-flexbox;
+   	display: flex;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+}
+
+.account_form_checkbox-terms-wrapper .error {
+	-webkit-box-ordinal-group: 2;
+       -ms-flex-order: 1;
+           order: 1;
+	width: 100%;
+	color: #f76666 !important;
+}
+
+
 .order-details_form-birth-wrapper {
 	display: -webkit-box;
     display: -ms-flexbox;
