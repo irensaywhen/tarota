@@ -6677,7 +6677,8 @@ footer{
 
 }
 
-.account_forms_sign-up {
+.account_forms_sign-up,
+.order_form_sign-up {
 	border-left: 1px dashed #565656;
 }
 
@@ -6777,7 +6778,8 @@ footer{
 		padding: 6px 0 3px 6px;
 	}
 
-	.account_forms_sign-up {
+	.account_forms_sign-up,
+	.order_form_sign-up {
 		border-left: none;
 	}
 
@@ -6793,7 +6795,8 @@ footer{
 
 .forgot-password-form,
 .account_forms_log-in,
-.account_forms_sign-up {
+.account_forms_sign-up,
+.order_form_sign-up {
 	color: #f76666;
 }
 
@@ -8062,12 +8065,12 @@ footer{
 }
 
 .order-details_form-birth-inner-wrapper {
-	
+	width: 30%;
 }
 
 
 .order-details_form-birth {
-	width: 30%;
+	width: 100%;
 	background: #4f2b7f;
 	color: #fff;
 	border: 1px dashed #565656;
@@ -8146,6 +8149,25 @@ footer{
 	background: #f06e9c;
 }
 
+@media screen and (max-width: 430px){
+
+	.order-details_form-birth-wrapper{
+		-webkit-box-orient: vertical;
+    	-webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+	}
+
+	.order-details_form-birth-inner-wrapper {
+		width: 100%;
+		margin-bottom: 15px;
+	}
+
+	.order-details_form-birth {
+		text-align-last: left !important;
+	}
+}
+
 /*Order and pay button end*/
 
 @media screen and (max-width: 996px){
@@ -8167,7 +8189,7 @@ footer{
 /*---Profile start---*/
 
 /*--Profile header start--*/
-.profile_header {
+.profile_header_inner-wrapper {
 	display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -8227,6 +8249,7 @@ footer{
         -ms-flex-pack: justify;
             justify-content: space-between;
 	color: #fff;
+	padding-right: 25px;
 }
 
 .profile_header_info_services {
@@ -8235,16 +8258,58 @@ footer{
 	display: inline-block;
 }
 
+
+.profile_header_medium_title {
+	font-size: 18px;
+	color: #fff;
+	padding: 10px 0 20px 0;
+}
+
+.profile_header_medium_contacts {
+	display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+
+.profile_header_medium_contact {
+	padding: 10px 15px;
+	display: block;
+	width: 100%;
+	height: 100%;
+	border: 1px dashed #565656;
+	color: #fff;
+}
+
+.profile_header_medium_contact:hover {
+	background: #4f2b7f;
+	color: #fff;
+}
+
+.profile_header_medium_icon {
+	color: #4f2b7f;
+	font-size: 25px;
+	display: inline-block;
+	margin-right: 5px;
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.profile_header_medium_contact:hover .profile_header_medium_icon {
+	color: #0f0122
+}
+
 /*--Profile header end--*/
-
-/*--Medium start--*/
-
-/*--Medium end--*/
 
 /*--Profile description start--*/
 
 .profile_description {
-	padding: 35px 0;
+	padding: 17px 0;
 }
 
 .profile_description_title {
@@ -8257,7 +8322,406 @@ footer{
 	color: #fff;
 }
 
-/*Profile description end--*/
+/*--Profile description end--*/
+
+/*--Services start--*/
+
+.profile_services {
+	padding: 17px 0 40px 0;
+}
+
+.profile_services_title {
+	font-size: 26px;
+	color: #fff;
+}
+
+.profile_services_services-list-wrapper {
+	padding: 15px 0;
+	color: #fff;
+}
+
+.profile_services_services-list {
+	display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+}
+
+.profile_services_tab {
+	border: 1px dashed #565656;
+	margin: 0 !important;
+	float: none !important;
+}
+
+
+.profile_services_tab.active .profile_services_tab-link{
+	background: #4f2b7f;
+}
+
+.profile_services_tab-link:hover,
+.profile_services_tab:hover {
+	background: #4f2b7f !important;
+	color: #fff;
+}
+
+.profile_services_tab-link {
+	border-radius: 0 !important;
+}
+
+.profile_services_service_title {
+	color: #fff;
+	margin: 15px 0;
+}
+
+.profile_services_service_description {
+	color: #fff;
+}
+
+.profile_order-now-button-wrapper {
+	margin: 30px auto;
+	display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+			justify-content: center;
+	padding-bottom: 50px;
+	border-bottom: 1px dashed rgba(225, 255, 255, 0.75);
+}
+
+/*--Services end--*/
+
+/*--Order now sidebar form start--*/
+
+.profile_order_form {
+	background: #4f2b7f;
+	border: 1px dashed rgba(255, 255, 255, 0.75);
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+}
+
+.profile_order_title {
+	color: #fff;
+	font-size: 20px;
+	padding: 15px 10px;
+	margin-bottom: 15px;
+	background: #4f2b7f;
+}
+
+.profile_order_form_service-select {
+	width: 100%;
+	color: #000;
+	padding: 6px 20px;
+}
+
+#tarota {
+	display: none;
+}
+
+
+.profile_order_form_input-wrapper {
+	display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+			justify-content: space-between;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+		align-items: center;
+	margin: 18px 12px;
+}
+
+.profile_order_form-label {
+	padding-right: 30px;
+	color: #fff;
+}
+
+.profile_order_form-field {
+	-webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 2;
+	background: #986cd4;
+	padding: 8px 0px 5px 6px;
+	border-radius: 3px;
+}
+
+.profile_order_form_appointment-wrapper {
+	color: #fff;
+	margin-left: 12px;
+}
+
+.profile_order_form_appointment_title {
+	color: #fff;
+	margin: 10px 0;
+}
+
+..profile_order_form-appointment-label {
+	position: relative;
+}
+
+.profile_order_form-appointment-label::before {
+	content: "";
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: #986cd4;
+	border: 1px solid rgba(255, 255, 255, 0.75);
+	border-radius: 16px;
+	transition: all 0.5s;
+}
+
+.profile_order_form-appointment-label::after {
+	content: "";
+	position: absolute;
+	top: 5px; 
+	width: 8px;
+	height: 8px;
+	left: 4.5px;
+	border-radius: 4px;
+	background: #0f0122;
+	opacity: 0;
+	transition: all 0.5s;
+}
+
+.profile_order_form-appointment:checked ~ .profile_order_form-appointment-label::after {
+	opacity: 1;
+}
+
+.profile_order_form_appointment_input-group {
+	position: relative;
+}
+
+.profile_order_form-appointment {
+	position: absolute;
+	visibility: hidden;
+}
+
+.profile_order_form_appointment-schedule {
+	display: none;
+}
+
+
+.profile_order_form_appointment-date {
+	background: #986cd4;
+	color: rgba(255, 255, 255, 0.75);
+	padding: 8px 0px 5px 6px;
+	width: 60%;
+	margin: 8px;
+	border-radius: 3px;
+}
+
+.profile_order_form_appointment-time {
+	padding: 8px 0px 5px 6px;
+	width: 30%;
+	margin: 8px;
+	border-radius: 3px;
+}
+
+.profile_order_form_appointment-date::-webkit-datetime-edit-year-field {
+	color: rgba(255, 255, 255, 0.75);
+}
+
+.profile_order_form_appointment-date::-webkit-inner-spin-button {
+	display: none;
+}
+
+.profile_order_form_appointment-date::-webkit-calendar-picker-indicator:hover {
+	background: #986cd4;
+}
+
+.profile_order_form_appointment-time {
+	background: #986cd4;
+	color: rgba(255, 255, 255, 0.75);
+}
+
+.ui-timepicker-container {
+	background: #986cd4 !important;
+	color: rgba(255, 255, 255, 0.75) !important;
+}
+
+.ui-menu-item,
+.ui-corner-all {
+	background: #986cd4 !important;
+	color: rgba(255, 255, 255, 0.75) !important;
+}
+
+.ui-state-hover,
+#ui-active-item {
+	background: #4f2b7f !important;
+	color: #fff !important;
+}
+
+/*-Submit section start-*/
+
+/*-Submit area start-*/
+
+.profile_order_form-submit {
+	width: 100%;
+	background: #986cd4;
+	color: #fff;
+	line-height: normal;
+	margin-top: 15px;
+	padding: 10px 0 10px 0;
+	display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+
+.profile_order_form_price-label {
+	font-size: 18px;
+}
+
+.profile_order_form_price-value {
+	text-decoration: underline;
+}
+
+.profile_order_form_price-current-value {
+	text-decoration: underline;
+	font-size: 16px;
+}
+
+.profile_order_form-submit::before,
+.profile_order_form-submit::after {
+	display: none;
+}
+
+.profile_order_form-button button{
+	float: left;
+	width: 120px;
+	height:50px;
+	font-size:18px;
+	font-family: 'Roboto', sans-serif;
+	display: block;
+	line-height:50px;
+	border: none;
+	background: none;
+	color: inherit;
+	vertical-align: middle;
+	position: relative;
+	-webkit-backface-visibility: hidden;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.profile_order_form-button button:focus {
+	outline: none;
+}
+
+.profile_order_form-button .hs_btn_hover {
+	border-radius: 50px;
+	color: #fff;
+	-webkit-transition: background-color 0.3s, color 0.3s;
+	transition: background-color 0.3s, color 0.3s;
+	margin: 0;
+}
+
+.profile_order_form-button .hs_btn_hover::before {
+	content: '';
+	position: absolute;
+	top: -20px;
+	left: -20px;
+	bottom: -20px;
+	right: -20px;
+	background: inherit;
+	border-radius: 50px;
+	z-index: -1;
+	opacity: 0.4;
+	-webkit-transform: scale3d(0.8, 0.5, 1);
+	transform: scale3d(0.8, 0.5, 1);
+}
+
+.profile_order_form-button .hs_btn_hover:hover {
+	-webkit-transition: background-color 0.1s 0.3s, color 0.1s 0.3s;
+	transition: background-color 0.1s 0.3s, color 0.1s 0.3s;
+	color: #ECEFF1;
+	background-color: #4f2b7f;
+	-webkit-animation: anim-moema-1 0.3s forwards;
+	animation: anim-moema-1 0.3s forwards;
+}
+
+.profile_order_form-button .hs_btn_hover:hover::before {
+	-webkit-animation: anim-moema-2 0.3s 0.3s forwards;
+	animation: anim-moema-2 0.3s 0.3s forwards;
+}
+
+
+.profile_order_form-button button,
+.profile_order_form-button .hs_btn_hover,
+.profile_order_form-button .hs_btn_hover:hover{
+	background: #f06e9c;
+}
+
+@media screen and (max-width: 992px){
+	.profile_order_form_appointment-wrapper {
+		max-width: 380px;
+	}
+}
+
+@media screen and (max-width: 610px){
+	
+	.profile_header_inner-wrapper{
+		-webkit-box-orient: vertical;
+    	-webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    	-webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+	}
+
+	.profile_header_info {
+		width: 100%;
+	}
+
+	.profile_header_info_title-wrapper {
+		-webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+	}
+
+	.profile_header_info_subtitle {
+		text-align: center;
+	}
+
+}
+
+@media screen and (max-width: 440px){
+
+	.profile_header_info_services-wrapper {
+		flex-direction: column;
+	}
+
+	.profile_header_info_subtitle {
+		text-align: left;
+	}
+}
+
+@media screen and (max-width: 360px){
+
+	.profile_header_info_title {
+		width: 150px;
+	}
+
+	.profile_header_info_title-status {
+		width: 65px;
+	}
+}
+
+/*-Submit area end-*/
+
+
+/*-Submit section end-*/
+
+/*--Order now sidebar form end--*/
 
 /*---Profile end---*/
 
