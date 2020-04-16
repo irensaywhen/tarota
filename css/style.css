@@ -8904,6 +8904,30 @@ footer{
 
 /*--Home page end--*/
 
+/*--Home page live start--*/
+
+.live {
+	clear: both;
+	padding: 80px 0;
+}
+
+.live_title {
+	font-size: 36px;
+	padding: 20px 0 15px 0;
+	color: #fff;
+	background: #986cd4;
+	margin-bottom: 40px;
+}
+
+.Embed-video-container {
+	border: 1px dashed rgba(255, 255, 255, 0.75);
+}
+
+.live_video {
+	margin: 0 auto !important;
+}
+/*--Home page live end--*/
+
 
 /*---Home pages end---*/
 
