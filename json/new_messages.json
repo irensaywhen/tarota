@@ -1,0 +1,12 @@
+[
+    {
+        "nickname"      : "New User",
+        "message"       : "This is new message",
+        "is_moderator"  : "False"
+    },
+    {
+        "nickname"      : "User1",
+        "message"       : "This is new message from user 1",
+        "is_moderator"  : "True"
+    }
+]
