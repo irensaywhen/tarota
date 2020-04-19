@@ -7236,7 +7236,7 @@ footer{
 	min-height: 100px;
 	background: #4f2b7f;
 	border: 1px dashed #565656;
-	color: #fff;
+	color: #fff !important;
 	margin-bottom: 20px;
 }
 
@@ -7248,7 +7248,7 @@ footer{
 	width: 100%;
 	background: #4f2b7f;
 	border: 1px dashed #565656;
-	color: #fff;
+	color: #fff !important;
 	padding: 5px;
 }
 
@@ -7297,6 +7297,7 @@ footer{
 	background-clip: content-box;
 	padding: 1px;
 }
+
 
 .account_form_checkbox-terms-wrapper {
 	display: -webkit-box;
@@ -7522,7 +7523,7 @@ footer{
 .profile_header_medium_title {
 	font-size: 18px;
 	color: #fff;
-	padding: 10px 0 20px 0;
+	padding: 35px 0 20px 0;
 }
 
 .profile_header_medium_contacts {
@@ -7569,7 +7570,7 @@ footer{
 /*--Profile description start--*/
 
 .profile_description {
-	padding: 17px 0;
+	padding: 35px 0;
 }
 
 .profile_description_title {
@@ -7741,7 +7742,7 @@ footer{
 	top: 5px; 
 	width: 8px;
 	height: 8px;
-	left: 4.5px;
+	left: 4.34px;
 	border-radius: 4px;
 	background: #0f0122;
 	opacity: 0;
@@ -7926,6 +7927,8 @@ footer{
 	}
 }
 
+
+
 @media screen and (max-width: 610px){
 	
 	.profile_header_inner-wrapper{
@@ -7952,6 +7955,10 @@ footer{
 		text-align: center;
 	}
 
+	.profile_header_image-wrapper {
+		width: 50%;
+	}
+
 }
 
 @media screen and (max-width: 440px){
@@ -7963,16 +7970,34 @@ footer{
 	.profile_header_info_subtitle {
 		text-align: left;
 	}
+
+	.profile_header_image-wrapper {
+		width: 70%;
+	}
 }
 
 @media screen and (max-width: 360px){
 
+	.profile_header_info {
+		padding-left: 0;
+	}
+
+	.profile_header_info_title-wrapper {
+		width: 100%;
+	}
+
 	.profile_header_info_title {
-		width: 150px;
+		display: inline-block;
+		padding-right: 5px;
+		font-size: 30px;
 	}
 
 	.profile_header_info_title-status {
 		width: 65px;
+	}
+
+	.profile_header_image-wrapper {
+		width: 85%;
 	}
 }
 
