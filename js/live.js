@@ -18,6 +18,9 @@
 
         //Set up how othen the request about new messages will be send to the server in ms
         throttle = 300;
+
+        //Set up error message
+        errorMessage = 'Something went wrong';
     
         constructor() {
     
@@ -26,9 +29,6 @@
             this.$liveChatMessageForm = $('.live_chat_message-form');
             this.$liveChatMessageInput = $('.live_chat_message-input');
             this.$liveChatError = $('.live_chat_error');
-    
-            //Set up error message
-            this.errorMessage = 'Something went wrong';
     
             //Binding the context
             this.setUpRecentMessages = this.setUpRecentMessages.bind(this);
