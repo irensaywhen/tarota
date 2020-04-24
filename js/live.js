@@ -41,7 +41,7 @@
             this.$liveChatMessageForm.submit(this.sendMessage);
     
             //Set up periodical requests to the server
-            //let timerId = setInterval(this.getNewMessages, this.throttle);
+            let timerId = setInterval(this.getNewMessages, this.throttle);
     
             this.setUpRecentMessages();
         }
