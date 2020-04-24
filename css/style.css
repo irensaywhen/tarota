@@ -1860,57 +1860,7 @@ width:100%;
     left: 5px;
 	z-index:1;
 }
-.hs_sign_left_tabs_border_wrapper1 span{
-	position:absolute;
-	top: 45px;
-	width:10px;
-	height:10px;
-	background:#565656;
-	-webkit-border-radius: 100%;
-    -moz-border-radius: 100%;
-    border-radius: 100%;
-	    -webkit-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    -ms-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    transition: all 0.5s;
-}
-.hs_sign_left_tabs_border_wrapper1 span:after{
-	content: '';
-    border: 1px dashed #565656;
-    width: 228px;
-    position: absolute;
-    left: 2px;
-	 -moz-transform:rotate(201deg);
-    -webkit-transform:rotate(201deg);
-    -o-transform:rotate(201deg);
-    -ms-transform:rotate(201deg);
-    transform: rotate(201deg);
-    top: 47px;
-	    -webkit-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    -ms-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    transition: all 0.5s;
-}
-.hs_sign_left_tabs_border_wrapper1 span:before{
-	content: '';
-    border: 1px dashed #565656;
-    width: 25px;
-    position: absolute;
-	 -moz-transform:rotate(231deg);
-    -webkit-transform:rotate(231deg);
-    -o-transform:rotate(231deg);
-    -ms-transform:rotate(231deg);
-    transform: rotate(231deg);
-    top: 99px;
-    left: 219px;
-	    -webkit-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    -ms-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    transition: all 0.5s;
-}
+
 .hs_sign_left_tabs_border_wrapper2 span{
 	position: absolute;
     top: 72px;
@@ -2358,7 +2308,7 @@ width:100%;
     -moz-transition: all 0.5s;
     transition: all 0.5s;
 }
-.hs_sign_left_tabs_border_wrapper1:hover span,
+
 .hs_sign_left_tabs_border_wrapper2:hover span,
 .hs_sign_left_tabs_border_wrapper3:hover span,
 .hs_sign_left_tabs_border_wrapper4:hover span,
@@ -2377,7 +2327,7 @@ width:100%;
     -moz-transition: all 0.5s;
     transition: all 0.5s;
 }
-.hs_sign_left_tabs_border_wrapper1:hover span:before, .hs_sign_left_tabs_border_wrapper1:hover span:after,.hs_sign_left_tabs_border_wrapper2:hover span:before, .hs_sign_left_tabs_border_wrapper2:hover span:after,.hs_sign_left_tabs_border_wrapper3:hover span:before, .hs_sign_left_tabs_border_wrapper3:hover span:after,.hs_sign_left_tabs_border_wrapper4:hover span:before, .hs_sign_left_tabs_border_wrapper4:hover span:after,.hs_sign_left_tabs_border_wrapper5:hover span:before, .hs_sign_left_tabs_border_wrapper5:hover span:after,.hs_sign_left_tabs_border_wrapper6:hover span:before, .hs_sign_left_tabs_border_wrapper6:hover span:after,.hs_sign_right_tabs_border_wrapper1:hover span:before, .hs_sign_right_tabs_border_wrapper1:hover span:after,.hs_sign_right_tabs_border_wrapper2:hover span:before, .hs_sign_right_tabs_border_wrapper2:hover span:after,.hs_sign_right_tabs_border_wrapper3:hover span:before, .hs_sign_right_tabs_border_wrapper3:hover span:after,.hs_sign_right_tabs_border_wrapper4:hover span:before, .hs_sign_right_tabs_border_wrapper4:hover span:after,.hs_sign_right_tabs_border_wrapper5:hover span:before, .hs_sign_right_tabs_border_wrapper5:hover span:after,.hs_sign_right_tabs_border_wrapper6:hover span:before, .hs_sign_right_tabs_border_wrapper6:hover span:after{
+.hs_sign_left_tabs_border_wrapper2:hover span:before, .hs_sign_left_tabs_border_wrapper2:hover span:after,.hs_sign_left_tabs_border_wrapper3:hover span:before, .hs_sign_left_tabs_border_wrapper3:hover span:after,.hs_sign_left_tabs_border_wrapper4:hover span:before, .hs_sign_left_tabs_border_wrapper4:hover span:after,.hs_sign_left_tabs_border_wrapper5:hover span:before, .hs_sign_left_tabs_border_wrapper5:hover span:after,.hs_sign_left_tabs_border_wrapper6:hover span:before, .hs_sign_left_tabs_border_wrapper6:hover span:after,.hs_sign_right_tabs_border_wrapper1:hover span:before, .hs_sign_right_tabs_border_wrapper1:hover span:after,.hs_sign_right_tabs_border_wrapper2:hover span:before, .hs_sign_right_tabs_border_wrapper2:hover span:after,.hs_sign_right_tabs_border_wrapper3:hover span:before, .hs_sign_right_tabs_border_wrapper3:hover span:after,.hs_sign_right_tabs_border_wrapper4:hover span:before, .hs_sign_right_tabs_border_wrapper4:hover span:after,.hs_sign_right_tabs_border_wrapper5:hover span:before, .hs_sign_right_tabs_border_wrapper5:hover span:after,.hs_sign_right_tabs_border_wrapper6:hover span:before, .hs_sign_right_tabs_border_wrapper6:hover span:after{
 	border:1px dashed #7b5aa7;
 	    -webkit-transition: all 0.5s;
     -o-transition: all 0.5s;
@@ -8565,7 +8515,7 @@ footer{
 .video-chat_sidebar_timer {
 	display: block;
 	width: 100%;
-	font-size: 25px;
+	font-size: 28px;
 	margin: 25px auto;
 	color: #fff;
 }
@@ -8596,9 +8546,205 @@ footer{
 	border-radius: 3px;
 }
 
+/*animation styles for timer start*/
+
+@-webkit-keyframes heartbeat {
+	0% {
+	  -webkit-transform: scale3d(1, 1, 1);
+			transform: scale3d(1, 1, 1);
+	}
+  
+	50% {
+		-webkit-transform: scale3d(0.9, 0.9, 1);
+		transform: scale3d(0.9, 0.9, 1);
+	}
+  
+	100% {
+	  -webkit-transform: scale3d(1, 1, 1);
+			transform: scale3d(1, 1, 1);
+	}
+  }
+  @keyframes heartbeat {
+	0% {
+	  -webkit-transform: scale3d(1, 1, 1);
+			transform: scale3d(1, 1, 1);
+	}
+  
+	50% {
+	  -webkit-transform: scale3d(0.9, 0.9, 1);
+			transform: scale3d(0.9, 0.9, 1);
+	}
+  
+	100% {
+	  -webkit-transform: scale3d(1, 1, 1);
+			transform: scale3d(1, 1, 1);
+	}
+  }
+
+.heartbeat-animation {
+	animation: heartbeat 2s linear infinite;
+}
+
+
+
+/*animation styles for timer end*/
+
 /*-Video chat timer and form end-*/
 
 /*--Video chat step 1 end--*/
+
+/*--Video chat step 2 start--*/
+
+
+.video-chat_chat {
+	width: 100%;
+	max-width: 100%;
+}
+
+.video-chat_sidebar_leave button {
+	width: 100%;
+	max-width: 310px;
+	margin: 30px auto;
+	height:50px;
+	font-size:18px;
+	font-family: 'Roboto', sans-serif;
+	display: block;
+	line-height:50px;
+	border: none;
+	background: none;
+	color: inherit;
+	vertical-align: middle;
+	position: relative;
+	z-index: 1;
+	-webkit-backface-visibility: hidden;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.video-chat_sidebar_leave button:focus {
+	outline: none;
+}
+
+.video-chat_sidebar_leave .hs_btn_hover {
+	border-radius: 50px;
+	background: #4f2b7f;
+	color: #fff;
+	-webkit-transition: background-color 0.3s, color 0.3s;
+	transition: background-color 0.3s, color 0.3s;
+}
+
+.video-chat_sidebar_leave .hs_btn_hover::before {
+	content: '';
+	position: absolute;
+	top: -20px;
+	left: -20px;
+	bottom: -20px;
+	right: -20px;
+	background: inherit;
+	border-radius: 50px;
+	z-index: -1;
+	opacity: 0.4;
+	-webkit-transform: scale3d(0.8, 0.5, 1);
+	transform: scale3d(0.8, 0.5, 1);
+}
+
+.video-chat_sidebar_leave .hs_btn_hover:hover  {
+	-webkit-transition: background-color 0.1s 0.3s, color 0.1s 0.3s;
+	transition: background-color 0.1s 0.3s, color 0.1s 0.3s;
+	color: #ECEFF1;
+	background-color: #4f2b7f;
+	-webkit-animation: anim-moema-1 0.3s forwards;
+	animation: anim-moema-1 0.3s forwards;
+}
+
+.video-chat_sidebar_leave .hs_btn_hover:hover::before {
+	-webkit-animation: anim-moema-2 0.3s 0.3s forwards;
+	animation: anim-moema-2 0.3s 0.3s forwards;
+}
+
+/*-Activate your camera popup start-*/
+
+.camera-popup_title {
+	color: #fff;
+}
+
+.camera-popup_image-wrapper {
+	width: 100%;
+	padding: 10px 0 20px 0;
+}
+
+.camera-popup_image {
+	display: inline-block;
+	margin: 0 auto;
+	max-width: 100%;
+	width: 100%;
+}
+
+.camera-popup_button {
+	width: 152px;
+	margin: 0 auto;
+}
+
+.camera-popup_button button {
+	width: 150px;
+	height:50px;
+	font-size:18px;
+	font-family: 'Roboto', sans-serif;
+	display: block;
+	line-height:50px;
+	border: none;
+	background: none;
+	color: inherit;
+	vertical-align: middle;
+	position: relative;
+	z-index: 1;
+	-webkit-backface-visibility: hidden;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.camera-popup_button button:focus {
+	outline: none;
+}
+
+.camera-popup_button .hs_btn_hover {
+	border-radius: 50px;
+	background: #f06e9c;
+	color: #fff;
+	-webkit-transition: background-color 0.3s, color 0.3s;
+	transition: background-color 0.3s, color 0.3s;
+}
+
+.camera-popup_button .hs_btn_hover::before {
+	content: '';
+	position: absolute;
+	top: -20px;
+	left: -20px;
+	bottom: -20px;
+	right: -20px;
+	background: inherit;
+	border-radius: 50px;
+	z-index: -1;
+	opacity: 0.4;
+	-webkit-transform: scale3d(0.8, 0.5, 1);
+	transform: scale3d(0.8, 0.5, 1);
+}
+
+.camera-popup_button .hs_btn_hover:hover  {
+	-webkit-transition: background-color 0.1s 0.3s, color 0.1s 0.3s;
+	transition: background-color 0.1s 0.3s, color 0.1s 0.3s;
+	color: #ECEFF1;
+	background-color: #f06e9c;
+	-webkit-animation: anim-moema-1 0.3s forwards;
+	animation: anim-moema-1 0.3s forwards;
+}
+
+.camera-popup_button .hs_btn_hover:hover::before {
+	-webkit-animation: anim-moema-2 0.3s 0.3s forwards;
+	animation: anim-moema-2 0.3s 0.3s forwards;
+}
+
+/*-Activate your camera popup end-*/
+
+/*--Video chat step 2 end--*/
 
 /*--Video chat ended start--*/
 
@@ -8703,6 +8849,7 @@ footer{
 	.video-chat_sidebar_title {
 		max-width: 310px;
 		margin: 0 auto;
+		text-align: center !important;
 	}
 
 	.video-chat_sidebar_person {

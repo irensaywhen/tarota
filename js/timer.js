@@ -12,6 +12,15 @@ class Timer {
 
     errorMessage = 'Something went wrong';
 
+    //Whether timer is animated or red
+    isAnimated = false;
+    isRed = false;
+
+    //Initially passed time
+    hours = null;
+    minutes = null;
+    seconds = null;
+
     constructor(hours=0, minutes=15, seconds=0){
 
         //Cache
@@ -27,8 +36,14 @@ class Timer {
         this.addTime = this.addTime.bind(this);
         this.updateTimer = this.updateTimer.bind(this);
 
+        //Save passed time
+
+        this.hours = hours;
+        this.minutes = minutes;
+        this.seconds = seconds;
+
         //Initialize the timer
-        this.setUpTimer(hours, minutes, seconds);
+        this.showTime(hours, minutes, seconds);
     }
 
     /**
@@ -54,6 +69,7 @@ class Timer {
      */
     startTimer(){
 
+        this.setUpTimer(this.hours, this.minutes, this.seconds);
         this.timerIntervalId = setInterval(this.updateTimer, 1000);
     }
 
@@ -69,12 +85,34 @@ class Timer {
         let distance = this.countDownTime - now + 2;
 
         // Time calculations for days, hours, minutes and seconds
-        /*let overallHours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        let overallMinutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        let overallSeconds = Math.floor((distance % (1000 * 60)) / 1000);*/
         let overallHours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
         let overallMinutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
         let overallSeconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        //Check whether animation need to be added
+
+        if (!(this.isAnimated)){
+            
+            if (((overallMinutes === 5) && (overallSeconds === 0))||(overallMinutes < 5)){
+
+                this.isAnimated = true;
+                this.$timer.addClass('heartbeat-animation');
+            }
+        }
+
+        //Check whether timer should be red
+
+        if(!(this.isRed)){
+
+            if (((overallMinutes === 3) && (overallSeconds === 0))||(overallMinutes < 3)){
+
+                this.isRed = true;
+                this.$timer.css({
+                    color           : 'rgb(255, 58, 58)',
+                    'font-weight'   : 'bold'
+                });
+            }
+        }
 
         // Display the result in the element with id="demo"
         this.showTime(overallHours, overallMinutes, overallSeconds);
@@ -270,7 +308,7 @@ class Form {
 
         if (!(this.timer.timerIntervalId)){
 
-            this.timer.addTime(minutes, 2.5);
+            this.timer.addTime(minutes, 2.8);
         } else {
             this.timer.addTime(minutes);
         }
@@ -284,5 +322,5 @@ class Form {
     }
 }
 
-let timer = new Timer();
+let timer = new Timer(0, 15, 0);
 let form = new Form(timer);
