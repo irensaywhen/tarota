@@ -32,24 +32,7 @@
 	.header-phone p{
 		font-size:12px;
 	}
-	.hs_cycle_main_wrapper{
-		margin-left:95px;
-	}
-	.hs_sign_left_tabs_border_wrapper1 span:after {
-		width: 192px;
-		left: 2px;
-		top: 40px;
-	}
-	.hs_sign_left_tabs_border_wrapper1 span:before {
-		width: 31px;
-		 -moz-transform:rotate(246deg);
-		-webkit-transform:rotate(246deg);
-		-o-transform:rotate(246deg);
-		-ms-transform:rotate(246deg);
-		transform: rotate(246deg);
-		top: 91px;
-		left: 179px;
-	}
+
 	.hs_sign_left_tabs_border_wrapper4 span:after {
 		width: 141px;
 		left: 6px;
@@ -162,7 +145,7 @@
 }
 
 @media (max-width: 991px){
-	.hs_sign_left_tabs_border_wrapper1 span,.hs_sign_left_tabs_border_wrapper2 span,.hs_sign_left_tabs_border_wrapper3 span,.hs_sign_left_tabs_border_wrapper4 span,.hs_sign_left_tabs_border_wrapper5 span,.hs_sign_left_tabs_border_wrapper6 span,
+	.hs_sign_left_tabs_border_wrapper2 span,.hs_sign_left_tabs_border_wrapper3 span,.hs_sign_left_tabs_border_wrapper4 span,.hs_sign_left_tabs_border_wrapper5 span,.hs_sign_left_tabs_border_wrapper6 span,
 	.hs_sign_right_tabs_border_wrapper1 span,.hs_sign_right_tabs_border_wrapper2 span,.hs_sign_right_tabs_border_wrapper3 span,.hs_sign_right_tabs_border_wrapper4 span,.hs_sign_right_tabs_border_wrapper5 span,.hs_sign_right_tabs_border_wrapper6 span{
 		display:none;
 	}

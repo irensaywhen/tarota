@@ -8836,6 +8836,19 @@ footer{
 
 /*--Video chat ended end--*/
 
+/*--Chat start--*/
+
+.chat-page_chat {
+	width: 100%;
+	max-width: 100%;
+}
+
+.chat-page_chat-messages {
+	height: 500px;
+}
+
+/*--Chat end--*/
+
 /*--Video chat media queries start--*/
 
 @media screen and (max-width: 1200px){
