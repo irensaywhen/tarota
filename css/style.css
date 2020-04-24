@@ -8426,7 +8426,7 @@ footer{
 	max-width: 100%;
 	border-radius: 20px;
 	margin: 30px auto;
-	padding: 20px 7px;
+	padding: 40px 20px;
 	background: #986cd4;
 }
 
@@ -8436,17 +8436,16 @@ footer{
 }
 
 .video-chat_info_buttons {
-	display: flex;
-	justify-content: space-between;
+	display: -webkit-box;
+    	display: -ms-flexbox;
+    	display: flex;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
 }
 
-.chat-ended_info_button {
-	display: flex;
-	justify-content: center;
-}
 
-.chat-ended_info_button a {
-	width: 220px;
+.video-chat_info_button a {
+	width: 150px;
 	height:50px;
 	font-size:18px;
 	font-family: 'Roboto', sans-serif;
@@ -8462,18 +8461,18 @@ footer{
 	-moz-osx-font-smoothing: grayscale;
 }
 
-.chat-ended_info_button a:focus {
+.video-chat_info_button a:focus {
 	outline: none;
 }
 
-.chat-ended_info_button .hs_btn_hover {
+.video-chat_info_button .hs_btn_hover {
 	border-radius: 50px;
 	background: #4f2b7f;
 	color: #fff;
 	-webkit-transition: background-color 0.3s, color 0.3s;
 	transition: background-color 0.3s, color 0.3s;
 }
-.chat-ended_info_button .hs_btn_hover::before {
+.video-chat_info_button .hs_btn_hover::before {
 	content: '';
 	position: absolute;
 	top: -20px;
@@ -8487,7 +8486,7 @@ footer{
 	-webkit-transform: scale3d(0.8, 0.5, 1);
 	transform: scale3d(0.8, 0.5, 1);
 }
-.chat-ended_info_button .hs_btn_hover:hover  {
+.video-chat_info_button .hs_btn_hover:hover  {
 	-webkit-transition: background-color 0.1s 0.3s, color 0.1s 0.3s;
 	transition: background-color 0.1s 0.3s, color 0.1s 0.3s;
 	color: #ECEFF1;
@@ -8495,9 +8494,14 @@ footer{
 	-webkit-animation: anim-moema-1 0.3s forwards;
 	animation: anim-moema-1 0.3s forwards;
 }
-.chat-ended_info_button .hs_btn_hover:hover::before {
+.video-chat_info_button .hs_btn_hover:hover::before {
 	-webkit-animation: anim-moema-2 0.3s 0.3s forwards;
 	animation: anim-moema-2 0.3s 0.3s forwards;
+}
+
+.video-chat_info_button-yes .hs_btn_hover, 
+.video-chat_info_button-yes .hs_btn_hover:hover{
+	background: #f06e9c;
 }
 
 /*-Video chat main area end-*/
@@ -8685,6 +8689,50 @@ footer{
 }
 
 /*--Video chat ended end--*/
+
+/*--Video chat media queries start--*/
+
+@media screen and (max-width: 1200px){
+
+	.video-chat_sidebar_person_title {
+		text-align: right !important;
+		width: 90%;
+		max-width: 310px;
+	}
+
+	.video-chat_sidebar_title {
+		max-width: 310px;
+		margin: 0 auto;
+	}
+
+	.video-chat_sidebar_person {
+		max-width: 310px;
+	}
+
+	.video-chat_sidebar_timer-container {
+		max-width: 310px;
+		margin: 0 auto;
+	}
+}
+
+@media screen and (max-width: 400px){
+
+	.video-chat_info_buttons {
+		-webkit-box-orient: vertical;
+    	-webkit-box-direction: reverse;
+    	    -ms-flex-direction: column-reverse;
+    	        flex-direction: column-reverse;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+	}
+
+	.video-chat_info_button-yes {
+		margin-bottom: 10px;
+	}
+}
+
+/*--Video chat media queries end--*/
 
 /*---Video chat pages end---*/
 
