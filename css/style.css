@@ -7677,6 +7677,11 @@ footer{
 	width: 100%;
 	color: #000;
 	padding: 6px 20px;
+	background: #fff !important;
+}
+
+.profile_order_form_service-option {
+	background: #fff !important;
 }
 
 #tarota {
@@ -7821,7 +7826,7 @@ footer{
 
 /*-Submit area start-*/
 
-.profile_order_form-submit {
+.sidebar-form-submit {
 	width: 100%;
 	background: #986cd4;
 	color: #fff;
@@ -7838,11 +7843,11 @@ footer{
 	        align-items: center;
 }
 
-.profile_order_form_price-label {
+.sidebar-form-submit_price-label {
 	font-size: 18px;
 }
 
-.profile_order_form_price-value {
+.sidebar-form-submit_price-value {
 	text-decoration: underline;
 }
 
@@ -7851,12 +7856,12 @@ footer{
 	font-size: 16px;
 }
 
-.profile_order_form-submit::before,
-.profile_order_form-submit::after {
+.sidebar-form-submit::before,
+.sidebar-form-submit::after {
 	display: none;
 }
 
-.profile_order_form-button button{
+.sidebar-form-submit_button button{
 	float: left;
 	width: 120px;
 	height:50px;
@@ -7873,11 +7878,11 @@ footer{
 	-moz-osx-font-smoothing: grayscale;
 }
 
-.profile_order_form-button button:focus {
+.sidebar-form-submit_button button:focus {
 	outline: none;
 }
 
-.profile_order_form-button .hs_btn_hover {
+.sidebar-form-submit_button .hs_btn_hover {
 	border-radius: 50px;
 	color: #fff;
 	-webkit-transition: background-color 0.3s, color 0.3s;
@@ -7885,7 +7890,7 @@ footer{
 	margin: 0;
 }
 
-.profile_order_form-button .hs_btn_hover::before {
+.sidebar-form-submit_button .hs_btn_hover::before {
 	content: '';
 	position: absolute;
 	top: -20px;
@@ -7900,7 +7905,7 @@ footer{
 	transform: scale3d(0.8, 0.5, 1);
 }
 
-.profile_order_form-button .hs_btn_hover:hover {
+.sidebar-form-submit_button .hs_btn_hover:hover {
 	-webkit-transition: background-color 0.1s 0.3s, color 0.1s 0.3s;
 	transition: background-color 0.1s 0.3s, color 0.1s 0.3s;
 	color: #ECEFF1;
@@ -7909,15 +7914,15 @@ footer{
 	animation: anim-moema-1 0.3s forwards;
 }
 
-.profile_order_form-button .hs_btn_hover:hover::before {
+.sidebar-form-submit_button .hs_btn_hover:hover::before {
 	-webkit-animation: anim-moema-2 0.3s 0.3s forwards;
 	animation: anim-moema-2 0.3s 0.3s forwards;
 }
 
 
-.profile_order_form-button button,
-.profile_order_form-button .hs_btn_hover,
-.profile_order_form-button .hs_btn_hover:hover{
+.sidebar-form-submit_button button,
+.sidebar-form-submit_button .hs_btn_hover,
+.sidebar-form-submit_button .hs_btn_hover:hover{
 	background: #f06e9c;
 }
 
@@ -8391,8 +8396,297 @@ footer{
 
 /*--Home page live end--*/
 
-
 /*---Home pages end---*/
+
+
+/*---Video chat pages start---*/
+
+/*--Video chat step 1 start--*/
+
+/*-Video chat main area start-*/
+
+.video-chat_title {
+
+}
+
+.video-chat {
+	clear: both;
+	border-bottom: 1px dashed rgba(255, 255, 255, 0.75);
+	padding-bottom: 60px;
+}
+
+.video-chat_title {
+	color: #fff;
+	font-size: 36px;
+	padding-bottom: 50px;
+}
+
+.video-chat_info {
+	width: 400px;
+	max-width: 100%;
+	border-radius: 20px;
+	margin: 30px auto;
+	padding: 20px 7px;
+	background: #986cd4;
+}
+
+.video-chat_info_title {
+	color: #fff;
+	padding-bottom: 30px;
+}
+
+.video-chat_info_buttons {
+	display: flex;
+	justify-content: space-between;
+}
+
+.chat-ended_info_button {
+	display: flex;
+	justify-content: center;
+}
+
+.chat-ended_info_button a {
+	width: 220px;
+	height:50px;
+	font-size:18px;
+	font-family: 'Roboto', sans-serif;
+	display: block;
+	line-height:50px;
+	border: none;
+	background: none;
+	color: inherit;
+	vertical-align: middle;
+	position: relative;
+	z-index: 1;
+	-webkit-backface-visibility: hidden;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.chat-ended_info_button a:focus {
+	outline: none;
+}
+
+.chat-ended_info_button .hs_btn_hover {
+	border-radius: 50px;
+	background: #4f2b7f;
+	color: #fff;
+	-webkit-transition: background-color 0.3s, color 0.3s;
+	transition: background-color 0.3s, color 0.3s;
+}
+.chat-ended_info_button .hs_btn_hover::before {
+	content: '';
+	position: absolute;
+	top: -20px;
+	left: -20px;
+	bottom: -20px;
+	right: -20px;
+	background: inherit;
+	border-radius: 50px;
+	z-index: -1;
+	opacity: 0.4;
+	-webkit-transform: scale3d(0.8, 0.5, 1);
+	transform: scale3d(0.8, 0.5, 1);
+}
+.chat-ended_info_button .hs_btn_hover:hover  {
+	-webkit-transition: background-color 0.1s 0.3s, color 0.1s 0.3s;
+	transition: background-color 0.1s 0.3s, color 0.1s 0.3s;
+	color: #ECEFF1;
+	background-color: #4f2b7f;
+	-webkit-animation: anim-moema-1 0.3s forwards;
+	animation: anim-moema-1 0.3s forwards;
+}
+.chat-ended_info_button .hs_btn_hover:hover::before {
+	-webkit-animation: anim-moema-2 0.3s 0.3s forwards;
+	animation: anim-moema-2 0.3s 0.3s forwards;
+}
+
+/*-Video chat main area end-*/
+
+/*-Video chat sidebar start-*/
+
+.video-chat_sidebar_title {
+	background: #4f2b7f;
+	color: #fff;
+	padding: 15px 10px;
+	font-size: 20px;
+}
+
+.video-chat_sidebar_person {
+	margin: 20px auto;
+	background: #986cd4;
+	position: relative;
+	height: 100px;
+	border-radius: 100px;
+	border: 1px dashed rgba(255, 255, 255, 0.75);
+}
+
+.video-chat_sidebar_person_title {
+	display: block;
+	width: 110%;
+	height: 100px;
+	line-height: 100px;
+	font-size: 28px;
+	font-weight: 400;
+	color: #fff;
+}
+
+.video-chat_sidebar_person_image-wrapper {
+	position: absolute;
+	left: 0;
+	width: 100px;
+	height: 100px;
+	border-radius: 100%;
+}
+
+/*-Video chat sidebar end-*/
+
+/*-Video chat timer and form start-*/
+
+.video-chat_sidebar_timer-container {
+	border: 1px dashed rgba(255, 255, 255, 0.75);
+	background: #4f2b7f;
+	padding-top: 20px;
+}
+
+.video-chat_sidebar_timer-wrapper {
+	margin: 10px 8px;
+	padding: 10px 0 20px 0;
+	border-bottom: 1px dashed rgba(255, 255, 255, 0.75);
+}
+
+.video-chat_sidebar_timer_title {
+	color: #fff;
+}
+
+.video-chat_sidebar_timer {
+	display: block;
+	width: 100%;
+	font-size: 25px;
+	margin: 25px auto;
+	color: #fff;
+}
+
+.video-chat_timer-form_input-wrapper {
+	margin: 18px 12px;
+	display: -webkit-box;
+    	display: -ms-flexbox;
+    	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	padding-bottom: 30px;
+}
+
+.video-chat_timer-form-label {
+	font-size: 20px;
+	width: 100%;
+	color: #fff;
+	padding-bottom: 15px;
+}
+
+.video-chat_timer-form_select {
+	background: #986cd4;
+	padding: 8px 0px 5px 6px;
+	border-radius: 3px;
+}
+
+/*-Video chat timer and form end-*/
+
+/*--Video chat step 1 end--*/
+
+/*--Video chat ended start--*/
+
+.chat-ended {
+	clear: both;
+	border-bottom: 1px dashed rgba(255, 255, 255, 0.75);
+	padding-bottom: 60px;
+}
+
+.chat-ended_title {
+	color: #fff;
+	font-size: 36px;
+	padding-bottom: 50px;
+}
+
+.chat-ended_info {
+	width: 400px;
+	max-width: 100%;
+	border-radius: 20px;
+	margin: 30px auto;
+	padding: 20px 7px;
+	background: #986cd4;
+}
+
+.chat-ended_info_title {
+	color: #fff;
+	padding-bottom: 30px;
+}
+
+.chat-ended_info_button {
+	display: flex;
+	justify-content: center;
+}
+
+.chat-ended_info_button a {
+	width: 220px;
+	height:50px;
+	font-size:18px;
+	font-family: 'Roboto', sans-serif;
+	display: block;
+	line-height:50px;
+	border: none;
+	background: none;
+	color: inherit;
+	vertical-align: middle;
+	position: relative;
+	z-index: 1;
+	-webkit-backface-visibility: hidden;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.chat-ended_info_button a:focus {
+	outline: none;
+}
+
+.chat-ended_info_button .hs_btn_hover {
+	border-radius: 50px;
+	background: #4f2b7f;
+	color: #fff;
+	-webkit-transition: background-color 0.3s, color 0.3s;
+	transition: background-color 0.3s, color 0.3s;
+}
+.chat-ended_info_button .hs_btn_hover::before {
+	content: '';
+	position: absolute;
+	top: -20px;
+	left: -20px;
+	bottom: -20px;
+	right: -20px;
+	background: inherit;
+	border-radius: 50px;
+	z-index: -1;
+	opacity: 0.4;
+	-webkit-transform: scale3d(0.8, 0.5, 1);
+	transform: scale3d(0.8, 0.5, 1);
+}
+.chat-ended_info_button .hs_btn_hover:hover  {
+	-webkit-transition: background-color 0.1s 0.3s, color 0.1s 0.3s;
+	transition: background-color 0.1s 0.3s, color 0.1s 0.3s;
+	color: #ECEFF1;
+	background-color: #4f2b7f;
+	-webkit-animation: anim-moema-1 0.3s forwards;
+	animation: anim-moema-1 0.3s forwards;
+}
+.chat-ended_info_button .hs_btn_hover:hover::before {
+	-webkit-animation: anim-moema-2 0.3s 0.3s forwards;
+	animation: anim-moema-2 0.3s 0.3s forwards;
+}
+
+/*--Video chat ended end--*/
+
+/*---Video chat pages end---*/
 
 
 
