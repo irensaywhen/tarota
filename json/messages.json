@@ -2,1001 +2,1209 @@
     {
         "nickname"      : "User1",
         "message"       : "The oldest message",
-        "is_moderator"  : "False"
+        "is_moderator"  : false,
+        "timestamp"     : 1
+
     },
     {
         "nickname"      : "User2",
         "message"       : "Hello!",
-        "is_moderator"  : "False"
+        "is_moderator"  : false,
+        "timestamp"     :  2
     },
     {
         "nickname"      : "User3",
         "message"       : "Hello!",
-        "is_moderator"  : "False"
+        "is_moderator"  : false,
+        "timestamp"     :  3
     },
     {
         "nickname"      : "User4",
         "message"       : "Hello!",
-        "is_moderator"  : "False"
+        "is_moderator"  : false,
+        "timestamp"     :  4
     },
     {
         "nickname"      : "User5",
         "message"       : "Hello!",
-        "is_moderator"  : "False"
+        "is_moderator"  : false,
+        "timestamp"     :  5
     },
     {
         "nickname"      : "User6",
         "message"       : "Hello!",
-        "is_moderator"  : "False"
+        "is_moderator"  : false,
+        "timestamp"     :  5
     },
     {
         "nickname"      : "User7",
         "message"       : "Hello!",
-        "is_moderator"  : "False"
+        "is_moderator"  : false,
+        "timestamp"     :  6
     },
     {
         "nickname"      : "User1",
         "message"       : "Hello!",
-        "is_moderator"  : "False"
+        "is_moderator"  : false,
+        "timestamp"     :  6
     },
     {
         "nickname"      : "User1",
         "message"       : "Hello!",
-        "is_moderator"  : "False"
+        "is_moderator"  : false,
+        "timestamp"     :  6
     },
     {
         "nickname"      : "User1",
         "message"       : "Hello!",
-        "is_moderator"  : "False"
+        "is_moderator"  : false,
+        "timestamp"     :  6
     },
     {
         "nickname"      : "User1",
         "message"       : "Hello!",
-        "is_moderator"  : "False"
+        "is_moderator"  : false,
+        "timestamp"     :  7
     },
     {
         "nickname"      : "User1",
         "message"       : "Hello!",
-        "is_moderator"  : "False"
+        "is_moderator"  : false,
+        "timestamp"     :  7
     },
     {
         "nickname"      : "User1",
         "message"       : "Hello!",
-        "is_moderator"  : "False"
+        "is_moderator"  : false,
+        "timestamp"     :  7
     },
     {
         "nickname"      : "User1",
         "message"       : "Hello!",
-        "is_moderator"  : "False"
+        "is_moderator"  : false,
+        "timestamp"     :  7
     },
     {
         "nickname"      : "User1",
         "message"       : "Hello!",
-        "is_moderator"  : "False"
+        "is_moderator"  : false,
+        "timestamp"     :  7
     },
     {
         "nickname"      : "User1",
         "message"       : "Hello!",
-        "is_moderator"  : "False"
+        "is_moderator"  : false,
+        "timestamp"     :  7
     },
     {
         "nickname"      : "User1",
         "message"       : "Hello!",
-        "is_moderator"  : "False"
+        "is_moderator"  : false,
+        "timestamp"     :  7
     },
     {
         "nickname"      : "User1",
         "message"       : "Hello!",
-        "is_moderator"  : "False"
+        "is_moderator"  : false,
+        "timestamp"     :  8
     },
     {
         "nickname"      : "User1",
         "message"       : "Hello!",
-        "is_moderator"  : "False"
+        "is_moderator"  : false,
+        "timestamp"     :  8
     },
     {
         "nickname"      : "User1",
         "message"       : "Hello!",
-        "is_moderator"  : "False"
+        "is_moderator"  : false,
+        "timestamp"     :  8
     },
     {
         "nickname"      : "User1",
         "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User2",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
+        "is_moderator"  : false,
+        "timestamp"     :  8
     },
     {
         "nickname"      : "User2",
         "message"       : "Hello!",
-        "is_moderator"  : "False"
+        "is_moderator"  : false,
+        "timestamp"     :  8
     },
     {
         "nickname"      : "User1",
         "message"       : "Hello!",
-        "is_moderator"  : "False"
+        "is_moderator"  : false,
+        "timestamp"     :  1
     },
     {
         "nickname"      : "User1",
         "message"       : "Hello!",
-        "is_moderator"  : "False"
+        "is_moderator"  : false,
+        "timestamp"     :  2
     },
     {
         "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
+        "message"       : "The oldest message",
+        "is_moderator"  : false,
+        "timestamp"     :  1
+
     },
     {
         "nickname"      : "User2",
         "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User2",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Message",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Message",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Message",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Message",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Message",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User2",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
+        "is_moderator"  : false,
+        "timestamp"     :  2
     },
     {
         "nickname"      : "User3",
         "message"       : "Hello!",
-        "is_moderator"  : "False"
+        "is_moderator"  : false,
+        "timestamp"     :  3
     },
     {
         "nickname"      : "User4",
         "message"       : "Hello!",
-        "is_moderator"  : "False"
+        "is_moderator"  : false,
+        "timestamp"     :  4
     },
     {
         "nickname"      : "User5",
         "message"       : "Hello!",
-        "is_moderator"  : "False"
+        "is_moderator"  : false,
+        "timestamp"     :  5
     },
     {
         "nickname"      : "User6",
         "message"       : "Hello!",
-        "is_moderator"  : "False"
+        "is_moderator"  : false,
+        "timestamp"     :  5
     },
     {
         "nickname"      : "User7",
         "message"       : "Hello!",
-        "is_moderator"  : "False"
+        "is_moderator"  : false,
+        "timestamp"     :  6
     },
     {
         "nickname"      : "User1",
         "message"       : "Hello!",
-        "is_moderator"  : "False"
+        "is_moderator"  : false,
+        "timestamp"     :  6
     },
     {
         "nickname"      : "User1",
         "message"       : "Hello!",
-        "is_moderator"  : "False"
+        "is_moderator"  : false,
+        "timestamp"     :  6
     },
     {
         "nickname"      : "User1",
         "message"       : "Hello!",
-        "is_moderator"  : "False"
+        "is_moderator"  : false,
+        "timestamp"     :  6
     },
     {
         "nickname"      : "User1",
         "message"       : "Hello!",
-        "is_moderator"  : "False"
+        "is_moderator"  : false,
+        "timestamp"     :  7
     },
     {
         "nickname"      : "User1",
         "message"       : "Hello!",
-        "is_moderator"  : "False"
+        "is_moderator"  : false,
+        "timestamp"     :  7
     },
     {
         "nickname"      : "User1",
         "message"       : "Hello!",
-        "is_moderator"  : "False"
+        "is_moderator"  : false,
+        "timestamp"     :  7
     },
     {
         "nickname"      : "User1",
         "message"       : "Hello!",
-        "is_moderator"  : "False"
+        "is_moderator"  : false,
+        "timestamp"     :  7
     },
     {
         "nickname"      : "User1",
         "message"       : "Hello!",
-        "is_moderator"  : "False"
+        "is_moderator"  : false,
+        "timestamp"     :  7
     },
     {
         "nickname"      : "User1",
         "message"       : "Hello!",
-        "is_moderator"  : "False"
+        "is_moderator"  : false,
+        "timestamp"     :  7
     },
     {
         "nickname"      : "User1",
         "message"       : "Hello!",
-        "is_moderator"  : "False"
+        "is_moderator"  : false,
+        "timestamp"     :  7
     },
     {
         "nickname"      : "User1",
         "message"       : "Hello!",
-        "is_moderator"  : "False"
+        "is_moderator"  : false,
+        "timestamp"     :  8
     },
     {
         "nickname"      : "User1",
         "message"       : "Hello!",
-        "is_moderator"  : "False"
+        "is_moderator"  : false,
+        "timestamp"     :  8
     },
     {
         "nickname"      : "User1",
         "message"       : "Hello!",
-        "is_moderator"  : "False"
+        "is_moderator"  : true,
+        "timestamp"     :  8
     },
     {
         "nickname"      : "User1",
         "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User2",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
+        "is_moderator"  : true,
+        "timestamp"     :  8
     },
     {
         "nickname"      : "User2",
         "message"       : "Hello!",
-        "is_moderator"  : "False"
+        "is_moderator"  : true,
+        "timestamp"     :  8
     },
     {
         "nickname"      : "User1",
         "message"       : "Hello!",
-        "is_moderator"  : "False"
+        "is_moderator"  : true,
+        "timestamp"     :  1
     },
     {
         "nickname"      : "User1",
         "message"       : "Hello!",
-        "is_moderator"  : "False"
+        "is_moderator"  : false,
+        "timestamp"     :  2
     },
     {
         "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
+        "message"       : "The oldest message",
+        "is_moderator"  : false,
+        "timestamp"     :  1
+
     },
     {
         "nickname"      : "User2",
         "message"       : "Hello!",
-        "is_moderator"  : "False"
+        "is_moderator"  : false,
+        "timestamp"     :  2
+    },
+    {
+        "nickname"      : "User3",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  3
+    },
+    {
+        "nickname"      : "User4",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  4
+    },
+    {
+        "nickname"      : "User5",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  5
+    },
+    {
+        "nickname"      : "User6",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  5
+    },
+    {
+        "nickname"      : "User7",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  6
     },
     {
         "nickname"      : "User1",
         "message"       : "Hello!",
-        "is_moderator"  : "False"
+        "is_moderator"  : false,
+        "timestamp"     :  6
     },
     {
         "nickname"      : "User1",
         "message"       : "Hello!",
-        "is_moderator"  : "False"
+        "is_moderator"  : false,
+        "timestamp"     :  6
     },
     {
         "nickname"      : "User1",
         "message"       : "Hello!",
-        "is_moderator"  : "False"
+        "is_moderator"  : false,
+        "timestamp"     :  6
     },
     {
         "nickname"      : "User1",
         "message"       : "Hello!",
-        "is_moderator"  : "False"
+        "is_moderator"  : false,
+        "timestamp"     :  7
     },
     {
         "nickname"      : "User1",
         "message"       : "Hello!",
-        "is_moderator"  : "False"
+        "is_moderator"  : false,
+        "timestamp"     :  7
     },
     {
         "nickname"      : "User1",
         "message"       : "Hello!",
-        "is_moderator"  : "False"
+        "is_moderator"  : false,
+        "timestamp"     :  7
     },
     {
         "nickname"      : "User1",
         "message"       : "Hello!",
-        "is_moderator"  : "False"
+        "is_moderator"  : false,
+        "timestamp"     :  7
     },
     {
         "nickname"      : "User1",
         "message"       : "Hello!",
-        "is_moderator"  : "False"
+        "is_moderator"  : false,
+        "timestamp"     :  7
     },
     {
         "nickname"      : "User1",
         "message"       : "Hello!",
-        "is_moderator"  : "False"
+        "is_moderator"  : false,
+        "timestamp"     :  7
     },
     {
         "nickname"      : "User1",
         "message"       : "Hello!",
-        "is_moderator"  : "False"
+        "is_moderator"  : false,
+        "timestamp"     :  7
     },
     {
         "nickname"      : "User1",
         "message"       : "Hello!",
-        "is_moderator"  : "False"
+        "is_moderator"  : false,
+        "timestamp"     :  8
     },
     {
         "nickname"      : "User1",
         "message"       : "Hello!",
-        "is_moderator"  : "False"
+        "is_moderator"  : false,
+        "timestamp"     :  8
     },
     {
         "nickname"      : "User1",
         "message"       : "Hello!",
-        "is_moderator"  : "False"
+        "is_moderator"  : false,
+        "timestamp"     :  8
     },
     {
         "nickname"      : "User1",
         "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
-    },
-    {
-        "nickname"      : "User1",
-        "message"       : "Hello!",
-        "is_moderator"  : "False"
+        "is_moderator"  : false,
+        "timestamp"     :  8
     },
     {
         "nickname"      : "User2",
         "message"       : "Hello!",
-        "is_moderator"  : "False"
+        "is_moderator"  : false,
+        "timestamp"     :  8
     },
     {
         "nickname"      : "User1",
         "message"       : "Hello!",
-        "is_moderator"  : "False"
+        "is_moderator"  : false,
+        "timestamp"     :  1
     },
     {
         "nickname"      : "User1",
         "message"       : "Hello!",
-        "is_moderator"  : "False"
+        "is_moderator"  : false,
+        "timestamp"     :  2
+    },
+    {
+        "nickname"      : "User1",
+        "message"       : "The oldest message",
+        "is_moderator"  : false,
+        "timestamp"     :  1
+
+    },
+    {
+        "nickname"      : "User2",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  2
+    },
+    {
+        "nickname"      : "User3",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  3
+    },
+    {
+        "nickname"      : "User4",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  4
+    },
+    {
+        "nickname"      : "User5",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  5
+    },
+    {
+        "nickname"      : "User6",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  5
+    },
+    {
+        "nickname"      : "User7",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  6
     },
     {
         "nickname"      : "User1",
         "message"       : "Hello!",
-        "is_moderator"  : "False"
+        "is_moderator"  : false,
+        "timestamp"     :  6
     },
     {
         "nickname"      : "User1",
         "message"       : "Hello!",
-        "is_moderator"  : "False"
+        "is_moderator"  : false,
+        "timestamp"     :  6
     },
     {
         "nickname"      : "User1",
         "message"       : "Hello!",
-        "is_moderator"  : "False"
+        "is_moderator"  : false,
+        "timestamp"     :  6
     },
     {
         "nickname"      : "User1",
         "message"       : "Hello!",
-        "is_moderator"  : "False"
+        "is_moderator"  : false,
+        "timestamp"     :  7
     },
     {
         "nickname"      : "User1",
         "message"       : "Hello!",
-        "is_moderator"  : "False"
+        "is_moderator"  : false,
+        "timestamp"     :  7
     },
     {
         "nickname"      : "User1",
         "message"       : "Hello!",
-        "is_moderator"  : "False"
+        "is_moderator"  : false,
+        "timestamp"     :  7
     },
     {
         "nickname"      : "User1",
         "message"       : "Hello!",
-        "is_moderator"  : "False"
+        "is_moderator"  : false,
+        "timestamp"     :  7
     },
     {
         "nickname"      : "User1",
         "message"       : "Hello!",
-        "is_moderator"  : "False"
+        "is_moderator"  : false,
+        "timestamp"     :  7
     },
     {
         "nickname"      : "User1",
         "message"       : "Hello!",
-        "is_moderator"  : "False"
+        "is_moderator"  : false,
+        "timestamp"     :  7
     },
     {
         "nickname"      : "User1",
         "message"       : "Hello!",
-        "is_moderator"  : "False"
+        "is_moderator"  : false,
+        "timestamp"     :  7
     },
     {
         "nickname"      : "User1",
         "message"       : "Hello!",
-        "is_moderator"  : "False"
+        "is_moderator"  : false,
+        "timestamp"     :  8
     },
     {
         "nickname"      : "User1",
         "message"       : "Hello!",
-        "is_moderator"  : "False"
+        "is_moderator"  : false,
+        "timestamp"     :  8
     },
     {
         "nickname"      : "User1",
-        "message"       : "Message",
-        "is_moderator"  : "True"
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  8
     },
     {
         "nickname"      : "User1",
-        "message"       : "Message",
-        "is_moderator"  : "False"
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  8
+    },
+    {
+        "nickname"      : "User2",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  8
     },
     {
         "nickname"      : "User1",
-        "message"       : "Message 2",
-        "is_moderator"  : "True"
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  1
     },
     {
         "nickname"      : "User1",
-        "message"       : "The most recent message",
-        "is_moderator"  : "False"
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  2
+    },
+    {
+        "nickname"      : "User1",
+        "message"       : "The oldest message",
+        "is_moderator"  : false,
+        "timestamp"     :  1
+
+    },
+    {
+        "nickname"      : "User2",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  2
+    },
+    {
+        "nickname"      : "User3",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  3
+    },
+    {
+        "nickname"      : "User4",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  4
+    },
+    {
+        "nickname"      : "User5",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  5
+    },
+    {
+        "nickname"      : "User6",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  5
+    },
+    {
+        "nickname"      : "User7",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  6
+    },
+    {
+        "nickname"      : "User1",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  6
+    },
+    {
+        "nickname"      : "User1",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  6
+    },
+    {
+        "nickname"      : "User1",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  6
+    },
+    {
+        "nickname"      : "User1",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  7
+    },
+    {
+        "nickname"      : "User1",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  7
+    },
+    {
+        "nickname"      : "User1",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  7
+    },
+    {
+        "nickname"      : "User1",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  7
+    },
+    {
+        "nickname"      : "User1",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  7
+    },
+    {
+        "nickname"      : "User1",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  7
+    },
+    {
+        "nickname"      : "User1",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  7
+    },
+    {
+        "nickname"      : "User1",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  8
+    },
+    {
+        "nickname"      : "User1",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  8
+    },
+    {
+        "nickname"      : "User1",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  8
+    },
+    {
+        "nickname"      : "User1",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  8
+    },
+    {
+        "nickname"      : "User2",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  8
+    },
+    {
+        "nickname"      : "User1",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  1
+    },
+    {
+        "nickname"      : "User1",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  2
+    },
+    {
+        "nickname"      : "User1",
+        "message"       : "The oldest message",
+        "is_moderator"  : false,
+        "timestamp"     :  1
+
+    },
+    {
+        "nickname"      : "User2",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  2
+    },
+    {
+        "nickname"      : "User3",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  3
+    },
+    {
+        "nickname"      : "User4",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  4
+    },
+    {
+        "nickname"      : "User5",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  5
+    },
+    {
+        "nickname"      : "User6",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  5
+    },
+    {
+        "nickname"      : "User7",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  6
+    },
+    {
+        "nickname"      : "User1",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  6
+    },
+    {
+        "nickname"      : "User1",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  6
+    },
+    {
+        "nickname"      : "User1",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  6
+    },
+    {
+        "nickname"      : "User1",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  7
+    },
+    {
+        "nickname"      : "User1",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  7
+    },
+    {
+        "nickname"      : "User1",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  7
+    },
+    {
+        "nickname"      : "User1",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  7
+    },
+    {
+        "nickname"      : "User1",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  7
+    },
+    {
+        "nickname"      : "User1",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  7
+    },
+    {
+        "nickname"      : "User1",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  7
+    },
+    {
+        "nickname"      : "User1",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  8
+    },
+    {
+        "nickname"      : "User1",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  8
+    },
+    {
+        "nickname"      : "User1",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  8
+    },
+    {
+        "nickname"      : "User1",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  8
+    },
+    {
+        "nickname"      : "User2",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  8
+    },
+    {
+        "nickname"      : "User1",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  1
+    },
+    {
+        "nickname"      : "User1",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  2
+    },
+    {
+        "nickname"      : "User1",
+        "message"       : "The oldest message",
+        "is_moderator"  : false,
+        "timestamp"     :  1
+
+    },
+    {
+        "nickname"      : "User2",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  2
+    },
+    {
+        "nickname"      : "User3",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  3
+    },
+    {
+        "nickname"      : "User4",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  4
+    },
+    {
+        "nickname"      : "User5",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  5
+    },
+    {
+        "nickname"      : "User6",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  5
+    },
+    {
+        "nickname"      : "User7",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  6
+    },
+    {
+        "nickname"      : "User1",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  6
+    },
+    {
+        "nickname"      : "User1",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  6
+    },
+    {
+        "nickname"      : "User1",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  6
+    },
+    {
+        "nickname"      : "User1",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  7
+    },
+    {
+        "nickname"      : "User1",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  7
+    },
+    {
+        "nickname"      : "User1",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  7
+    },
+    {
+        "nickname"      : "User1",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  7
+    },
+    {
+        "nickname"      : "User1",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  7
+    },
+    {
+        "nickname"      : "User1",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  7
+    },
+    {
+        "nickname"      : "User1",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  7
+    },
+    {
+        "nickname"      : "User1",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  8
+    },
+    {
+        "nickname"      : "User1",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  8
+    },
+    {
+        "nickname"      : "User1",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  8
+    },
+    {
+        "nickname"      : "User1",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  8
+    },
+    {
+        "nickname"      : "User2",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  8
+    },
+    {
+        "nickname"      : "User1",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  1
+    },
+    {
+        "nickname"      : "User1",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  2
+    },
+    {
+        "nickname"      : "User1",
+        "message"       : "The oldest message",
+        "is_moderator"  : false,
+        "timestamp"     :  1
+
+    },
+    {
+        "nickname"      : "User2",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  2
+    },
+    {
+        "nickname"      : "User3",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  3
+    },
+    {
+        "nickname"      : "User4",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  4
+    },
+    {
+        "nickname"      : "User5",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  5
+    },
+    {
+        "nickname"      : "User6",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  5
+    },
+    {
+        "nickname"      : "User7",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  6
+    },
+    {
+        "nickname"      : "User1",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  6
+    },
+    {
+        "nickname"      : "User1",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  6
+    },
+    {
+        "nickname"      : "User1",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  6
+    },
+    {
+        "nickname"      : "User1",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  7
+    },
+    {
+        "nickname"      : "User1",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  7
+    },
+    {
+        "nickname"      : "User1",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  7
+    },
+    {
+        "nickname"      : "User1",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  7
+    },
+    {
+        "nickname"      : "User1",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  7
+    },
+    {
+        "nickname"      : "User1",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  7
+    },
+    {
+        "nickname"      : "User1",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  7
+    },
+    {
+        "nickname"      : "User1",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  8
+    },
+    {
+        "nickname"      : "User1",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  8
+    },
+    {
+        "nickname"      : "User1",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  8
+    },
+    {
+        "nickname"      : "User1",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  8
+    },
+    {
+        "nickname"      : "User2",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  8
+    },
+    {
+        "nickname"      : "User1",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  1
+    },
+    {
+        "nickname"      : "User1",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  2
+    },
+    {
+        "nickname"      : "User1",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  7
+    },
+    {
+        "nickname"      : "User1",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  8
+    },
+    {
+        "nickname"      : "User1",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  8
+    },
+    {
+        "nickname"      : "User1",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  8
+    },
+    {
+        "nickname"      : "User1",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  8
+    },
+    {
+        "nickname"      : "User2",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  8
+    },
+    {
+        "nickname"      : "User1",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  1
+    },
+    {
+        "nickname"      : "User1",
+        "message"       : "Hello!",
+        "is_moderator"  : false,
+        "timestamp"     :  2
     }
 ]

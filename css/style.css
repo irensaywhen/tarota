@@ -639,9 +639,13 @@ ul{
 
 /*-- hs service wrapper Start --*/
 .services-wrapper{
-	float:left;
+	clear: both;
 	width:100%;
 	padding-bottom:100px;
+}
+
+.portfolio-area {
+	clear: both;
 }
 .service-card{
 	float:left;
@@ -4908,6 +4912,12 @@ footer{
 /*--Video chat media queries end--*/
 
 /*---Video chat pages end---*/
+
+/*---Profile list start---*/
+
+
+
+/*---Profile list end---*/
 
 
 .post-img-wrapper  .owl-theme .owl-dots{
