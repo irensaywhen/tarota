@@ -8209,6 +8209,14 @@ footer{
 	padding: 0;
 }
 
+.live-chat_youtube-video {
+	max-width: 585px;
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+	align-items: flex-end;
+}
+
 .live_chat_messages {
 	height: 290px;
 	border: 1px dashed rgba(255, 255, 255, 0.75);
