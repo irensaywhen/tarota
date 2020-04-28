@@ -5,6 +5,7 @@
     let $signUpForm = $('#order_form_sign-up');
     let $passwordField = $('.order-details_password');
     let $orderButton = $('#order-details_button');
+    let $createAccountLabel = $('.checkbox-create-account-label');
 
     $(window).on('load', function(){
 
@@ -16,9 +17,24 @@
             
             if($(this).is(':checked')){
 
-                $passwordField.css('display', 'block');
+                $passwordField
+                    .css('opacity', 0)
+                    .slideDown('slow')
+                    .animate(
+                        { opacity: 1 },
+                        { queue: false, duration: 1000 }
+                    );
+
+
             } else {
-                $passwordField.css('display', 'none');
+
+                $passwordField
+                    .css('opacity', 1)
+                    .slideUp('slow')
+                    .animate(
+                        { opacity: 0 },
+                        { queue: false, duration: 'slow' }
+                    );
             }
         })
 
