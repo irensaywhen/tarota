@@ -31,7 +31,7 @@
                 'border-radius'     : '20px',
             },
             callback_afterClose: () => {
-                $('.header-button-green')
+                $('.header-button-call-specialist')
                     .toggleClass('open-future-popup');
                 $('.inner-wrapper').css({
                     '-webkit-filter': '',

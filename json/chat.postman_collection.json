@@ -1,0 +1,266 @@
+{
+	"info": {
+		"_postman_id": "c0bda6a9-ce79-40d2-86c6-5606c2defdcb",
+		"name": "Live chat",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "send",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/send",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"send"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Successfully sent message",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/send",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"send"
+							]
+						}
+					},
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": "Message sent"
+				}
+			]
+		},
+		{
+			"name": "send error",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/send",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"send"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Sending error",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/send-error",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"send-error"
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": "Message not sent"
+				}
+			]
+		},
+		{
+			"name": "messages",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/messages",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"messages"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200 messages from users",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/messages",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"messages"
+							]
+						}
+					},
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": null,
+					"cookie": [],
+					"body": "[\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"The oldest message\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User2\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User3\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User4\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User5\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User6\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User7\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User2\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User2\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User2\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User2\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Message\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Message\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Message\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Message\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Message\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User2\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User3\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User4\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User5\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User6\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User7\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User2\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User2\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User2\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User2\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Hello!\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Message\",\r\n        \"is_moderator\"  : \"True\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Message\",\r\n        \"is_moderator\"  : \"False\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"Message 2\",\r\n        \"is_moderator\"  : \"True\"\r\n    },\r\n    {\r\n        \"nickname\"      : \"User1\",\r\n        \"message\"       : \"The most recent message\",\r\n        \"is_moderator\"  : \"False\"\r\n    }\r\n]"
+				}
+			]
+		},
+		{
+			"name": "get new messages",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": [
+				{
+					"name": "get new messages",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/new-messages",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"new-messages"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": null,
+					"cookie": [],
+					"body": "[\n    {\n        \"nickname\": \"New User\",\n        \"message\": \"This is new message\",\n        \"is_moderator\": \"False\"\n    },\n    {\n        \"nickname\": \"User1\",\n        \"message\": \"This is new message from user 1\",\n        \"is_moderator\": \"True\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "get new messages error",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": [
+				{
+					"name": "get new messages error",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/new-messages-error",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"new-messages-error"
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "json",
+					"header": null,
+					"cookie": [],
+					"body": ""
+				}
+			]
+		},
+		{
+			"name": "messages-error",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": [
+				{
+					"name": "messages-error",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/messages-error",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"messages-error"
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		}
+	],
+	"protocolProfileBehavior": {}
+}
