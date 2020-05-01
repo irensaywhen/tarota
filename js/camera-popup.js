@@ -1,9 +1,11 @@
 (function($){
 
     $(document).ready(function(){
-        $('.future-popup').SlickModals({
-            popup_closeButtonPlace: 'inside',
-            popup_reopenClass: 'open-future-popup',
+        $('.camera-popup').SlickModals({
+            popup_type: 'delayed',
+            popup_delayedTime: '0.5s',
+            overlay_closesPopup : false,
+            popup_closeButtonEnable: false,
             overlay_css: {
                 'background': 'rgba(255, 255, 255, 0)'
             },
@@ -11,9 +13,8 @@
                 'width'         : '555px',
                 'background'    : '#4f2b7f',
                 'border-radius' : '20px',
-                'border'        : '1px dashed rgba(255, 255, 255, 0.75)',
                 'max-width'     : '555px',
-                'padding'       : '0'
+                'padding'       : '30px 50px'
             },
             mobile_show       : true,
             mobile_breakpoint : '650px',
@@ -25,14 +26,12 @@
                 'max-width'         : '96vw',
                 'border'            : '1px dashed rgba(255, 255, 255, 0.75)',
                 'margin'            : '0',
-                'padding'           : '0',
+                'padding'           : '30px 0',
                 'animation-duration': '0.4s',
                 'background'        : '#4f2b7f',
                 'border-radius'     : '20px',
             },
             callback_afterClose: () => {
-                $('.header-button-call-specialist')
-                    .toggleClass('open-future-popup');
                 $('.inner-wrapper').css({
                     '-webkit-filter': '',
                     'filter': ''
@@ -46,9 +45,5 @@
                 })
             }
         });
-
-        $('.header-button-call-specialist').click(function(event){
-            $(this).toggleClass('open-future-popup');
-        })
     })
 })(jQuery);
