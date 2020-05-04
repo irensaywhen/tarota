@@ -4171,6 +4171,11 @@ footer{
 	margin: 0 auto !important;
 }
 
+.live-chat_youtube-video {
+	display: block;
+	margin: 0 auto;
+}
+
 .live_chat {
 	background: rgb(79, 43, 127);
 	width: 100%;
