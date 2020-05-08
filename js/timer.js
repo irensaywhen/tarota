@@ -127,11 +127,25 @@ class Timer {
      * Function updates the minutes of the timer expiration time
      * @param {number} minutes 
      */
-    addTime(minutes=0, seconds=0){
+    addTime(minutes=0){
 
-        this.countDownTime.setMinutes(this.countDownTime.getMinutes() + minutes);
-        this.countDownTime.setSeconds(this.countDownTime.getSeconds() + seconds);
-        this.updateTimer();
+        if (this.timerIntervalId){
+
+            this.countDownTime.setMinutes(this.countDownTime.getMinutes() + minutes);
+            this.updateTimer();
+
+        } else {
+
+            this.minutes += minutes;
+
+            if (this.minutes >= 60){
+
+                this.minutes -= 60;
+                this.hours += 1;
+            }
+
+            this.showTime(this.hours, this.minutes, this.seconds);
+        }
     }
 
     /**
@@ -251,7 +265,7 @@ class Form {
      * Store the selected time in the class
      */
     collectFormData(){
-        this.selectedTime = this.$selectTime.val()
+        this.selectedTime = this.$selectTime.val();
     }
 
     /**
@@ -306,12 +320,8 @@ class Form {
      */
     addTime(minutes){
 
-        if (!(this.timer.timerIntervalId)){
+        this.timer.addTime(minutes);
 
-            this.timer.addTime(minutes, 2.8);
-        } else {
-            this.timer.addTime(minutes);
-        }
     }
 
     /**
