@@ -515,13 +515,12 @@ footer {
 }
 
 @media (max-width: 388px) {
-  #return-to-top {
-    bottom: 140px;
-    right: 40px;
-  }
-
   .container {
     padding: 0 !important;
+  }
+
+  .info {
+    padding: 0 15px;
   }
 
   .cta_button a {
@@ -533,7 +532,10 @@ footer {
   }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 356px) {
+  #return-to-top {
+    bottom: 140px;
+  }
   .welcome_title {
     font-size: 25px;
   }
