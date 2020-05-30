@@ -22,14 +22,27 @@ Purchase:
     <link 
         rel="preload" 
         as="style" 
-        onload="this.rel = 'stylesheet'" 
+        onload="this.onload=null;this.rel = 'stylesheet'" 
         type="text/css" 
         href="css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="css/fonts.css" />
+    <!--If scripts are disabled-->
+    <noscript>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+    </noscript>
+    <link   rel="preload" 
+            as="style" 
+            onload="this.onload=null;this.rel = 'stylesheet'" 
+            type="text/css"  
+            href="css/fonts.css" />
+    <!--If scripts are disabled-->
+    <noscript>
+        <link rel="stylesheet" type="text/css" href="css/fonts.css" />
+    </noscript>
+    <!--Polyfill - loading asynchronously-->
+    <script src="js/cssrelpreload.js" async></script>
+    <!--Main stylesheet-->
     <link 
-        rel="preload" 
-        as="style" 
-        onload="this.rel = 'stylesheet'"  
+        rel="stylesheet" 
         href="css/mvp_style.css">
     <link rel="stylesheet" href="fonts/fontawesome/css/all.css">
     <!-- favicon links -->
