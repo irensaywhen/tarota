@@ -22,8 +22,6 @@
     <noscript>
         <link rel="stylesheet" href="css/bootstrap.min.css">
     </noscript>
-    <!--Polyfill-->
-    <script src="js/cssrelpreload.js" async></script>
     <!--Main stylesheet-->
     <link 
         rel="stylesheet"
@@ -34,8 +32,20 @@
       type="image/png"
       href="images/header/favicon.ico"
     />
+    <!--fontawesome-->
+    <link   rel="preload" 
+            as="style" 
+            onload="this.onload=null;this.rel = 'stylesheet'" 
+            type="text/css" 
+            href="fonts/fontawesome/css/all.css">
+
+    <noscript>
+        <link rel="stylesheet" href="fonts/fontawesome/css/all.css">
+    </noscript>
     <!--Preloading image-->
     <script src="js/mvp_example_images.js" async></script>
+    <!--Polyfill-->
+    <script src="js/cssrelpreload.js" async></script>
   </head>
 
   <body>
