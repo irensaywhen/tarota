@@ -1,5 +1,6 @@
 const gulp = require("gulp");
 const purgecss = require("gulp-purgecss");
+var autoprefixer = require("gulp-autoprefixer");
 const cleanCSS = require("gulp-clean-css");
 const concat = require("gulp-concat");
 
@@ -24,7 +25,7 @@ gulp.task("minifyCSS", function () {
       "home/dist/fonts/fontawesome/css/all.css",
       "home/dist/css/mvp_style.css",
     ])
-    .pipe(cleanCSS())
+    .pipe(cleanCSS({ level: { 1: { specialComments: 0 } } }))
     .pipe(concat("style.min.css"))
     .pipe(gulp.dest("home/dist/css"));
 });
