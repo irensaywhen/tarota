@@ -9,5 +9,5 @@ gulp.task("removeUnusedCss", function () {
         content: ["home/**/*.html"],
       })
     )
-    .pipe(gulp.dest("home/dist/css"));
+    .pipe(gulp.dest("home/dist/"));
 });
