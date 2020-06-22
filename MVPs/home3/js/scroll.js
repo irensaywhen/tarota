@@ -17,20 +17,5 @@
         500
       );
     });
-
-    // Menu js for Position fixed
-    $(window).scroll(function () {
-      var window_top = $(window).scrollTop() + 1;
-
-      if (window_top > 160) {
-        $(".header-navigation-wrapper").addClass(
-          "menu_fixed animated fadeInDown"
-        );
-      } else {
-        $(".header-navigation-wrapper").removeClass(
-          "menu_fixed animated fadeInDown"
-        );
-      }
-    });
   });
 })(jQuery);
