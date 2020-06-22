@@ -542,6 +542,10 @@ a:focus {
   margin-bottom: 15px !important;
 }
 
+.error {
+  color: #f76666 !important;
+}
+
 /* second step form fields end */
 
 /* Submit section start */

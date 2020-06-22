@@ -1,5 +1,3 @@
-//const jqueryValidation = require("jquery-validation");
-
 (function ($) {
   $(document).ready(function () {
     // Caching
@@ -41,5 +39,8 @@
           .fadeTo(400, 1);
       });
     });
+
+    // Validate the form
+    $("#cta_form").validate();
   });
 })(jQuery);
