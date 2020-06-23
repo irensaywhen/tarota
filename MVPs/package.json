@@ -12,6 +12,7 @@
     "gulp": "^4.0.2",
     "gulp-clean-css": "^4.3.0",
     "gulp-concat": "^2.6.1",
+    "gulp-hub": "^4.2.0",
     "gulp-purgecss": "^2.3.0"
   },
   "dependencies": {
