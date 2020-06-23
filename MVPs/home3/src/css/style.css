@@ -714,6 +714,33 @@ a:focus {
 
 /*---Information section end---*/
 
+/*---Payment result page start---*/
+
+.code {
+  background: #4f2b7f;
+  border: 1px dashed rgba(255, 255, 255, 0.5);
+  max-width: 350px;
+  width: 95%;
+  margin: 30px auto;
+}
+
+.code_value {
+  font-size: 36px;
+  padding: 33px 0;
+}
+
+.code_footer {
+  background: #986cd4;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 14px;
+  padding: 10px 0;
+}
+
+/*---Payment result page end---*/
+
 /*--- Footer Start ---*/
 footer {
   width: 100%;
