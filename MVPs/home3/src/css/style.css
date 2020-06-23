@@ -25,9 +25,15 @@ body::-webkit-scrollbar-thumb {
   background-color: #4f2b7f;
 }
 
+/*-- Spacing utilities start--*/
+
 .no-gutters {
   padding-left: 0;
   padding-right: 0;
+}
+
+.gutters {
+  padding: 0 15px;
 }
 
 .no-left-gutters {
@@ -38,8 +44,19 @@ body::-webkit-scrollbar-thumb {
   padding-right: 0;
 }
 
+/*-- Spacing utilities end--*/
+
 .row {
   margin: 0 !important;
+}
+
+.row.display-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.row.display-flex > [class*="col-"] {
+  display: flex;
+  flex-direction: column;
 }
 
 a {
@@ -87,6 +104,7 @@ textarea:focus {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
+
 ul {
   list-style: none;
   margin: 0;
@@ -114,6 +132,10 @@ a:focus {
 
 .main {
   padding-top: 20px;
+}
+
+.sections-wrapper {
+  margin-bottom: 70px;
 }
 
 ::placeholder {
@@ -173,6 +195,10 @@ a:focus {
   background: #0f0122;
 }
 
+.call-to-action.border {
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.5);
+}
+
 .call-to-action .container {
   padding: 0;
   width: 100%;
@@ -185,7 +211,12 @@ a:focus {
 
 .cta_call {
   font-size: 36px;
-  padding-top: 40px;
+  padding-top: 15px;
+}
+
+.cta_payment {
+  padding-right: 20px;
+  color: #948f8f;
 }
 
 .cta_description {
@@ -335,6 +366,10 @@ a:focus {
   padding: 15px 0 30px;
 }
 
+.specialist-card-wrapper {
+  min-height: 100% !important;
+}
+
 .specialist-card {
   width: 100%;
   max-width: 333px;
@@ -464,6 +499,11 @@ a:focus {
   margin: 10px auto 10px auto;
 }
 
+.specialist-card.single {
+  height: 100%;
+  border-bottom: none;
+}
+
 .specialist-card.single .sc_info_title_online {
   display: none;
 }
@@ -490,34 +530,7 @@ a:focus {
 }
 
 .cta_form_title {
-  padding-top: 30px;
-}
-
-.cta_time-input-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  justify-content: space-around;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin: 18px auto;
-  max-width: 350px;
-}
-
-.cta_time-label {
-  padding-right: 30px;
-  color: #fff;
-}
-
-.cta_time-input {
-  -webkit-box-flex: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 2;
-  background: #986cd4;
-  padding: 8px 0px 5px 6px;
-  border-radius: 3px;
-  max-width: 250px;
+  padding: 30px 0 20px 0;
 }
 
 /* second step form fields start*/
@@ -573,7 +586,7 @@ a:focus {
   font-size: 22px;
 }
 
-.cta_form_submit_price-value {
+.cta_form_submit_price {
   text-decoration: underline;
   font-size: 22px;
 }
@@ -678,21 +691,28 @@ a:focus {
 
 /*---Welcoming section end---*/
 
-/*---Info section start---*/
+/*---Information section start---*/
 
-.info {
-  padding: 30px 0;
+.information {
+  padding: 15px 0;
+  background: #0f0122;
 }
 
-.info_title {
-  font-size: 28px;
+.information_image-wrapper {
+  width: 100%;
 }
 
-.info_text {
-  margin: 10px auto;
+.information_image {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
 }
 
-/*---Info section end---*/
+.information_text {
+  padding-top: 20px;
+}
+
+/*---Information section end---*/
 
 /*--- Footer Start ---*/
 footer {
@@ -913,6 +933,11 @@ footer {
   .specialist-card.single .sc_info_services {
     padding: 0 15px 0 10px;
   }
+
+  .cta_form-label {
+    text-align: left !important;
+    padding-bottom: 10px;
+  }
 }
 
 @media (max-width: 650px) {
@@ -1044,5 +1069,31 @@ footer {
     padding-top: 10px;
   }
 }
+
+/*--Bootstrap grid media start--*/
+
+@media screen and (min-width: 768px) {
+  .gutters-sm {
+    padding: 0 15px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .gutters-md {
+    padding: 0 15px;
+  }
+
+  .information_text {
+    padding-top: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .gutters-lg {
+    padding: 0 15px;
+  }
+}
+
+/*--Bootstrap grid media end--*/
 
 /*---Media queries end---*/
