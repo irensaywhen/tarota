@@ -195,10 +195,6 @@ a:focus {
   background: #0f0122;
 }
 
-.call-to-action.border {
-  border-bottom: 1px dashed rgba(255, 255, 255, 0.5);
-}
-
 .call-to-action .container {
   padding: 0;
   width: 100%;
@@ -501,7 +497,7 @@ a:focus {
 
 .specialist-card.single {
   height: 100%;
-  border-bottom: none;
+  border: 1px dashed rgba(255, 255, 255, 0.5);
 }
 
 .specialist-card.single .sc_info_title_online {
@@ -1102,6 +1098,14 @@ footer {
 @media screen and (min-width: 768px) {
   .gutters-sm {
     padding: 0 15px;
+  }
+
+  .call-to-action.border {
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.5);
+  }
+
+  .specialist-card.single {
+    border-bottom: none;
   }
 }
 
