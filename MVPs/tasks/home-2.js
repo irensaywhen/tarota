@@ -8,23 +8,23 @@ const uglify = require("gulp-uglify");
 // Remove Unused CSS
 gulp.task("removeUnusedCSS-2", function () {
   return gulp
-    .src("home2/**/*.css")
+    .src("home2/src/**/*.css")
     .pipe(
       purgecss({
-        content: ["home2/**/*.html"],
+        content: ["home2/src/**/*.html"],
       })
     )
-    .pipe(gulp.dest("home2/dist/"));
+    .pipe(gulp.dest("home2/src/clean-css"));
 });
 
 // Minify and concatenate CSS
 gulp.task("minifyCSS-2", function () {
   return gulp
     .src([
-      "home2/dist/src/css/bootstrap.css",
-      "home2/dist/src/fonts/fonts.css",
-      "home2/dist/src/fonts/fontawesome/css/all.css",
-      "home2/dist/src/css/style.css",
+      "home2/src/clean-css/css/bootstrap.css",
+      "home2/src/clean-css/fonts/fonts.css",
+      "home2/src/clean-css/fonts/fontawesome/css/all.css",
+      "home2/src/clean-css/css/style.css",
     ])
     .pipe(
       autoprefixer({
@@ -45,12 +45,3 @@ gulp.task("minifyJS-2", function () {
     .pipe(uglify())
     .pipe(gulp.dest("home2/dist/js"));
 });
-
-// Rebuild
-gulp.task(
-  "rebuild-2",
-  gulp.parallel("minifyJS-2", function (done) {
-    gulp.series("removeUnusedCSS-2", "minifyCSS-2");
-    done();
-  })
-);

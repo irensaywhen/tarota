@@ -1,5 +1,5 @@
 (function ($) {
-  $(document).ready(function () {
+  document.addEventListener("DOMContentLoaded", function () {
     // ===== Scroll to Top ====
     $(window).scroll(function () {
       if ($(this).scrollTop() >= 100) {
