@@ -505,9 +505,6 @@ footer {
 }
 
 @media (max-width: 356px) {
-  #return-to-top {
-    bottom: 140px;
-  }
   .welcome_title {
     font-size: 25px;
   }

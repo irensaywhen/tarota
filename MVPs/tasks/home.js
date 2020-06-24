@@ -8,23 +8,23 @@ const uglify = require("gulp-uglify");
 // Remove Unused CSS
 gulp.task("removeUnusedCSS-1", function () {
   return gulp
-    .src("home/**/*.css")
+    .src("home/src/**/*.css")
     .pipe(
       purgecss({
-        content: ["home/**/*.html"],
+        content: ["home/src/**/*.html"],
       })
     )
-    .pipe(gulp.dest("home2/dist/"));
+    .pipe(gulp.dest("home/src/clean-css"));
 });
 
 // Minify and concatenate CSS
 gulp.task("minifyCSS-1", function () {
   return gulp
     .src([
-      "home/dist/src/css/bootstrap.css",
-      "home/dist/src/fonts/fonts.css",
-      "home/dist/src/fonts/fontawesome/css/all.css",
-      "home/dist/src/css/style.css",
+      "home/src/clean-css/css/bootstrap.css",
+      "home/src/clean-css/fonts/fonts.css",
+      "home/src/clean-css/fonts/fontawesome/css/all.css",
+      "home/src/clean-css/css/style.css",
     ])
     .pipe(
       autoprefixer({
