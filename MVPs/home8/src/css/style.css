@@ -109,7 +109,8 @@ a:focus {
   margin-right: 20px;
 }
 
-.cta_button-wrapper {
+.cta_button-wrapper,
+.info_button-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -128,7 +129,8 @@ a:focus {
   margin: 0 auto;
 }
 
-.cta_button a {
+.cta_button a,
+.info_button a {
   width: 400px;
   height: 50px;
   font-size: 24px;
@@ -151,11 +153,13 @@ a:focus {
   margin-bottom: 10px;
 }
 
-.cta_button a:focus {
+.cta_button a:focus,
+.info_button a:focus {
   outline: none;
 }
 
-.cta_button .hs_btn_hover {
+.cta_button .hs_btn_hover,
+.info_button .hs_btn_hover {
   border-radius: 50px;
   background: #f06e9c;
   color: #fff;
@@ -164,7 +168,8 @@ a:focus {
   transition: background-color 0.3s, color 0.3s;
 }
 
-.cta_button .hs_btn_hover::before {
+.cta_button .hs_btn_hover::before,
+.info_button .hs_btn_hover::before {
   content: "";
   position: absolute;
   top: -20px;
@@ -179,7 +184,8 @@ a:focus {
   transform: scale3d(0.8, 0.5, 1);
 }
 
-.cta_button .hs_btn_hover:hover {
+.cta_button .hs_btn_hover:hover,
+.info_button .hs_btn_hover:hover {
   -webkit-transition: background-color 0.1s 0.3s, color 0.1s 0.3s;
   -o-transition: background-color 0.1s 0.3s, color 0.1s 0.3s;
   transition: background-color 0.1s 0.3s, color 0.1s 0.3s;
@@ -189,9 +195,20 @@ a:focus {
   animation: anim-moema-1 0.3s forwards;
 }
 
-.cta_button .hs_btn_hover:hover::before {
+.cta_button .hs_btn_hover:hover::before,
+.info_button .hs_btn_hover:hover::before {
   -webkit-animation: anim-moema-2 0.3s 0.3s forwards;
   animation: anim-moema-2 0.3s 0.3s forwards;
+}
+
+/*-Additional styles for info button-*/
+.info_button-wrapper,
+.info_button a {
+  width: 300px;
+}
+
+.info_button-wrapper {
+  margin: 15px 0 0 0;
 }
 
 @-webkit-keyframes anim-moema-1 {
@@ -405,17 +422,29 @@ a:focus {
 
 /*---Info section start---*/
 
-.info_title {
-  font-size: 28px;
-  padding: 30px 0 20px 0;
+.info {
+  padding: 45px 0;
 }
 
-.info_title::after {
+.info_title {
+  font-size: 28px;
+  padding: 5px 0 10px 0;
+}
+
+.info_line span {
+  width: 8px;
+  height: 8px;
+  background: #4f2b7f;
+  display: inline-block;
+  position: relative;
+}
+.info_line span:after {
   content: "";
-  display: block;
+  border: 1px solid #d8d8d8;
   width: 100px;
-  margin: 15px auto;
-  border-bottom: 1px solid #fff;
+  position: absolute;
+  left: 15px;
+  top: 3px;
 }
 
 .info_text {

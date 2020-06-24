@@ -13,9 +13,12 @@
     "gulp-clean-css": "^4.3.0",
     "gulp-concat": "^2.6.1",
     "gulp-hub": "^4.2.0",
-    "gulp-purgecss": "^2.3.0"
+    "gulp-purgecss": "^2.3.0",
+    "gulp-terser": "^1.2.0",
+    "gulp-uglify": "^3.0.2"
   },
   "dependencies": {
-    "gulp-autoprefixer": "^7.0.1"
+    "gulp-autoprefixer": "^7.0.1",
+    "jquery-validation": "^1.19.2"
   }
 }

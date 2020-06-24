@@ -32,21 +32,9 @@ body::-webkit-scrollbar-thumb {
   padding-right: 0;
 }
 
-.gutters {
-  padding: 0 15px;
-}
-
 .padding {
   padding-top: 15px;
   padding-bottom: 15px;
-}
-
-.no-left-gutters {
-  padding-left: 0;
-}
-
-.no-right-gutters {
-  padding-right: 0;
 }
 
 /*-- Spacing utilities end--*/
@@ -79,10 +67,7 @@ a:focus {
 }
 h1,
 h2,
-h3,
-h4,
-h5,
-h6 {
+h3 {
   font-family: "Roboto", sans-serif;
   line-height: 1.1;
   font-weight: 400;
@@ -97,14 +82,12 @@ p {
 }
 input,
 select,
-button,
-textarea {
+button {
   outline: none;
 }
 input:focus,
 select:focus,
-button:focus,
-textarea:focus {
+button:focus {
   outline: none;
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -312,21 +295,6 @@ a:focus {
   -webkit-animation: anim-moema-2 0.3s 0.3s forwards;
   animation: anim-moema-2 0.3s 0.3s forwards;
 }
-
-@-webkit-keyframes anim-moema-1 {
-  60% {
-    -webkit-transform: scale3d(0.8, 0.8, 1);
-    transform: scale3d(0.8, 0.8, 1);
-  }
-  85% {
-    -webkit-transform: scale3d(1.1, 1.1, 1);
-    transform: scale3d(1.1, 1.1, 1);
-  }
-  100% {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
-}
 @keyframes anim-moema-1 {
   60% {
     -webkit-transform: scale3d(0.8, 0.8, 1);
@@ -405,23 +373,6 @@ a:focus {
 }
 
 /*Animation for online label start*/
-
-@-webkit-keyframes pulsate {
-  0% {
-    -webkit-box-shadow: 0 0 0 #9fdc86;
-    box-shadow: 0 0 0 #9fdc86;
-  }
-
-  50% {
-    -webkit-box-shadow: 0 0 17px #35751a;
-    box-shadow: 0 0 17px #35751a;
-  }
-
-  100% {
-    -webkit-box-shadow: 0 0 0 #9fdc86;
-    box-shadow: 0 0 0 #9fdc86;
-  }
-}
 @keyframes pulsate {
   0% {
     -webkit-box-shadow: 0 0 0 #9fdc86;
@@ -449,11 +400,6 @@ a:focus {
   color: #fff;
   box-shadow: 0 0 17px #35751a;
   animation: pulsate 1s ease-out infinite;
-}
-
-.sc_offline {
-  width: 100%;
-  height: 35px;
 }
 
 .sc_call {
@@ -486,13 +432,6 @@ a:focus {
   width: 100%;
   font-size: 12px;
   color: #948f8f;
-}
-
-.service-info {
-  width: 100%;
-  display: inline-block;
-  padding-left: 30px;
-  padding-right: 30px;
 }
 
 .sc_info_title {
@@ -1064,10 +1003,6 @@ footer {
     padding: 0 !important;
   }
 
-  .info {
-    padding: 0 15px;
-  }
-
   .cta_button a {
     width: 230px;
   }
@@ -1101,9 +1036,6 @@ footer {
 /*--Bootstrap grid media start--*/
 
 @media screen and (min-width: 768px) {
-  .gutters-sm {
-    padding: 0 15px;
-  }
 
   .call-to-action.border {
     border-bottom: 1px dashed rgba(255, 255, 255, 0.5);
@@ -1121,12 +1053,6 @@ footer {
 
   .information_text {
     padding-top: 0;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .gutters-lg {
-    padding: 0 15px;
   }
 }
 
