@@ -27,6 +27,7 @@ gulp.task("removeUnusedCSS-9", function (done) {
     .pipe(
       purgecss({
         content: ["home9/src/**/*.html"],
+        whitelist: ["error"],
       })
     )
     .pipe(gulp.dest("home9/src/clean-css/"))
