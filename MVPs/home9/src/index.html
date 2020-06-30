@@ -147,6 +147,243 @@
         </section>
         <!--Benefits section end-->
 
+        <!--Call to action section start-->
+      <div class="container sections-wrapper">
+        <section class="call-to-action">
+          <div class="container">
+            <h2 class="cta_title text-center">
+              Want to know your future?
+            </h2>
+            <p class="cta_description text-center">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <form action="" class="cta_form" method="POST" id="cta_form">
+              <!--Form first step start-->
+              <div id="cta_form_first-step" class="cta_form_first-step">
+                <h3 class="cta_form_title text-center">
+                  Order a Consultation
+                </h3>
+
+                <div class="container-fluid">
+                  <!--Form field start-->
+                  <div class="row cta_form-group">
+                    <div class="col-xs-12 col-md-4">
+                      <label for="name" class="cta_form-label text-left">
+                        Name:
+                      </label>
+                    </div>
+                    <div class="col-xs-12 col-md-8">
+                      <input
+                        type="text"
+                        name="name"
+                        id="name"
+                        class="cta_form-input"
+                        placeholder="Your Name"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <!--Form field end-->
+
+                  <!--Form field start-->
+                  <div class="row cta_form-group">
+                    <div class="col-xs-12 col-md-4">
+                      <label for="surname" class="cta_form-label text-left">
+                        Surname:
+                      </label>
+                    </div>
+                    <div class="col-xs-12 col-md-8">
+                      <input
+                        type="text"
+                        name="surname"
+                        id="surname"
+                        class="cta_form-input"
+                        placeholder="Your Surname"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <!--Form field end-->
+
+                  <!--Form field start-->
+                  <div class="row cta_form-group">
+                    <div class="col-xs-12 col-md-4">
+                      <label for="time" class="cta_form-label text-left">
+                        Time:
+                      </label>
+                    </div>
+                    <div class="col-xs-12 col-md-8">
+                      <select
+                        name="time"
+                        id="time"
+                        class="cta_form-input"
+                        required
+                      >
+                        <option value="15" data-price="9.99" selected
+                          >15 minutes</option
+                        >
+                        <option value="30" data-price="19.99"
+                          >30 minutes</option
+                        >
+                        <option value="45" data-price="29.99"
+                          >45 minutes</option
+                        >
+                        <option value="60" data-price="39.99"
+                          >60 minutes</option
+                        >
+                        <option value="75" data-price="49.99"
+                          >75 minutes</option
+                        >
+                        <option value="90" data-price="59.99"
+                          >90 minutes</option
+                        >
+                        <option value="105" data-price="69.99"
+                          >105 minutes</option
+                        >
+                        <option value="120" data-price="79.99"
+                          >120 minutes</option
+                        >
+                      </select>
+                    </div>
+                  </div>
+                  <!--Form field end-->
+                </div>
+
+                <!--Form submit start-->
+                <div class="cta_form_submit">
+                  <span class="cta_form_submit_price-label">
+                    Price:
+                  </span>
+                  <strong class="cta_form_submit_price">
+                    <!--
+                          The price is set dynamically via javascript when the page is loaded
+                        -->
+                    <span class="cta_form_price"></span>
+                    zł
+                  </strong>
+                  <div class="cta_form_submit_button" id="cta_order-button">
+                    <button type="button" class="hs_btn_hover">
+                      Order now
+                    </button>
+                  </div>
+                </div>
+                <!--Form submit end-->
+              </div>
+              <!--Form first step end-->
+
+              <!--Form second step start-->
+              <div id="cta_form_second-step" class="cta_form_second-step">
+                <a href="#" class="cta_form_back" id="cta_form_back">
+                  <i class="fas fa-arrow-left"></i>
+                  back
+                </a>
+                <!--Form inputs start-->
+
+                <div class="container-fluid">
+                  <!--Form field start-->
+                  <div class="row cta_form-group">
+                    <div class="col-xs-12 col-md-4">
+                      <label for="email" class="cta_form-label text-left">
+                        Email:
+                      </label>
+                    </div>
+                    <div class="col-xs-12 col-md-8">
+                      <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        class="cta_form-input"
+                        placeholder="Email address"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <!--Form field end-->
+
+                  <!--Form field start-->
+                  <div class="row cta_form-group">
+                    <div class="col-xs-12 col-md-4">
+                      <label for="phone" class="cta_form-label text-left">
+                        Phone number:
+                      </label>
+                    </div>
+                    <div class="col-xs-12 col-md-8">
+                      <input
+                        type="tel"
+                        pattern="\+[0-9]{2}(\s[0-9]{3}){3}"
+                        name="phone"
+                        id="phone"
+                        class="cta_form-input"
+                        placeholder="+48 505 505 505"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <!--Form field end-->
+                </div>
+
+                <!--Form inputs end-->
+
+                <!--Form submit start-->
+                <div class="cta_form_submit">
+                  <span class="cta_form_submit_price-label">
+                    Price:
+                  </span>
+                  <!--
+                          The price is set dynamically via javascript when the page is loaded
+                        -->
+                  <strong class="cta_form_submit_price">
+                    <span class="cta_form_price"></span>
+                    zł
+                  </strong>
+                  <div class="cta_form_submit_button">
+                    <button type="submit" class="hs_btn_hover">
+                      Pay
+                    </button>
+                  </div>
+                </div>
+                <!--Form submit end-->
+              </div>
+              <!--Form second step end-->
+            </form>
+            <p class="cta_payment text-right">
+              <small>Payment by Cashbill S.A.</small>
+            </p>
+
+            <!--Hidden form start-->
+            <form
+              action="https://pay.cashbill.pl/form/pay.php"
+              method="POST"
+              id="hidden-form"
+              target="_blank"
+            >
+              <input type="hidden" name="service" value="{$service}" />
+              <input type="hidden" name="amount" value="{$amount}" />
+              <input type="hidden" name="desc" value="{$desc}" />
+              <input type="hidden" name="userdata" value="{$userdata}" />
+              <input type="hidden" name="sign" value="{$sign}" />
+            </form>
+            <!--Hidden form end-->
+
+            <h3 class="cta_call text-center">
+              Or call now:
+            </h3>
+            <div class="cta_button-wrapper">
+              <div class="cta_button">
+                <a href="tel:700600600" class="hs_btn_hover">
+                  700 700 700
+                </a>
+              </div>
+              <p class="cta_price text-right">
+                <small>7.49 z vat / min</small>
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!--Call to action section end-->
+
         <!--Services explanation start-->
         <section class="info">
             <div class="container">
@@ -231,8 +468,10 @@
     <!-- hs bottom footer wrapper End -->
     </div>
     <!--main js file start-->
-    <script src="js/jquery.js" defer></script>
-    <script src="js/scroll.js" defer></script>
+    <script src="js/jquery.js"></script>
+    <script src="../../node_modules/jquery-validation/dist/jquery.validate.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/form.js"></script>
     <!--main js file end-->
 </body>
 
