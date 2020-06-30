@@ -95,7 +95,7 @@ a:focus {
 }
 
 .main {
-  padding-bottom: 100px;
+  padding-bottom: 70px;
 }
 
 .sections-wrapper {
@@ -592,6 +592,7 @@ a:focus {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .cta_form_submit_price-label {
@@ -600,7 +601,6 @@ a:focus {
 }
 
 .cta_form_submit_price {
-  text-decoration: underline;
   font-size: 22px;
   padding-right: 20px;
 }
@@ -608,6 +608,7 @@ a:focus {
 .cta_form_price {
   display: inline-block;
   padding-right: 7px;
+  text-decoration: underline;
 }
 
 .cta_form_back {
@@ -861,11 +862,87 @@ footer {
 
 /*--- Footer end---*/
 
+/*---Payment result page start---*/
+
+/*--Welcoming section start--*/
+
+.welcome {
+  padding: 50px 0;
+}
+
+.welcome_title {
+  font-size: 45px;
+}
+
+.welcome_title::after {
+  content: "";
+  display: block;
+  width: 100px;
+  margin: 30px 0 15px 0;
+  border-bottom: 1px solid #fff;
+}
+
+.welcome-description {
+  padding: 30px 0;
+}
+
+/*--Welcoming section end--*/
+
+/*--Welcoming section end--*/
+
+/*--Call to action section start--*/
+
+.code {
+  background: #4f2b7f;
+  border: 1px dashed rgba(255, 255, 255, 0.5);
+  max-width: 350px;
+  width: 95%;
+  margin: 30px auto;
+}
+
+.code_value {
+  font-size: 36px;
+  padding: 33px 0;
+}
+
+.code_footer {
+  background: #986cd4;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 14px;
+  padding: 10px 0;
+}
+
+/*--Call to action section start--*/
+
+/*---Payment result page end---*/
+
 /*---Media queries start---*/
 
 @media (max-width: 1024px) {
   .header {
     height: 70px;
+  }
+  .welcome {
+    padding: 25px 0;
+  }
+
+  .welcome_title {
+    font-size: 40px;
+  }
+
+  .welcome_title::after {
+    margin: 15px 0 7.5px 0;
+  }
+
+  .welcome-description {
+    padding: 20px 0 0 0;
+  }
+
+  .cta_call {
+    padding-top: 0;
   }
 }
 
@@ -881,6 +958,21 @@ footer {
 
   .cta_button-wrapper {
     padding: 10px 0 5px 0;
+  }
+  .welcome {
+    padding: 20px 0;
+  }
+
+  .welcome_title {
+    font-size: 36px;
+  }
+
+  .welcome_title::after {
+    margin: 10px 0 6px 0;
+  }
+
+  .welcome-description {
+    padding: 15px 0 0 0;
   }
 }
 
@@ -905,6 +997,18 @@ footer {
 
   .cta_call {
     font-size: 26px;
+  }
+
+  .welcome {
+    padding-top: 0;
+  }
+
+  .welcome_title {
+    font-size: 28px;
+  }
+
+  .main.payment-result {
+    padding-top: 10px;
   }
 }
 
@@ -946,11 +1050,19 @@ footer {
   .cta_button-wrapper {
     width: 230px;
   }
+
+  .welcome {
+    padding-left: 15px;
+  }
 }
 
 @media (max-width: 356px) {
   #return-to-top {
     bottom: 140px;
+  }
+
+  .welcome_title {
+    font-size: 25px;
   }
 
   .cta_title {

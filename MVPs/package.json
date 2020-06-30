@@ -9,16 +9,19 @@
   "author": "Irina Gataullina",
   "license": "ISC",
   "devDependencies": {
+    "del": "^5.1.0",
     "gulp": "^4.0.2",
     "gulp-clean-css": "^4.3.0",
     "gulp-concat": "^2.6.1",
     "gulp-hub": "^4.2.0",
+    "gulp-plumber": "^1.2.1",
     "gulp-purgecss": "^2.3.0",
     "gulp-terser": "^1.2.0",
     "gulp-uglify": "^3.0.2"
   },
   "dependencies": {
     "gulp-autoprefixer": "^7.0.1",
+    "gulp-task-err-handler": "^0.1.4",
     "jquery-validation": "^1.19.2"
   }
 }
