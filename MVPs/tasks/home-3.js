@@ -99,7 +99,7 @@ gulp.task("minifyJSPayment-3", function (done) {
       done(error);
     })
     .pipe(uglify())
-    .pipe(gulp.dest("home11/dist/js"))
+    .pipe(gulp.dest("home3/dist/js"))
     .on("end", function () {
       // in case of success
       done();
