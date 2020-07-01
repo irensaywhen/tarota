@@ -579,20 +579,27 @@ a:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
+  justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .cta_form_submit_price-label {
   font-size: 22px;
+  padding-right: 20px;
 }
 
 .cta_form_submit_price {
-  text-decoration: underline;
   font-size: 22px;
+  padding-right: 20px;
+}
+
+.cta_form_price {
+  display: inline-block;
+  padding-right: 7px;
+  text-decoration: underline;
 }
 
 .cta_form_back {
