@@ -8,7 +8,7 @@ const terser = require("gulp-terser");
 const del = require("del");
 
 // Clean css and js folders
-gulp.task("cleanDist-11", function () {
+gulp.task("cleanDist-3", function () {
   return del([
     "home3/dist/css/**",
     "home3/dist/js/**",
