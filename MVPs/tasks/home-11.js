@@ -131,7 +131,7 @@ gulp.task(
 
 // Handle all the JS
 gulp.task(
-  "JS-10",
+  "JS-11",
   gulp.parallel("minifyJSImages-11", "minifyJSMain-11", "minifyJSPayment-11")
 );
 
