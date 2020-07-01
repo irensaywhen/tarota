@@ -1,0 +1,1 @@
+!function(){const n=document.getElementById("top-section"),t="https://picsum.photos/800/600";n.style.backgroundImage="none";let e=new Image;e.onload=function(){n.style.backgroundImage="url('"+t+"')"},e.src=t}();
