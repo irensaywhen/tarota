@@ -95,15 +95,7 @@ a:focus {
 }
 
 .main {
-  padding-bottom: 70px;
-}
-
-.sections-wrapper {
-  margin-bottom: 70px;
-}
-
-.cta_form-input::placeholder {
-  color: #fff;
+  padding-bottom: 100px;
 }
 
 /*---Default styles end---*/
@@ -411,309 +403,11 @@ a:focus {
 
 /*---Benefits section end---*/
 
-/*---Know your future section start---*/
-
-.call-to-action {
-  background: #0f0122;
-}
-
-.call-to-action.border {
-  border-bottom: 1px dashed rgba(255, 255, 255, 0.5);
-}
-
-.call-to-action .container {
-  padding: 0;
-  width: 100%;
-}
-
-.cta_title {
-  padding: 30px 0 10px;
-  font-size: 36px;
-}
-
-.cta_call {
-  font-size: 36px;
-  padding-top: 15px;
-}
-
-.cta_payment {
-  padding-right: 20px;
-  color: #948f8f;
-}
-
-.cta_description {
-  padding: 20px 15px;
-}
-
-.cta_price {
-  color: #948f8f;
-  align-self: flex-end;
-  padding-right: 15px;
-}
-
-.cta_button-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding: 30px 0 20px;
-  max-width: 333px;
-  margin: 0 auto;
-}
-
-.cta_button a {
-  width: 333px;
-  max-width: 333px;
-  height: 50px;
-  font-size: 24px;
-  font-family: "Roboto", sans-serif;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  line-height: 50px;
-  border: none;
-  background: none;
-  color: inherit;
-  vertical-align: middle;
-  position: relative;
-  z-index: 1;
-  -webkit-backface-visibility: hidden;
-  -moz-osx-font-smoothing: grayscale;
-  margin-bottom: 10px;
-}
-
-.cta_button a:focus {
-  outline: none;
-}
-
-.cta_button .hs_btn_hover {
-  border-radius: 50px;
-  background: #f06e9c;
-  color: #fff;
-  -webkit-transition: background-color 0.3s, color 0.3s;
-  -o-transition: background-color 0.3s, color 0.3s;
-  transition: background-color 0.3s, color 0.3s;
-}
-.cta_button .hs_btn_hover::before {
-  content: "";
-  position: absolute;
-  top: -20px;
-  left: -20px;
-  bottom: -20px;
-  right: -20px;
-  background: inherit;
-  border-radius: 50px;
-  z-index: -1;
-  opacity: 0.4;
-  -webkit-transform: scale3d(0.8, 0.5, 1);
-  transform: scale3d(0.8, 0.5, 1);
-}
-.cta_button .hs_btn_hover:hover {
-  -webkit-transition: background-color 0.1s 0.3s, color 0.1s 0.3s;
-  -o-transition: background-color 0.1s 0.3s, color 0.1s 0.3s;
-  transition: background-color 0.1s 0.3s, color 0.1s 0.3s;
-  color: #eceff1;
-  background-color: #f06e9c;
-  -webkit-animation: anim-moema-1 0.3s forwards;
-  animation: anim-moema-1 0.3s forwards;
-}
-.cta_button .hs_btn_hover:hover::before {
-  -webkit-animation: anim-moema-2 0.3s 0.3s forwards;
-  animation: anim-moema-2 0.3s 0.3s forwards;
-}
-
-/*--Order a consultation form start--*/
-
-.cta_form {
-  background: #4f2b7f;
-  border: 1px dashed rgba(255, 255, 255, 0.5);
-  margin: 10px 20px;
-}
-
-.cta_form_title {
-  padding: 30px 0 20px 0;
-}
-
-/*--Second step form fields start--*/
-
-.cta_form-input {
-  background: #986cd4;
-  color: #fff;
-  border: 1px dashed #565656;
-  padding: 2px 0 1px 6px;
-  width: 100%;
-}
-
-.cta_form-label {
-  color: #fff;
-  width: 100%;
-  margin: 0;
-  padding: 2px 0 1px 0;
-  cursor: pointer;
-}
-
-.cta_form-group {
-  margin-bottom: 15px !important;
-}
-
-.error {
-  color: #f76666 !important;
-}
-
-/*--Second step form fields end--*/
-
-/*--Submit section start--*/
-
-/*-Submit area start-*/
-
-.cta_form_submit {
-  width: 100%;
-  background: #986cd4;
-  color: #fff;
-  line-height: normal;
-  margin-top: 15px;
-  padding: 10px 0 10px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.cta_form_submit_price-label {
-  font-size: 22px;
-  padding-right: 20px;
-}
-
-.cta_form_submit_price {
-  font-size: 22px;
-  padding-right: 20px;
-}
-
-.cta_form_price {
-  display: inline-block;
-  padding-right: 7px;
-  text-decoration: underline;
-}
-
-.cta_form_back {
-  color: rgba(255, 255, 255, 0.7);
-  transition: all 0.5s;
-  padding-left: 5px;
-}
-
-.cta_form_back:hover,
-.cta_form_back:focus {
-  color: #707070;
-  text-decoration: none;
-  outline: none;
-}
-
-.cta_form_submit::before,
-.cta_form_submit::after {
-  display: none;
-}
-
-.cta_form_submit_button button {
-  float: left;
-  width: 120px;
-  height: 50px;
-  font-size: 20px;
-  font-family: "Roboto", sans-serif;
-  display: block;
-  line-height: 50px;
-  border: none;
-  background: none;
-  color: inherit;
-  vertical-align: middle;
-  position: relative;
-  -webkit-backface-visibility: hidden;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.cta_form_submit_button button:focus {
-  outline: none;
-}
-
-.cta_form_submit_button .hs_btn_hover {
-  border-radius: 50px;
-  color: #fff;
-  -webkit-transition: background-color 0.3s, color 0.3s;
-  transition: background-color 0.3s, color 0.3s;
-  margin: 0;
-}
-
-.cta_form_submit_button .hs_btn_hover::before {
-  content: "";
-  position: absolute;
-  top: -20px;
-  left: -20px;
-  bottom: -20px;
-  right: -20px;
-  background: inherit;
-  border-radius: 50px;
-  z-index: -1;
-  opacity: 0.4;
-  -webkit-transform: scale3d(0.8, 0.5, 1);
-  transform: scale3d(0.8, 0.5, 1);
-}
-
-.cta_form_submit_button .hs_btn_hover:hover {
-  -webkit-transition: background-color 0.1s 0.3s, color 0.1s 0.3s;
-  transition: background-color 0.1s 0.3s, color 0.1s 0.3s;
-  color: #eceff1;
-  background-color: #4f2b7f;
-  -webkit-animation: anim-moema-1 0.3s forwards;
-  animation: anim-moema-1 0.3s forwards;
-}
-
-.cta_form_submit_button .hs_btn_hover:hover::before {
-  -webkit-animation: anim-moema-2 0.3s 0.3s forwards;
-  animation: anim-moema-2 0.3s 0.3s forwards;
-}
-
-.cta_form_submit_button button,
-.cta_form_submit_button .hs_btn_hover,
-.cta_form_submit_button .hs_btn_hover:hover {
-  background: #f06e9c;
-}
-
-/*-Submit area end-*/
-
-/*--Submit section end--*/
-
-/*--Form steps start--*/
-
-.cta_form_second-step {
-  display: none;
-}
-
-/*--Form steps end--*/
-
-/*--Order a consultation form end--*/
-
-/*---Know your future section end---*/
-
 /*---Info section start---*/
 
 .info_title {
   font-size: 28px;
-  padding: 5px 0 10px 0;
+  padding: 30px 0 20px 0;
 }
 
 .info_title::after {
@@ -724,26 +418,9 @@ a:focus {
   border-bottom: 1px solid #fff;
 }
 
-.info_line span {
-  width: 8px;
-  height: 8px;
-  background: #4f2b7f;
-  display: inline-block;
-  position: relative;
-}
-.info_line span:after {
-  content: "";
-  border: 1px solid #d8d8d8;
-  width: 100px;
-  position: absolute;
-  left: 15px;
-  top: 3px;
-}
-
 .info_text {
   margin: 10px auto;
 }
-
 /*--Call to action--*/
 .call-to-action {
   background: #0f0122;
@@ -871,87 +548,11 @@ footer {
 
 /*--- Footer end---*/
 
-/*---Payment result page start---*/
-
-/*--Welcoming section start--*/
-
-.welcome {
-  padding: 50px 0;
-}
-
-.welcome_title {
-  font-size: 45px;
-}
-
-.welcome_title::after {
-  content: "";
-  display: block;
-  width: 100px;
-  margin: 30px 0 15px 0;
-  border-bottom: 1px solid #fff;
-}
-
-.welcome-description {
-  padding: 30px 0;
-}
-
-/*--Welcoming section end--*/
-
-/*--Welcoming section end--*/
-
-/*--Call to action section start--*/
-
-.code {
-  background: #4f2b7f;
-  border: 1px dashed rgba(255, 255, 255, 0.5);
-  max-width: 350px;
-  width: 95%;
-  margin: 30px auto;
-}
-
-.code_value {
-  font-size: 36px;
-  padding: 33px 0;
-}
-
-.code_footer {
-  background: #986cd4;
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: 14px;
-  padding: 10px 0;
-}
-
-/*--Call to action section start--*/
-
-/*---Payment result page end---*/
-
 /*---Media queries start---*/
 
 @media (max-width: 1024px) {
   .header {
     height: 70px;
-  }
-  .welcome {
-    padding: 25px 0;
-  }
-
-  .welcome_title {
-    font-size: 40px;
-  }
-
-  .welcome_title::after {
-    margin: 15px 0 7.5px 0;
-  }
-
-  .welcome-description {
-    padding: 20px 0 0 0;
-  }
-
-  .cta_call {
-    padding-top: 0;
   }
 }
 
@@ -967,21 +568,6 @@ footer {
 
   .cta_button-wrapper {
     padding: 10px 0 5px 0;
-  }
-  .welcome {
-    padding: 20px 0;
-  }
-
-  .welcome_title {
-    font-size: 36px;
-  }
-
-  .welcome_title::after {
-    margin: 10px 0 6px 0;
-  }
-
-  .welcome-description {
-    padding: 15px 0 0 0;
   }
 }
 
@@ -1006,18 +592,6 @@ footer {
 
   .cta_call {
     font-size: 26px;
-  }
-
-  .welcome {
-    padding-top: 0;
-  }
-
-  .welcome_title {
-    font-size: 28px;
-  }
-
-  .main.payment-result {
-    padding-top: 10px;
   }
 }
 
@@ -1059,19 +633,11 @@ footer {
   .cta_button-wrapper {
     width: 230px;
   }
-
-  .welcome {
-    padding-left: 15px;
-  }
 }
 
 @media (max-width: 356px) {
   #return-to-top {
     bottom: 140px;
-  }
-
-  .welcome_title {
-    font-size: 25px;
   }
 
   .cta_title {
@@ -1082,48 +648,5 @@ footer {
     font-size: 24px;
   }
 }
-
-/*--Bootstrap grid media start--*/
-
-@media screen and (min-width: 768px) {
-  .gutters-sm {
-    padding: 0 15px;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  .gutters-md {
-    padding: 0 15px;
-  }
-
-  .cta_form {
-    max-width: 650px;
-    margin: 10px auto;
-  }
-
-  .cta_payment {
-    padding: 0;
-    max-width: 650px;
-    margin: 0 auto;
-  }
-
-  .padding-md-0 {
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-
-  .cta_form-label {
-    text-align: right !important;
-    padding-bottom: 10px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .gutters-lg {
-    padding: 0 15px;
-  }
-}
-
-/*--Bootstrap grid media end--*/
 
 /*---Media queries end---*/
