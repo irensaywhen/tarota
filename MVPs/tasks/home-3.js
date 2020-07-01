@@ -113,10 +113,7 @@ gulp.task(
 );
 
 // Handle all the JS
-gulp.task(
-  "JS-3",
-  gulp.parallel("minifyJSImages-3", "minifyJSMain-3", "minifyJSPayment-3")
-);
+gulp.task("JS-3", gulp.parallel("minifyJSMain-3", "minifyJSPayment-3"));
 
 // Build CSS and JS files
 
